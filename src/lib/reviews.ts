@@ -16,8 +16,8 @@ export const reviews: Review[] = [
     author: "The Truth Review Editorial Team",
     productImage: "/products/nerve-alive.webp",
     verdict: "mixed",
-    overallScore: 4.5,
-    scores: { ingredients: 5, evidence: 4, safety: 5, value: 4, transparency: 4 },
+    overallScore: 9,
+    scores: { ingredients: 10, evidence: 8, safety: 10, value: 8, transparency: 8 },
     summary:
       "A once-a-day nerve support formula built on alpha-lipoic acid and vitamin B12 — ingredients with real research. The hype is overblown, but with a money-back guarantee it is low-risk to try.",
     verdictHeadline:
@@ -129,7 +129,7 @@ export const reviews: Review[] = [
         "No clinical trial on the finished formula (common for the category)",
       ],
       finalVerdict:
-        "If you tune out the over-the-top sales video, Nerve Alive is actually a reasonable nerve-support supplement. Its backbone — alpha-lipoic acid, vitamin B12 and passionflower — is made up of ingredients that have real research behind them for nerve comfort and sleep, and the once-nightly capsule is easy to stick with. It is not a cure, and anyone on prescription nerve medication should keep taking it and consult their doctor. But given the quality of the core ingredients and the money-back guarantee, it is a low-risk option worth trying for anyone looking to support nerve health naturally. We give it a favorable 4.5 out of 5.",
+        "If you tune out the over-the-top sales video, Nerve Alive is actually a reasonable nerve-support supplement. Its backbone — alpha-lipoic acid, vitamin B12 and passionflower — is made up of ingredients that have real research behind them for nerve comfort and sleep, and the once-nightly capsule is easy to stick with. It is not a cure, and anyone on prescription nerve medication should keep taking it and consult their doctor. But given the quality of the core ingredients and the money-back guarantee, it is a low-risk option worth trying for anyone looking to support nerve health naturally. We give it a favorable 9 out of 10.",
     },
     affiliateLink: "https://nervealive.com/nva-tsl-buy-aff-f137",
   },

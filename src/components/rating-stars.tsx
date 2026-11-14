@@ -10,7 +10,7 @@ function Row({ className }: { className?: string }) {
   );
 }
 
-// `score` is on a 0–5 scale.
+// `score` is on a 0–10 scale.
 export function RatingStars({
   score,
   hideValue = false,
@@ -18,7 +18,7 @@ export function RatingStars({
   score: number;
   hideValue?: boolean;
 }) {
-  const pct = Math.max(0, Math.min(100, (score / 5) * 100));
+  const pct = Math.max(0, Math.min(100, (score / 10) * 100));
   return (
     <div className="flex items-center gap-1">
       <div className="relative inline-block">
@@ -28,7 +28,7 @@ export function RatingStars({
         </div>
       </div>
       {!hideValue && (
-        <span className="text-sm font-semibold text-muted-foreground ml-1">{score}/5</span>
+        <span className="text-sm font-semibold text-muted-foreground ml-1">{score}/10</span>
       )}
     </div>
   );

@@ -150,7 +150,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
             <div className="flex items-center gap-3 mb-4">
               <RatingStars score={review.overallScore} hideValue />
               <span className="text-2xl font-black text-[var(--brand-navy)]" style={serif}>
-                {stars5} <span className="text-base font-semibold text-muted-foreground">of 5</span>
+                {stars5} <span className="text-base font-semibold text-muted-foreground">of 10</span>
               </span>
             </div>
 
@@ -170,7 +170,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
           {scoreCards.map((c) => (
             <div key={c.key} className="bg-white rounded-lg shadow-lg border-t-4 border-[var(--brand-gold)] p-5 text-center">
               <div className="text-3xl font-black text-[var(--brand-navy)]" style={serif}>
-                {review.scores[c.key]}<span className="text-sm text-muted-foreground">/5</span>
+                {review.scores[c.key]}<span className="text-sm text-muted-foreground">/10</span>
               </div>
               <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mt-1">
                 {c.label}
