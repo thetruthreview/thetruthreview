@@ -25,6 +25,7 @@ export interface ReviewData {
   sections: {
     introduction: string;
     companyClaims: string[];
+    companyClaimsBody?: string;
     factOrFiction: Array<{ claim: string; verdict: "true" | "false" | "partially-true" | "unverified"; explanation: string }>;
     ingredients: Array<{ name: string; dosage: string; purpose: string; evidence: string; rating: "strong" | "moderate" | "weak" | "none" }>;
     clinicalEvidence: string;
@@ -79,6 +80,54 @@ function Prose({ text }: { text: string }) {
         </p>
       ))}
     </>
+  );
+}
+
+function renderInline(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <strong key={i} className="font-bold text-[var(--brand-navy)]">
+        {part.slice(2, -2)}
+      </strong>
+    ) : (
+      <span key={i}>{part}</span>
+    )
+  );
+}
+
+// Lightweight renderer: `### heading`, `* bullet` lists, `**bold**`, and paragraphs.
+function RichText({ text }: { text: string }) {
+  const blocks = text.split("\n\n");
+  return (
+    <div className="space-y-4">
+      {blocks.map((block, i) => {
+        const lines = block.split("\n");
+        if (block.startsWith("### ")) {
+          return (
+            <h3 key={i} className="text-xl font-bold text-[var(--brand-navy)] mt-6" style={serif}>
+              {block.replace(/^###\s+/, "")}
+            </h3>
+          );
+        }
+        if (lines.every((l) => l.trim().startsWith("* "))) {
+          return (
+            <ul key={i} className="space-y-2">
+              {lines.map((l, j) => (
+                <li key={j} className="flex items-start gap-2 text-lg leading-relaxed">
+                  <span className="text-[var(--brand-gold)] font-bold mt-0.5">›</span>
+                  <span>{renderInline(l.trim().replace(/^\*\s+/, ""))}</span>
+                </li>
+              ))}
+            </ul>
+          );
+        }
+        return (
+          <p key={i} className="text-lg leading-relaxed">
+            {renderInline(block)}
+          </p>
+        );
+      })}
+    </div>
   );
 }
 
@@ -189,14 +238,18 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
 
         <section className="mb-10">
           <SectionHeader id="claims" number="02" title="What Does the Company Claim?" />
-          <ul className="space-y-2">
-            {sections.companyClaims.map((claim, i) => (
-              <li key={i} className="flex items-start gap-2 text-lg leading-relaxed">
-                <span className="text-[var(--brand-gold)] font-bold">›</span>
-                <span>{claim}</span>
-              </li>
-            ))}
-          </ul>
+          {sections.companyClaimsBody ? (
+            <RichText text={sections.companyClaimsBody} />
+          ) : (
+            <ul className="space-y-2">
+              {sections.companyClaims.map((claim, i) => (
+                <li key={i} className="flex items-start gap-2 text-lg leading-relaxed">
+                  <span className="text-[var(--brand-gold)] font-bold">›</span>
+                  <span>{claim}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
 
         <section className="mb-10">
