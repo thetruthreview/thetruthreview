@@ -89,10 +89,10 @@ export const reviews: Review[] = [
             "Reasonable, with a caveat. The individual ingredients have real research for calming the nervous system and easing discomfort, so the benefit is plausible for many people. What's missing is a clinical trial on the finished Nerve Alive blend itself — so the support is credible, just not proven for this exact product.",
         },
         {
-          claim: "You can grab it on Amazon or at your local pharmacy",
-          verdict: "false",
+          claim: "It's backed by a money-back guarantee",
+          verdict: "true",
           explanation:
-            "Not true — and worth knowing. Nerve Alive is sold only through the official website, not Amazon, eBay or retail shelves. Any third-party listings are almost always counterfeits, so the official page is the only way to get the genuine product and the money-back guarantee.",
+            "True. Every order is covered by a money-back guarantee, so you can try it and request a refund if it's not for you. Just confirm the current window and terms on the official checkout page — but as refund policies go, it genuinely lowers the risk of giving it a shot.",
         },
       ],
       ingredientsIntro:
