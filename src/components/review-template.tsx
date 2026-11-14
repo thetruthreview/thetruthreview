@@ -60,7 +60,7 @@ function SectionHeader({ number, title, id }: { number: string; title: string; i
         {number}
       </span>
       <h2
-        className="text-xl font-bold text-[var(--brand-navy)] border-b-2 border-[var(--brand-gold)] pb-1 flex-1"
+        className="text-2xl font-bold text-[var(--brand-navy)] border-b-2 border-[var(--brand-gold)] pb-1 flex-1"
         style={serif}
       >
         {title}
@@ -104,7 +104,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
             <h1 className="text-3xl sm:text-4xl font-black leading-tight mt-3 mb-4" style={serif}>
               {review.title}
             </h1>
-            <p className="text-white/70 leading-relaxed mb-5">{review.summary}</p>
+            <p className="text-lg text-white/80 leading-relaxed mb-5">{review.summary}</p>
             <div className="flex items-center gap-4 mb-6">
               <span className="text-5xl font-black text-[var(--brand-gold)]" style={serif}>
                 {review.overallScore}
@@ -151,14 +151,14 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
       <div className="max-w-5xl mx-auto px-4 py-12">
         <section className="mb-10">
           <SectionHeader id="introduction" number="01" title="Introduction" />
-          <p className="text-sm leading-relaxed">{sections.introduction}</p>
+          <p className="text-lg leading-relaxed">{sections.introduction}</p>
         </section>
 
         <section className="mb-10">
           <SectionHeader id="claims" number="02" title="What Does the Company Claim?" />
           <ul className="space-y-2">
             {sections.companyClaims.map((claim, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm">
+              <li key={i} className="flex items-start gap-2 text-lg leading-relaxed">
                 <span className="text-[var(--brand-gold)] font-bold">›</span>
                 <span>{claim}</span>
               </li>
@@ -172,12 +172,12 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
             {sections.factOrFiction.map((item, i) => (
               <div key={i} className="border rounded-lg p-4 bg-white">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                  <span className="text-sm font-semibold text-[var(--brand-navy)]">&ldquo;{item.claim}&rdquo;</span>
-                  <span className={`text-[10px] font-bold tracking-wide uppercase border px-2 py-0.5 rounded-sm whitespace-nowrap ${claimVerdictConfig[item.verdict].color}`}>
+                  <span className="text-lg font-semibold text-[var(--brand-navy)]">&ldquo;{item.claim}&rdquo;</span>
+                  <span className={`text-xs font-bold tracking-wide uppercase border px-2 py-0.5 rounded-sm whitespace-nowrap ${claimVerdictConfig[item.verdict].color}`}>
                     {claimVerdictConfig[item.verdict].label}
                   </span>
                 </div>
-                <p className="text-xs text-muted-foreground leading-relaxed">{item.explanation}</p>
+                <p className="text-base text-muted-foreground leading-relaxed">{item.explanation}</p>
               </div>
             ))}
           </div>
@@ -190,15 +190,15 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
               <div key={i} className="border rounded-lg p-4 bg-white">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
                   <div>
-                    <span className="font-bold text-[var(--brand-navy)]">{ing.name}</span>
-                    <span className="text-xs text-muted-foreground ml-2">({ing.dosage})</span>
+                    <span className="text-lg font-bold text-[var(--brand-navy)]">{ing.name}</span>
+                    <span className="text-base text-muted-foreground ml-2">({ing.dosage})</span>
                   </div>
-                  <span className={`text-[10px] font-bold tracking-wide uppercase border px-2 py-0.5 rounded-sm ${evidenceLabels[ing.rating].color}`}>
+                  <span className={`text-xs font-bold tracking-wide uppercase border px-2 py-0.5 rounded-sm ${evidenceLabels[ing.rating].color}`}>
                     {evidenceLabels[ing.rating].label}
                   </span>
                 </div>
-                <p className="text-xs text-muted-foreground mb-1"><strong>Purpose:</strong> {ing.purpose}</p>
-                <p className="text-xs text-muted-foreground leading-relaxed">{ing.evidence}</p>
+                <p className="text-base text-muted-foreground mb-1"><strong>Purpose:</strong> {ing.purpose}</p>
+                <p className="text-base text-muted-foreground leading-relaxed">{ing.evidence}</p>
               </div>
             ))}
           </div>
@@ -206,40 +206,40 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
 
         <section className="mb-10">
           <SectionHeader id="clinical-evidence" number="05" title="Clinical Evidence" />
-          <p className="text-sm leading-relaxed">{sections.clinicalEvidence}</p>
+          <p className="text-lg leading-relaxed">{sections.clinicalEvidence}</p>
         </section>
 
         <section className="mb-10">
           <SectionHeader id="safety" number="06" title="Safety & Side Effects" />
-          <p className="text-sm leading-relaxed">{sections.safety}</p>
+          <p className="text-lg leading-relaxed">{sections.safety}</p>
         </section>
 
         <section className="mb-10">
           <SectionHeader id="customer-reviews" number="07" title="Customer Reviews & Complaints" />
-          <p className="text-sm leading-relaxed">{sections.customerReviews}</p>
+          <p className="text-lg leading-relaxed">{sections.customerReviews}</p>
         </section>
 
         <section className="mb-10">
           <SectionHeader id="pricing" number="08" title="Pricing & Refund Policy" />
-          <p className="text-sm leading-relaxed">{sections.pricing}</p>
+          <p className="text-lg leading-relaxed">{sections.pricing}</p>
         </section>
 
         <section className="mb-10">
           <SectionHeader id="pros-cons" number="09" title="Pros & Cons" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-green-50 border border-green-100 rounded-lg p-4">
-              <h3 className="font-bold text-green-800 mb-3 text-sm uppercase tracking-wide">Pros</h3>
+            <div className="bg-green-50 border border-green-100 rounded-lg p-5">
+              <h3 className="font-bold text-green-800 mb-3 text-base uppercase tracking-wide">Pros</h3>
               <ul className="space-y-2">
                 {sections.pros.map((p, i) => (
-                  <li key={i} className="text-sm text-green-700">+ {p}</li>
+                  <li key={i} className="text-lg text-green-700 leading-relaxed">+ {p}</li>
                 ))}
               </ul>
             </div>
-            <div className="bg-red-50 border border-red-100 rounded-lg p-4">
-              <h3 className="font-bold text-red-800 mb-3 text-sm uppercase tracking-wide">Cons</h3>
+            <div className="bg-red-50 border border-red-100 rounded-lg p-5">
+              <h3 className="font-bold text-red-800 mb-3 text-base uppercase tracking-wide">Cons</h3>
               <ul className="space-y-2">
                 {sections.cons.map((c, i) => (
-                  <li key={i} className="text-sm text-red-700">– {c}</li>
+                  <li key={i} className="text-lg text-red-700 leading-relaxed">– {c}</li>
                 ))}
               </ul>
             </div>
@@ -253,10 +253,10 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
               <VerdictBadge verdict={review.verdict} />
               <RatingStars score={review.overallScore} />
             </div>
-            <p className="text-white/80 leading-relaxed text-sm mb-4">{sections.finalVerdict}</p>
+            <p className="text-lg text-white/80 leading-relaxed mb-4">{sections.finalVerdict}</p>
             <CtaButton href={review.affiliateLink} />
           </div>
-          <p className="text-xs text-muted-foreground mt-3">
+          <p className="text-sm text-muted-foreground mt-3">
             This review contains affiliate links. We may earn a commission at no extra cost to you.
             Our verdicts are not influenced by commissions.
           </p>

@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Atkinson_Hyperlegible } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const atkinson = Atkinson_Hyperlegible({
+  weight: ["400", "700"],
+  variable: "--font-atkinson",
   subsets: ["latin"],
   display: "swap",
 });
@@ -41,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={atkinson.variable}>
       <body className="min-h-screen flex flex-col bg-background antialiased">
         <SiteHeader />
         <main className="flex-1">{children}</main>

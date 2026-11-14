@@ -22,7 +22,7 @@ export default function AboutPage() {
         </h1>
       </div>
 
-      <div className="prose text-sm leading-relaxed space-y-4 text-foreground">
+      <div className="prose text-lg leading-relaxed space-y-4 text-foreground">
         <p>
           The Truth Review is an independent consumer publication focused exclusively on the
           dietary supplement and nutraceutical industry in the United States and beyond.
