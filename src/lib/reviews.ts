@@ -39,34 +39,29 @@ export const reviews: Review[] = [
         "Backed by a money-back guarantee with free bonus guides",
       ],
       companyClaimsBody:
-        "Based on what the product promises, Nerve Alive was developed as a daily dietary supplement intended to support nerve health, nutritional balance, and overall well-being. The company presents its formula as a combination of five ingredients, each selected for a different role in its proposed approach to nervous system support.\n\n" +
-        "Rather than positioning the product as a conventional pain-relief supplement, the brand emphasizes a combination of nutritional ingredients, botanical extracts, and a convenient daily capsule routine.\n\n" +
-        "Here is a closer look at the main claims made by the company.\n\n" +
-        "### 1. A Multi-Ingredient Formula for Nerve Health\n\n" +
-        "One of the central selling points of Nerve Alive is its five-ingredient formula. Among what the product promises, the manufacturer highlights the following components:\n\n" +
-        "* **Corydalis extract:** Presented as a botanical component of the formula, associated with capsaicin and the company's proposed approach to nerve health.\n" +
-        "* **Marshmallow root:** Included as a plant-based ingredient that the company associates with nervous system support.\n" +
-        "* **Prickly pear extract:** Highlighted in connection with alpha-lipoic acid and its proposed role in the formula.\n" +
-        "* **Vitamin B12 (Methylcobalamin):** Included as a nutritional component associated with normal nerve function and myelin maintenance.\n" +
-        "* **Passionflower extract (Passiflora incarnata):** Presented as a botanical ingredient intended to complement the formula's focus on relaxation and sleep.\n\n" +
-        "The manufacturer describes these ingredients as a complementary combination designed to address different aspects of nutritional and general wellness support.\n\n" +
-        "### 2. Support for Nerve Function and Everyday Comfort\n\n" +
-        "What the product promises places considerable emphasis on nerve health and everyday physical comfort. According to the company, Nerve Alive is intended to support normal nerve function and provide nutritional support for people concerned about sensations such as tingling, numbness, and burning discomfort.\n\n" +
-        "The company also highlights the importance of maintaining healthy nerve communication and supporting the body's normal nutritional processes involved in nervous system function.\n\n" +
-        "However, these descriptions should be understood as the manufacturer's intended product positioning, not evidence that the finished supplement can reverse neuropathy, repair damaged nerves, or eliminate nerve pain.\n\n" +
-        "### 3. Sleep, Relaxation and Overall Well-Being\n\n" +
-        "Another aspect the product promises is the relationship between nighttime comfort, relaxation, and general well-being.\n\n" +
-        "The inclusion of passionflower extract is presented as part of the company's approach to supporting relaxation and sleep quality. The manufacturer also associates the formula with potential improvements in daily energy, mood, and overall comfort.\n\n" +
-        "These are additional wellness-oriented claims rather than established outcomes demonstrated by clinical trials of the complete Nerve Alive formula.\n\n" +
-        "### 4. Daily Convenience and Purchase Benefits\n\n" +
-        "Nerve Alive is presented as a capsule-based supplement, with the company recommending two capsules daily before bedtime. The company also describes a time-release encapsulation system intended to protect the ingredients and control their release.\n\n" +
-        "On the purchasing side, the brand advertises different package options, complimentary digital guides, and a money-back guarantee.\n\n" +
-        "These commercial conditions are separate from the scientific merits of the formula and should be checked against the current official sales terms before purchasing.\n\n" +
-        "### What Should You Take Away From These Claims?\n\n" +
-        "Overall, the manufacturer positions Nerve Alive as a multi-ingredient nutritional supplement that combines botanical extracts and vitamin B12 with an emphasis on nerve health, relaxation, and daily well-being.\n\n" +
-        "That positioning helps explain what the company wants consumers to expect from the product. However, what a product promises alone cannot establish whether the formula delivers those benefits.\n\n" +
-        "In particular, the presence of ingredients that have been studied individually does not automatically demonstrate that Nerve Alive itself has been clinically proven to improve nerve function or relieve neuropathy symptoms.\n\n" +
-        "In the following sections, we examine the product's ingredients and available scientific evidence more closely to determine which claims are reasonably supported and which require additional scrutiny.",
+        "Nerve Alive is marketed as a daily supplement for nerve health, nutritional balance, and overall well-being. It's built around five ingredients, each chosen to play a different role in supporting the nervous system.\n\n" +
+        "Instead of selling it as a straight pain reliever, the makers lean on a mix of nutrients, botanical extracts, and the convenience of a single daily capsule. Here's a closer look at what it claims to do.\n\n" +
+        "### 1. A five-ingredient formula for nerve health\n\n" +
+        "The headline selling point is the formula itself — five ingredients working together:\n\n" +
+        "* **Corydalis extract:** a botanical tied to the product's pain-and-nerve angle (and marketed, somewhat loosely, alongside capsaicin).\n" +
+        "* **Marshmallow root:** a soothing plant extract included for general nervous-system support.\n" +
+        "* **Prickly pear extract:** the formula's source of alpha-lipoic acid, a well-known nerve nutrient.\n" +
+        "* **Vitamin B12 (methylcobalamin):** the active form of B12, tied to normal nerve function and myelin health.\n" +
+        "* **Passionflower (Passiflora incarnata):** added for relaxation and better sleep.\n\n" +
+        "Together, these are pitched as a complementary blend that covers several angles of nerve and wellness support at once.\n\n" +
+        "### 2. Nerve function and everyday comfort\n\n" +
+        "Most of the messaging centers on nerve health and day-to-day comfort — supporting normal nerve function for people dealing with tingling, numbness, and burning sensations, and keeping nerve signals firing the way they should.\n\n" +
+        "Worth keeping in mind: this is how the product is positioned, not proof that it can reverse neuropathy, repair damaged nerves, or erase nerve pain.\n\n" +
+        "### 3. Sleep, relaxation, and well-being\n\n" +
+        "Nerve pain and bad sleep go hand in hand, so the formula also targets rest. The passionflower is there to help you wind down, and the overall pitch includes better energy, mood, and comfort during the day.\n\n" +
+        "These are wellness claims — reasonable on paper, but not outcomes proven in a clinical trial of the finished product.\n\n" +
+        "### 4. Daily convenience and buyer perks\n\n" +
+        "It's a simple routine: two capsules a night, with a time-release coating meant to protect the ingredients and release them gradually.\n\n" +
+        "On the buying side, there are multi-bottle discounts, free digital guides, and a money-back guarantee — all of which are worth confirming against the current terms on the official page before you order.\n\n" +
+        "### The bottom line on these claims\n\n" +
+        "Put simply, Nerve Alive is positioned as a multi-ingredient supplement — botanicals plus B12 — aimed at nerve health, relaxation, and everyday well-being.\n\n" +
+        "That tells you what to expect from the pitch. What it doesn't tell you is whether the formula actually delivers. Ingredients that look good on their own don't automatically prove the finished product improves nerve function or relieves neuropathy.\n\n" +
+        "That's exactly what the next sections dig into — the ingredients and the real evidence behind them — to see which claims hold up and which need a closer look.",
       factOrFiction: [
         {
           claim: "It contains nutrients clinically studied for nerve health",
