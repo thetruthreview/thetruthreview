@@ -14,6 +14,7 @@ export const reviews: Review[] = [
     category: "Nerve Health",
     publishedAt: "November 2025",
     author: "The Truth Review Editorial Team",
+    productImage: "/products/nerve-alive.webp",
     verdict: "mixed",
     overallScore: 7.6,
     scores: { ingredients: 8, evidence: 7, safety: 8, value: 7, transparency: 6 },
