@@ -39,15 +39,16 @@ export const reviews: Review[] = [
         "Backed by a money-back guarantee with free bonus guides",
       ],
       companyClaimsBody:
-        "Nerve Alive is marketed as a daily supplement for nerve health, nutritional balance, and overall well-being. It's built around five ingredients, each chosen to play a different role in supporting the nervous system.\n\n" +
+        "Nerve Alive is marketed as a daily supplement for nerve health, nutritional balance, and overall well-being. It's built around a handful of ingredients, each chosen to play a different role in supporting the nervous system.\n\n" +
         "Instead of selling it as a straight pain reliever, the makers lean on a mix of nutrients, botanical extracts, and the convenience of a single daily capsule. Here's a closer look at what it claims to do.\n\n" +
-        "### 1. A five-ingredient formula for nerve health\n\n" +
-        "The headline selling point is the formula itself — five ingredients working together:\n\n" +
-        "* **Corydalis extract:** a botanical tied to the product's pain-and-nerve angle (and marketed, somewhat loosely, alongside capsaicin).\n" +
-        "* **Marshmallow root:** a soothing plant extract included for general nervous-system support.\n" +
+        "### 1. A multi-ingredient formula for nerve health\n\n" +
+        "The headline selling point is the formula itself — several ingredients working together:\n\n" +
+        "* **Magnesium:** front and center on the label (“With Magnesium”), included for healthy nerve signaling and muscle relaxation.\n" +
         "* **Prickly pear extract:** the formula's source of alpha-lipoic acid, a well-known nerve nutrient.\n" +
         "* **Vitamin B12 (methylcobalamin):** the active form of B12, tied to normal nerve function and myelin health.\n" +
-        "* **Passionflower (Passiflora incarnata):** added for relaxation and better sleep.\n\n" +
+        "* **Passionflower (Passiflora incarnata):** added for relaxation and better sleep.\n" +
+        "* **Corydalis extract:** a botanical tied to the product's pain-and-nerve angle (and marketed, somewhat loosely, alongside capsaicin).\n" +
+        "* **Marshmallow root:** a soothing plant extract included for general nervous-system support.\n\n" +
         "Together, these are pitched as a complementary blend that covers several angles of nerve and wellness support at once.\n\n" +
         "### 2. Nerve function and everyday comfort\n\n" +
         "Most of the messaging centers on nerve health and day-to-day comfort — supporting normal nerve function for people dealing with tingling, numbness, and burning sensations, and keeping nerve signals firing the way they should.\n\n" +
@@ -89,6 +90,14 @@ export const reviews: Review[] = [
         },
       ],
       ingredients: [
+        {
+          name: "Magnesium",
+          dosage: "Not disclosed on label",
+          purpose: "Supports healthy nerve signaling and muscle function",
+          evidence:
+            "Featured right on the label (“With Magnesium”), and a smart inclusion. Magnesium is essential for normal nerve transmission and muscle relaxation, and low levels are linked to cramps, restlessness and poor sleep. A well-established, evidence-backed nutrient for nerve and muscle comfort.",
+          rating: "strong",
+        },
         {
           name: "Alpha-Lipoic Acid (from Prickly Pear)",
           dosage: "Not disclosed on label",
