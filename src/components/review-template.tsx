@@ -27,6 +27,8 @@ export interface ReviewData {
     introduction: string;
     companyClaims: string[];
     companyClaimsBody?: string;
+    ingredientsIntro?: string;
+    ingredientsLeadIn?: string;
     factOrFiction: Array<{ claim: string; verdict: "true" | "false" | "partially-true" | "unverified"; explanation: string }>;
     ingredients: Array<{ name: string; dosage: string; purpose: string; evidence: string; rating: "strong" | "moderate" | "weak" | "none" }>;
     clinicalEvidence: string;
@@ -48,10 +50,10 @@ const evidenceLabels: Record<string, { label: string; color: string }> = {
 };
 
 const claimVerdictConfig = {
-  "true": { label: "Supported", color: "text-green-700 bg-green-50 border-green-200" },
-  "false": { label: "Not Supported", color: "text-red-700 bg-red-50 border-red-200" },
-  "partially-true": { label: "Partially Supported", color: "text-yellow-700 bg-yellow-50 border-yellow-200" },
-  "unverified": { label: "Unverified", color: "text-gray-600 bg-gray-50 border-gray-200" },
+  "true": { label: "Supported", color: "text-green-700 bg-green-50 border-green-200", icon: "/icons/check.png" },
+  "false": { label: "Not Supported", color: "text-red-700 bg-red-50 border-red-200", icon: "/icons/cross.png" },
+  "partially-true": { label: "Partially Supported", color: "text-yellow-700 bg-yellow-50 border-yellow-200", icon: "/icons/warning.png" },
+  "unverified": { label: "Unverified", color: "text-gray-600 bg-gray-50 border-gray-200", icon: "/icons/warning.png" },
 };
 
 const serif = { fontFamily: "var(--font-playfair), Georgia, serif" };
@@ -257,14 +259,24 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
           <SectionHeader id="fact-or-fiction" number="03" title="Fact or Fiction?" />
           <div className="space-y-3">
             {sections.factOrFiction.map((item, i) => (
-              <div key={i} className="border rounded-lg p-4 bg-white">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                  <span className="text-lg font-semibold text-[var(--brand-navy)]">&ldquo;{item.claim}&rdquo;</span>
-                  <span className={`text-xs font-bold tracking-wide uppercase border px-2 py-0.5 rounded-sm whitespace-nowrap ${claimVerdictConfig[item.verdict].color}`}>
+              <div key={i} className="border rounded-lg p-4 bg-white flex items-start gap-4">
+                <div className="flex-1">
+                  <span className="block text-lg font-semibold text-[var(--brand-navy)] mb-1">
+                    &ldquo;{item.claim}&rdquo;
+                  </span>
+                  <p className="text-base text-muted-foreground leading-relaxed">{item.explanation}</p>
+                </div>
+                <div className="flex flex-col items-center gap-1 shrink-0 w-16">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={claimVerdictConfig[item.verdict].icon}
+                    alt={claimVerdictConfig[item.verdict].label}
+                    className="w-12 h-12"
+                  />
+                  <span className="text-[10px] font-bold uppercase tracking-wide text-center text-muted-foreground leading-tight">
                     {claimVerdictConfig[item.verdict].label}
                   </span>
                 </div>
-                <p className="text-base text-muted-foreground leading-relaxed">{item.explanation}</p>
               </div>
             ))}
           </div>
@@ -272,14 +284,24 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
 
         <section className="mb-10">
           <SectionHeader id="ingredients" number="04" title="Ingredient Deep Dive" />
+          {sections.ingredientsIntro && (
+            <div className="mb-6">
+              <Prose text={sections.ingredientsIntro} />
+            </div>
+          )}
           {review.labelImage && (
             <figure className="mb-6 border rounded-lg overflow-hidden bg-white">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={review.labelImage} alt={`${review.productName} supplement facts label`} className="w-full h-auto" />
               <figcaption className="text-sm text-muted-foreground px-4 py-2 border-t bg-slate-50">
-                The official {review.productName} Supplement Facts label — the exact ingredients and doses we analyze below.
+                The official {review.productName} Supplement Facts label.
               </figcaption>
             </figure>
+          )}
+          {sections.ingredientsLeadIn && (
+            <div className="mb-6">
+              <Prose text={sections.ingredientsLeadIn} />
+            </div>
           )}
           <div className="space-y-4">
             {sections.ingredients.map((ing, i) => (

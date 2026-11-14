@@ -60,7 +60,7 @@ export const reviews: Review[] = [
         "It's a simple routine: two capsules a night, with a time-release coating meant to protect the ingredients and release them gradually.\n\n" +
         "On the buying side, there are multi-bottle discounts, free digital guides, and a money-back guarantee — all of which are worth confirming against the current terms on the official page before you order.\n\n" +
         "### The bottom line on these claims\n\n" +
-        "Put simply, Nerve Alive is positioned as a multi-ingredient supplement — botanicals plus B12 — aimed at nerve health, relaxation, and everyday well-being.\n\n" +
+        "Put simply, Nerve Alive is positioned as a multi-ingredient botanical supplement aimed at nerve health, relaxation, and everyday well-being.\n\n" +
         "That tells you what to expect from the pitch. What it doesn't tell you is whether the formula actually delivers. Ingredients that look good on their own don't automatically prove the finished product improves nerve function or relieves neuropathy.\n\n" +
         "That's exactly what the next sections dig into — the ingredients and the real evidence behind them — to see which claims hold up and which need a closer look.",
       factOrFiction: [
@@ -95,6 +95,10 @@ export const reviews: Review[] = [
             "There is a money-back guarantee, which genuinely lowers the risk of trying it. Just confirm the current window and terms on the official checkout page before you buy — the guarantee length quoted in the marketing doesn't always match what's listed at purchase.",
         },
       ],
+      ingredientsIntro:
+        "A supplement is only as good as what's actually in the bottle, so instead of taking the marketing's word for it, we went straight to the source. The image below is the official Nerve Alive Supplement Facts panel — the real ingredients, in the real amounts.",
+      ingredientsLeadIn:
+        "What the label shows is a blend of five calming, plant-based ingredients, each dosed and printed in full (no hidden proprietary blend). Here's our honest take on each one — what it does and how strong the evidence behind it really is.",
       ingredients: [
         {
           name: "Passion Flower (Passiflora incarnata)",
