@@ -39,6 +39,13 @@ export interface ReviewData {
     cons: string[];
     finalVerdict: string;
   };
+  reviewsData?: {
+    aggregate: number;
+    distribution: { stars: number; pct: number }[];
+    aggregateNote?: string;
+    cards?: { initials: string; name: string; meta: string; stars: number; text: string }[];
+    disclaimer?: string;
+  };
   affiliateLink?: string;
 }
 
@@ -151,6 +158,23 @@ function RichText({ text }: { text: string }) {
           </p>
         );
       })}
+    </div>
+  );
+}
+
+function SmallStars({ count }: { count: number }) {
+  return (
+    <div className="flex items-center gap-0.5 shrink-0">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <svg
+          key={i}
+          className={`w-3.5 h-3.5 ${i < count ? "text-[var(--brand-gold)]" : "text-gray-200"}`}
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      ))}
     </div>
   );
 }
@@ -355,7 +379,68 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
 
         <section className="mb-10">
           <SectionHeader id="customer-reviews" number="07" title="Customer Reviews & Complaints" />
-          <Prose text={sections.customerReviews} />
+          <div className="mb-6">
+            <Prose text={sections.customerReviews} />
+          </div>
+
+          {review.reviewsData && (
+            <>
+              {/* Aggregate block */}
+              <div className="border rounded-xl p-6 bg-white mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-6 items-center">
+                  <div className="text-center sm:pr-6 sm:border-r">
+                    <div className="text-5xl font-black text-[var(--brand-navy)]" style={serif}>
+                      {review.reviewsData.aggregate.toFixed(1)}
+                    </div>
+                    <div className="my-2 flex justify-center">
+                      <SmallStars count={Math.round(review.reviewsData.aggregate)} />
+                    </div>
+                    <div className="text-xs text-muted-foreground">
+                      {review.reviewsData.aggregateNote ?? "Based on aggregated public ratings"}
+                    </div>
+                  </div>
+                  <div className="space-y-1.5">
+                    {review.reviewsData.distribution.map((d) => (
+                      <div key={d.stars} className="flex items-center gap-2">
+                        <span className="text-sm text-muted-foreground w-8 shrink-0">{d.stars}★</span>
+                        <div className="flex-1 h-2.5 rounded-full bg-gray-100 overflow-hidden">
+                          <div className="h-full bg-[var(--brand-gold)] rounded-full" style={{ width: `${d.pct}%` }} />
+                        </div>
+                        <span className="text-sm text-muted-foreground w-10 text-right shrink-0">{d.pct}%</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Review cards */}
+              {review.reviewsData.cards && review.reviewsData.cards.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {review.reviewsData.cards.map((c, i) => (
+                  <div key={i} className="border rounded-lg p-4 bg-white">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-9 h-9 rounded-full bg-[var(--brand-navy)] text-[var(--brand-gold)] flex items-center justify-center text-sm font-bold shrink-0">
+                        {c.initials}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="font-bold text-[var(--brand-navy)] text-sm leading-tight">{c.name}</div>
+                        <div className="text-[11px] text-muted-foreground">{c.meta}</div>
+                      </div>
+                      <SmallStars count={c.stars} />
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{c.text}</p>
+                  </div>
+                ))}
+              </div>
+              )}
+
+              {review.reviewsData.disclaimer && (
+                <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
+                  {review.reviewsData.disclaimer}
+                </p>
+              )}
+            </>
+          )}
         </section>
 
         <section className="mb-10">

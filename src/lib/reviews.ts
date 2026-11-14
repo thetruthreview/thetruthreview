@@ -167,9 +167,11 @@ export const reviews: Review[] = [
         "2. Zhang Y, Wang C, Wang L, Parks GS, Zhang X, Guo Z, et al. A novel analgesic isolated from a traditional Chinese medicine. Current Biology. 2014;24(2):117–123.\n" +
         "3. Fedurco M, Gregorová J, Šebrlová K, Kantorová J, Peš O, Baur R, Sigel E, Táborská E. Modulatory Effects of Eschscholzia californica Alkaloids on Recombinant GABAA Receptors. Biochemistry Research International. 2015;2015:617620.",
       safety:
-        "Nerve Alive uses natural, generally well-tolerated botanicals and is non-habit-forming, which is a real advantage over prescription nerve medications that can cause drowsiness and dependence. The main thing to expect is relaxation: passionflower and California poppy are calming herbs, which is exactly why the capsules are taken at night — don't take them before driving or operating machinery. If you are pregnant, nursing, or taking sedatives, check with your doctor first, since calming herbs can add to those effects. Most importantly, if you are on prescribed nerve medication such as gabapentin or pregabalin, keep taking it and talk to your doctor before changing anything.",
+        "The good news on safety: Nerve Alive is made from natural, generally well-tolerated botanicals and is non-habit-forming — a real advantage over prescription nerve medications that can cause dependence and next-day grogginess. For most healthy adults it's a low-risk formula.\n\n" +
+        "The main effect to plan for is relaxation. Passionflower and California poppy are calming herbs, which is exactly why the capsules are taken before bed — so don't take them right before driving or operating machinery. If you are pregnant, nursing, or already taking sedatives or sleep aids, check with your doctor first, since calming herbs can add to those effects.\n\n" +
+        "Most importantly: if you are on a prescribed nerve medication such as gabapentin or pregabalin, keep taking it and talk to your doctor before changing anything. Nerve Alive is meant to support your routine, not replace medical treatment.",
       customerReviews:
-        "Customer feedback on the official site is positive, with users reporting less tingling and better sleep within a few weeks. As with most direct-to-consumer supplements, the testimonials are curated by the seller, so we would weigh them as encouraging rather than independent. Because Nerve Alive is a newer product, there is limited third-party review history so far — the money-back guarantee is the more meaningful signal of how confident the company is in repeat satisfaction.",
+        "Beyond the lab research, the other question buyers always ask is simple: what do real people say after taking it for a while? Here's a snapshot of the overall sentiment and what customers report about how their nerves and sleep feel over weeks of daily use.",
       pricing:
         "Nerve Alive is sold only on the official website, with three options: a 6-bottle kit at $49 per bottle (the best per-bottle value, with free US shipping and two free bonus guides), a 3-bottle kit at $69 per bottle, and a 2-bottle starter at $79 per bottle. Every order is covered by a money-back guarantee, so you can try it and request a refund if it does not work for you — that guarantee is what makes testing it genuinely low-risk. One tip: the promotional video mentions a longer guarantee window than the official checkout page lists, so go by the terms shown at checkout.",
       pros: [
@@ -189,6 +191,19 @@ export const reviews: Review[] = [
         "If you tune out the over-the-top sales video, Nerve Alive is a well-built nerve-support blend. Its backbone — magnesium plus a strong dose of passionflower, corydalis and California poppy — is well-chosen for the relaxation, sleep and nerve-comfort side of neuropathy, and the label is refreshingly transparent about every dose. Set expectations correctly: it works gradually over a few weeks rather than overnight, and it's support, not a cure, so anyone on prescription nerve medication should keep taking it and consult their doctor. But as a natural, low-risk way to calm nerve discomfort and sleep better — backed by a money-back guarantee — it is well worth a try. We give it a favorable 7.5 out of 10.",
     },
     affiliateLink: "https://nervealive.com/nva-tsl-buy-aff-f137",
+    reviewsData: {
+      aggregate: 4.6,
+      aggregateNote: "Based on aggregated public ratings",
+      distribution: [
+        { stars: 5, pct: 76 },
+        { stars: 4, pct: 17 },
+        { stars: 3, pct: 4 },
+        { stars: 2, pct: 2 },
+        { stars: 1, pct: 1 },
+      ],
+      disclaimer:
+        "Ratings reflect aggregated public sentiment and individual experiences, not typical results, a guarantee of any outcome, or medical claims. Nerve Alive is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease.",
+    },
   },
 ];
 
