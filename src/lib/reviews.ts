@@ -173,7 +173,11 @@ export const reviews: Review[] = [
       customerReviews:
         "Beyond the lab research, the other question buyers always ask is simple: what do real people say after taking it for a while? Here's a snapshot of the overall sentiment and what customers report about how their nerves and sleep feel over weeks of daily use.",
       pricing:
-        "Nerve Alive is sold only on the official website, with three options: a 6-bottle kit at $49 per bottle (the best per-bottle value, with free US shipping and two free bonus guides), a 3-bottle kit at $69 per bottle, and a 2-bottle starter at $79 per bottle. Every order is covered by a money-back guarantee, so you can try it and request a refund if it does not work for you — that guarantee is what makes testing it genuinely low-risk. One tip: the promotional video mentions a longer guarantee window than the official checkout page lists, so go by the terms shown at checkout.",
+        "Nerve Alive is sold only on the official website, in three packages — and the per-bottle price drops sharply the more you buy:\n\n" +
+        "* **6 bottles (180-day supply) — Best Value:** $49 per bottle, $294 total (down from $1,074). Includes free US shipping, 2 free bonus guides and the 60-day guarantee — the biggest saving at $780 off.\n" +
+        "* **3 bottles (90-day supply) — Most Popular:** $69 per bottle, $207 total (down from $537). Includes free US shipping, 2 free bonus guides and the 60-day guarantee.\n" +
+        "* **2 bottles (60-day supply) — Starter:** $79 per bottle, $158 total (down from $358), plus shipping and the 60-day guarantee.\n\n" +
+        "Every order is covered by a 60-day money-back guarantee, so you can try it and request a refund if it doesn't work for you — that's what makes testing it genuinely low-risk. Since botanicals work gradually, the 3- or 6-bottle options give the formula a fair runway and the best per-bottle price. One tip: the promotional video mentions a longer guarantee window than the official checkout, so always go by the terms shown at checkout.",
       pros: [
         "Transparent label — every ingredient dose is printed, no hidden proprietary blend",
         "Led by a solid dose of passionflower, with California poppy and corydalis for sleep and comfort",

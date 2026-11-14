@@ -445,7 +445,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
 
         <section className="mb-10">
           <SectionHeader id="pricing" number="08" title="Pricing & Refund Policy" />
-          <Prose text={sections.pricing} />
+          <RichText text={sections.pricing} />
         </section>
 
         <section className="mb-10">
