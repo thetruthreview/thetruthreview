@@ -21,6 +21,7 @@ export interface ReviewData {
     transparency: number;
   };
   summary: string;
+  verdictHeadline?: string;
   sections: {
     introduction: string;
     companyClaims: string[];
@@ -92,47 +93,64 @@ const scoreCards: Array<{ key: keyof ReviewData["scores"]; label: string }> = [
 
 export function ReviewTemplate({ review }: { review: ReviewData }) {
   const { sections } = review;
+  const stars5 = (review.overallScore / 2).toFixed(1);
   return (
     <article>
       {/* Hero */}
-      <section className="bg-[var(--brand-navy)] text-white pb-28 pt-12 px-4">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div>
-            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--brand-gold)]">
-              Independent Investigation · {review.category}
-            </span>
-            <h1 className="text-3xl sm:text-4xl font-black leading-tight mt-3 mb-4" style={serif}>
-              {review.title}
-            </h1>
-            <p className="text-lg text-white/80 leading-relaxed mb-5">{review.summary}</p>
-            <div className="flex items-center gap-4 mb-6">
-              <span className="text-5xl font-black text-[var(--brand-gold)]" style={serif}>
-                {review.overallScore}
-                <span className="text-lg text-white/50">/10</span>
-              </span>
-              <VerdictBadge verdict={review.verdict} />
-            </div>
-            <CtaButton href={review.affiliateLink} />
-            <p className="text-xs text-white/40 mt-4">
-              By {review.author} · {review.publishedAt}
-            </p>
-          </div>
-
-          <div className="flex justify-center">
+      <section className="bg-white border-b pt-10 pb-12 px-4">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-10 items-center">
+          {/* Product image */}
+          <div className="md:col-span-2 flex justify-center">
             {review.productImage ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={review.productImage} alt={review.productName} className="max-h-80 w-auto" />
+              <img src={review.productImage} alt={review.productName} className="max-h-72 w-auto" />
             ) : (
-              <div className="w-64 h-72 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-white/40 text-sm text-center px-4">
-                Product image placeholder
+              <div className="w-full aspect-square max-w-xs rounded-xl bg-gradient-to-br from-slate-50 to-slate-100 border flex items-center justify-center text-muted-foreground text-sm text-center px-4">
+                {review.productName}
+                <br />product image
               </div>
             )}
+          </div>
+
+          {/* Content */}
+          <div className="md:col-span-3">
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wide uppercase text-[var(--brand-gold)] bg-[var(--brand-gold)]/10 px-3 py-1 rounded-full mb-3">
+              Review &amp; Analysis
+            </span>
+            <h1 className="text-3xl sm:text-4xl font-black leading-tight text-[var(--brand-navy)] mb-3" style={serif}>
+              {review.title}
+            </h1>
+
+            <div className="flex items-center gap-3 mb-4">
+              <RatingStars score={review.overallScore} hideValue />
+              <span className="text-2xl font-black text-[var(--brand-navy)]" style={serif}>
+                {stars5} <span className="text-base font-semibold text-muted-foreground">of 5</span>
+              </span>
+            </div>
+
+            <p className="text-lg text-foreground/80 leading-relaxed mb-4">{review.summary}</p>
+
+            {/* Verdict box */}
+            <div className="flex items-start gap-3 bg-green-50 border border-green-200 rounded-lg p-4 mb-5">
+              <span className="mt-0.5 w-6 h-6 rounded-full bg-green-600 text-white flex items-center justify-center text-sm font-bold shrink-0">✓</span>
+              <div>
+                <div className="font-bold text-green-800 mb-0.5">Verdict</div>
+                <p className="text-sm text-green-800/90 leading-relaxed">
+                  {review.verdictHeadline ?? review.summary}
+                </p>
+              </div>
+            </div>
+
+            <CtaButton href={review.affiliateLink} />
+            <p className="text-xs text-muted-foreground mt-3">
+              Editorial rating by {review.author} · {review.publishedAt}
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Overlapping score cards */}
-      <section className="max-w-5xl mx-auto px-4 -mt-16 relative z-10">
+      {/* Score cards */}
+      <section className="max-w-5xl mx-auto px-4 mt-8 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {scoreCards.map((c) => (
             <div key={c.key} className="bg-white rounded-lg shadow-lg border-t-4 border-[var(--brand-gold)] p-5 text-center">

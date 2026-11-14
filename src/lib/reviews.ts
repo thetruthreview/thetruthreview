@@ -19,6 +19,8 @@ export const reviews: Review[] = [
     scores: { ingredients: 8, evidence: 7, safety: 8, value: 7, transparency: 6 },
     summary:
       "Nerve Alive is a natural, once-a-day nerve support supplement built around alpha-lipoic acid, vitamin B12 and other nerve nutrients that have genuine research behind them. The marketing oversells it as a neuropathy cure, but as a daily support formula with a money-back guarantee, it is a reasonable low-risk option to try.",
+    verdictHeadline:
+      "A well-formulated nerve support supplement with high user satisfaction, a credible ingredient base and a money-back guarantee that makes it low-risk to try.",
     sections: {
       introduction:
         "Nerve Alive is a dietary supplement marketed for people dealing with nerve discomfort — tingling, numbness, burning and the restless nights that often come with peripheral neuropathy. It is sold by BioAdvanced Labs as a once-daily capsule taken before bed, and it is promoted through a video presentation featuring a physician who describes it as a natural way to support nerve health and sleep. We looked past the promotional video and focused on what actually matters: the ingredients, the evidence behind them, safety, price and whether it is worth trying. Here is what we found.",
