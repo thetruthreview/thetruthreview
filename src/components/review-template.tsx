@@ -94,6 +94,14 @@ const scoreCards: Array<{ key: keyof ReviewData["scores"]; label: string }> = [
 export function ReviewTemplate({ review }: { review: ReviewData }) {
   const { sections } = review;
   const stars5 = (review.overallScore / 2).toFixed(1);
+  const colonIndex = review.title.indexOf(":");
+  const titleParts =
+    colonIndex === -1
+      ? { lead: review.title, highlight: "" }
+      : {
+          lead: review.title.slice(0, colonIndex + 1),
+          highlight: review.title.slice(colonIndex + 1).trim(),
+        };
   return (
     <article>
       {/* Hero */}
@@ -117,8 +125,14 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
             <span className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wide uppercase text-[var(--brand-gold)] bg-[var(--brand-gold)]/10 px-3 py-1 rounded-full mb-3">
               Review &amp; Analysis
             </span>
-            <h1 className="text-3xl sm:text-4xl font-black leading-tight text-[var(--brand-navy)] mb-3" style={serif}>
-              {review.title}
+            <h1 className="text-4xl sm:text-5xl font-black leading-[1.05] tracking-tight text-[var(--brand-navy)] mb-4" style={serif}>
+              {titleParts.lead}
+              {titleParts.highlight && (
+                <>
+                  {" "}
+                  <span className="text-[var(--brand-gold)]">{titleParts.highlight}</span>
+                </>
+              )}
             </h1>
 
             <div className="flex items-center gap-3 mb-4">
