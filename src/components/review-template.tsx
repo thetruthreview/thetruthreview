@@ -96,7 +96,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
     <article>
       {/* Hero */}
       <section className="bg-[var(--brand-navy)] text-white pb-28 pt-12 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <span className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--brand-gold)]">
               Independent Investigation · {review.category}
@@ -132,7 +132,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
       </section>
 
       {/* Overlapping score cards */}
-      <section className="max-w-6xl mx-auto px-4 -mt-16 relative z-10">
+      <section className="max-w-5xl mx-auto px-4 -mt-16 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {scoreCards.map((c) => (
             <div key={c.key} className="bg-white rounded-lg shadow-lg border-t-4 border-[var(--brand-gold)] p-5 text-center">
@@ -148,7 +148,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
       </section>
 
       {/* Body */}
-      <div className="max-w-3xl mx-auto px-4 py-12">
+      <div className="max-w-5xl mx-auto px-4 py-12">
         <section className="mb-10">
           <SectionHeader id="introduction" number="01" title="Introduction" />
           <p className="text-sm leading-relaxed">{sections.introduction}</p>

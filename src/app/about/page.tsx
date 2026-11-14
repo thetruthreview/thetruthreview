@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
+    <div className="max-w-5xl mx-auto px-4 py-10">
       <div className="mb-8">
         <span className="text-[10px] font-bold tracking-widest uppercase text-[var(--brand-gold)]">
           About This Publication

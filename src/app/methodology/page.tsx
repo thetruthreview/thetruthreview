@@ -21,7 +21,7 @@ const sections = [
 
 export default function MethodologyPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
+    <div className="max-w-5xl mx-auto px-4 py-10">
       <div className="mb-8">
         <span className="text-[10px] font-bold tracking-widest uppercase text-[var(--brand-gold)]">
           Editorial Policy

@@ -12,7 +12,8 @@ export default function HomePage() {
   return (
     <>
       <section className="bg-[var(--brand-navy)] text-white pb-28 pt-16 px-4">
-        <div className="max-w-6xl mx-auto max-w-3xl">
+        <div className="max-w-5xl mx-auto">
+          <div className="max-w-xl">
           <span className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--brand-gold)]">
             Independent Supplement Investigations
           </span>
@@ -29,10 +30,11 @@ export default function HomePage() {
           >
             Latest Reviews
           </Link>
+          </div>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 -mt-16 relative z-10">
+      <section className="max-w-5xl mx-auto px-4 -mt-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {pillars.map((p) => (
             <div key={p.title} className="bg-white rounded-lg shadow-lg border-t-4 border-[var(--brand-gold)] p-6 text-center">
@@ -43,7 +45,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="max-w-3xl mx-auto px-4 py-14 text-center">
+      <section className="max-w-5xl mx-auto px-4 py-14 text-center">
         <h2 className="text-2xl font-bold text-[var(--brand-navy)] mb-3" style={serif}>
           Layout preview
         </h2>
@@ -51,7 +53,7 @@ export default function HomePage() {
           The page below uses fictional sample content to show the review layout.
         </p>
         <Link
-          href="/reviews/sample-product"
+          href="/reviews/vision/sample-product"
           className="inline-block border border-[var(--brand-navy)] text-[var(--brand-navy)] px-5 py-2.5 rounded text-sm font-semibold hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
         >
           View sample review
