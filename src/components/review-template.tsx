@@ -100,10 +100,10 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
       <section className="bg-white border-b pt-10 pb-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-10 items-stretch">
           {/* Product image */}
-          <div className="md:col-span-2 flex items-center justify-center rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100 border p-6 min-h-[320px]">
+          <div className="md:col-span-2 flex items-center justify-center">
             {review.productImage ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={review.productImage} alt={review.productName} className="max-h-full w-full object-contain" />
+              <img src={review.productImage} alt={review.productName} className="w-full h-auto object-contain" />
             ) : (
               <div className="text-muted-foreground text-sm text-center px-4">
                 {review.productName}

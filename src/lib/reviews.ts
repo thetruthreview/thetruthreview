@@ -9,7 +9,7 @@ export const reviews: Review[] = [
   {
     slug: "nerve-alive",
     categorySlug: "nerve",
-    title: "Nerve Alive Review (2025): Does This Nerve Support Formula Really Help?",
+    title: "Nerve Alive Review 2026: Scam or Legit?",
     productName: "Nerve Alive",
     category: "Nerve Health",
     publishedAt: "November 2025",
@@ -19,7 +19,7 @@ export const reviews: Review[] = [
     overallScore: 7.6,
     scores: { ingredients: 8, evidence: 7, safety: 8, value: 7, transparency: 6 },
     summary:
-      "Nerve Alive is a natural, once-a-day nerve support supplement built around alpha-lipoic acid, vitamin B12 and other nerve nutrients that have genuine research behind them. The marketing oversells it as a neuropathy cure, but as a daily support formula with a money-back guarantee, it is a reasonable low-risk option to try.",
+      "A once-a-day nerve support formula built on alpha-lipoic acid and vitamin B12 — ingredients with real research. The hype is overblown, but with a money-back guarantee it is low-risk to try.",
     verdictHeadline:
       "A well-formulated nerve support supplement with high user satisfaction, a credible ingredient base and a money-back guarantee that makes it low-risk to try.",
     sections: {
