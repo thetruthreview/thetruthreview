@@ -13,6 +13,7 @@ export interface ReviewData {
   verdict: Verdict;
   overallScore: number;
   productImage?: string;
+  labelImage?: string;
   scores: {
     ingredients: number;
     evidence: number;
@@ -271,6 +272,15 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
 
         <section className="mb-10">
           <SectionHeader id="ingredients" number="04" title="Ingredient Deep Dive" />
+          {review.labelImage && (
+            <figure className="mb-6 border rounded-lg overflow-hidden bg-white">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={review.labelImage} alt={`${review.productName} supplement facts label`} className="w-full h-auto" />
+              <figcaption className="text-sm text-muted-foreground px-4 py-2 border-t bg-slate-50">
+                The official {review.productName} Supplement Facts label — the exact ingredients and doses we analyze below.
+              </figcaption>
+            </figure>
+          )}
           <div className="space-y-4">
             {sections.ingredients.map((ing, i) => (
               <div key={i} className="border rounded-lg p-4 bg-white">
