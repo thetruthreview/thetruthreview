@@ -139,9 +139,15 @@ function RichText({ text }: { text: string }) {
             </ul>
           );
         }
+        const subLines = block.split("\n");
         return (
           <p key={i} className="text-lg leading-relaxed">
-            {renderInline(block)}
+            {subLines.map((line, j) => (
+              <span key={j}>
+                {renderInline(line)}
+                {j < subLines.length - 1 && <br />}
+              </span>
+            ))}
           </p>
         );
       })}
