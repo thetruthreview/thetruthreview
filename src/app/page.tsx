@@ -13,12 +13,13 @@ export default function HomePage() {
     <>
       <section className="bg-[var(--brand-navy)] text-white pb-28 pt-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="max-w-xl">
+          <div className="max-w-2xl">
           <span className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--brand-gold)]">
             Independent Supplement Investigations
           </span>
           <h1 className="text-4xl sm:text-5xl font-black leading-tight mt-3 mb-4" style={serif}>
-            Before You Buy, <span className="text-[var(--brand-gold)]">Know the Truth.</span>
+            <span className="block">Before You Buy,</span>
+            <span className="block text-[var(--brand-gold)]">Know the Truth.</span>
           </h1>
           <p className="text-white/70 leading-relaxed mb-6 max-w-xl">
             We investigate dietary supplements so you don&apos;t have to: ingredients, dosages,
