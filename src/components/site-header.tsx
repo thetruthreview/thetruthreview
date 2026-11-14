@@ -4,15 +4,6 @@ import Link from "next/link";
 export function SiteHeader() {
   return (
     <header className="bg-white shadow-sm">
-      <div className="bg-[var(--brand-navy)] text-white/80 text-xs">
-        <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between gap-4">
-          <span>Independent investigations. Not medical advice.</span>
-          <span className="hidden sm:inline text-[var(--brand-gold)]">
-            Before You Buy, Know the Truth.
-          </span>
-        </div>
-      </div>
-
       <div className="max-w-6xl mx-auto px-4 py-2 flex items-center gap-6">
         <Link href="/" aria-label="The Truth Review - Home">
           <Image
