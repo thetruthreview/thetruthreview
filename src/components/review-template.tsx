@@ -154,18 +154,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
               </span>
             </div>
 
-            <p className="text-lg text-foreground/80 leading-relaxed mb-4">{review.summary}</p>
-
-            {/* Verdict box */}
-            <div className="flex items-start gap-3 bg-green-50 border border-green-200 rounded-lg p-4 mb-5">
-              <span className="mt-0.5 w-6 h-6 rounded-full bg-green-600 text-white flex items-center justify-center text-sm font-bold shrink-0">✓</span>
-              <div>
-                <div className="font-bold text-green-800 mb-0.5">Verdict</div>
-                <p className="text-sm text-green-800/90 leading-relaxed">
-                  {review.verdictHeadline ?? review.summary}
-                </p>
-              </div>
-            </div>
+            <p className="text-lg text-foreground/80 leading-relaxed mb-6">{review.summary}</p>
 
             <CtaButton href={review.affiliateLink} />
             <p className="text-xs text-muted-foreground mt-3">
