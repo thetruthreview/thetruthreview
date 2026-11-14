@@ -93,7 +93,7 @@ const scoreCards: Array<{ key: keyof ReviewData["scores"]; label: string }> = [
 
 export function ReviewTemplate({ review }: { review: ReviewData }) {
   const { sections } = review;
-  const stars5 = (review.overallScore / 2).toFixed(1);
+  const stars5 = review.overallScore.toFixed(1);
   const colonIndex = review.title.indexOf(":");
   const titleParts =
     colonIndex === -1
@@ -169,7 +169,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
           {scoreCards.map((c) => (
             <div key={c.key} className="bg-white rounded-lg shadow-lg border-t-4 border-[var(--brand-gold)] p-5 text-center">
               <div className="text-3xl font-black text-[var(--brand-navy)]" style={serif}>
-                {review.scores[c.key]}<span className="text-sm text-muted-foreground">/10</span>
+                {review.scores[c.key]}<span className="text-sm text-muted-foreground">/5</span>
               </div>
               <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mt-1">
                 {c.label}
