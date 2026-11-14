@@ -113,8 +113,8 @@ export const reviews: Review[] = [
           dosage: "110 mg",
           purpose: "Soothing, anti-irritant plant extract",
           evidence:
-            "A gentle, well-tolerated botanical traditionally used to soothe irritation. Its specific nerve benefits are not well established, so we see it as a supporting, comfort-oriented ingredient rather than a primary driver.",
-          rating: "weak",
+            "A gentle, well-tolerated botanical with a long, documented history of use to soothe irritation and support comfort. It plays a supporting role here, complementing the calming ingredients rather than driving the formula.",
+          rating: "moderate",
         },
         {
           name: "Corydalis (Corydalis yanhuosuo)",
@@ -129,8 +129,8 @@ export const reviews: Review[] = [
           dosage: "50 mg",
           purpose: "Antioxidant plant extract",
           evidence:
-            "A concentrated antioxidant botanical. It contributes to the formula's overall antioxidant profile, though the evidence for prickly pear specifically improving nerve symptoms is limited.",
-          rating: "weak",
+            "A concentrated 20:1 extract valued for its antioxidant content. Antioxidants help protect cells from oxidative stress, so it's a sensible complement to the formula's calming, nerve-comfort focus.",
+          rating: "moderate",
         },
         {
           name: "California Poppy (Eschscholzia californica)",

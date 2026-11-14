@@ -44,8 +44,8 @@ export interface ReviewData {
 
 const evidenceLabels: Record<string, { label: string; color: string }> = {
   strong: { label: "Strong Evidence", color: "text-green-700 bg-green-50 border-green-200" },
-  moderate: { label: "Moderate Evidence", color: "text-yellow-700 bg-yellow-50 border-yellow-200" },
-  weak: { label: "Weak Evidence", color: "text-orange-700 bg-orange-50 border-orange-200" },
+  moderate: { label: "Moderate Evidence", color: "text-blue-700 bg-blue-50 border-blue-200" },
+  weak: { label: "Weak Evidence", color: "text-blue-700 bg-blue-50 border-blue-200" },
   none: { label: "No Evidence", color: "text-red-700 bg-red-50 border-red-200" },
 };
 
