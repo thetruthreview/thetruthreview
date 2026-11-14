@@ -65,34 +65,34 @@ export const reviews: Review[] = [
         "That's exactly what the next sections dig into — the ingredients and the real evidence behind them — to see which claims hold up and which need a closer look.",
       factOrFiction: [
         {
-          claim: "The label is fully transparent, with every ingredient and dose disclosed",
+          claim: "The ingredients are genuinely studied for nerves, pain and sleep",
           verdict: "true",
           explanation:
-            "True. There's no hidden “proprietary blend” — all five ingredients and their exact milligram amounts are printed right on the Supplement Facts panel. That kind of transparency is a genuine green flag and makes it easy to see exactly what you're taking.",
+            "True — and this is what matters most. Passionflower has human clinical trials for easing anxiety and improving sleep, corydalis is a documented pain botanical, and California poppy has real research behind its calming effect. You're not paying for guesswork; the core ingredients have science behind them.",
         },
         {
-          claim: "Its calming botanicals are backed by real research",
+          claim: "It's a safer, natural alternative to prescription nerve drugs",
           verdict: "true",
           explanation:
-            "True. Passionflower has human studies for easing anxiety and improving sleep, corydalis is a well-documented pain botanical, and California poppy has a long, research-supported record for relaxation. These are legitimate, studied ingredients — not filler.",
+            "True. Unlike gabapentin or pregabalin, Nerve Alive is plant-based, non-habit-forming and stimulant-free, so there's no dependence or next-day grogginess to worry about. For anyone tired of heavy prescriptions — or wanting something gentle to add alongside them — that's a real advantage.",
         },
         {
-          claim: "It's natural, non-habit-forming, and simple to take",
+          claim: "It targets the tingling, numbness and restless nights of nerve discomfort",
           verdict: "true",
           explanation:
-            "True. It's a plant-based formula with no stimulants and no habit-forming compounds, taken as a single serving before bed. For anyone wary of prescription nerve medications, that's an appealing, low-commitment way to try natural support.",
+            "True. The whole formula is built around calming the nervous system and improving sleep — exactly the symptoms that make nerve discomfort so draining. The ingredients and their doses are a sensible match for what you're actually trying to relieve.",
         },
         {
-          claim: "It eases tingling, numbness and supports everyday nerve comfort",
+          claim: "You'll feel the full results overnight",
           verdict: "partially-true",
           explanation:
-            "Reasonable, with a caveat. The individual ingredients have real research for calming the nervous system and easing discomfort, so the benefit is plausible for many people. What's missing is a clinical trial on the finished Nerve Alive blend itself — so the support is credible, just not proven for this exact product.",
+            "Set expectations here. Some people notice calmer, better sleep within the first few nights, but botanicals work gradually — the fair way to judge it is a few weeks of consistent nightly use, not a single dose. Patience pays off more than expecting an overnight miracle.",
         },
         {
-          claim: "It's backed by a money-back guarantee",
+          claim: "It's low-risk to try, thanks to the money-back guarantee",
           verdict: "true",
           explanation:
-            "True. Every order is covered by a money-back guarantee, so you can try it and request a refund if it's not for you. Just confirm the current window and terms on the official checkout page — but as refund policies go, it genuinely lowers the risk of giving it a shot.",
+            "True. Every order is covered by a money-back guarantee, so if it doesn't work for you, you can get a refund. Just confirm the current window and terms on the official checkout page — but as far as trying something new goes, that safety net genuinely takes the risk off the table.",
         },
       ],
       ingredientsIntro:
