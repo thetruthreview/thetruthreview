@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export function SiteHeader() {
   return (
-    <header className="bg-white shadow-sm">
-      <div className="max-w-5xl mx-auto px-4 py-2 flex items-center gap-6">
+    <header className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
+      <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-6">
         <Link href="/" aria-label="The Truth Review - Home">
           <Image
             src="/logo.png"
@@ -12,7 +12,7 @@ export function SiteHeader() {
             width={1378}
             height={320}
             priority
-            className="h-10 sm:h-12 w-auto"
+            className="h-12 sm:h-14 w-auto"
           />
         </Link>
 
