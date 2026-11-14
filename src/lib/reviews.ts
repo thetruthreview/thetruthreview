@@ -65,28 +65,34 @@ export const reviews: Review[] = [
         "That's exactly what the next sections dig into — the ingredients and the real evidence behind them — to see which claims hold up and which need a closer look.",
       factOrFiction: [
         {
-          claim: "It contains nutrients clinically studied for nerve health",
+          claim: "The formula is built on real nerve-health ingredients",
           verdict: "true",
           explanation:
-            "This one holds up. Magnesium, alpha-lipoic acid and vitamin B12 (methylcobalamin) are among the most researched nutrients for nerve and muscle comfort, and all three are in the formula. These are legitimate, well-studied nerve nutrients — not filler.",
+            "True. Magnesium, alpha-lipoic acid and vitamin B12 (methylcobalamin) are among the most researched nutrients for nerve and muscle comfort, and all three are in here. This isn't a formula padded with filler — the core ingredients earn their spot.",
         },
         {
-          claim: "It can ease tingling, numbness and support better sleep",
+          claim: "It supports nerve function and eases tingling, numbness and burning",
           verdict: "partially-true",
           explanation:
-            "Reasonable. The individual ingredients have research supporting nerve-symptom relief and sleep, so these outcomes are plausible for many users. Results vary from person to person, as with any supplement.",
+            "Reasonable, with a caveat. Those ingredients have solid research for nerve-symptom relief on their own, so the effect is plausible for a lot of people. What's missing is a trial on the finished Nerve Alive blend — so the support is credible, just not proven for this exact product.",
         },
         {
-          claim: "It reverses neuropathy and regenerates nerves in a few weeks",
-          verdict: "unverified",
-          explanation:
-            "We would set realistic expectations here. There are no published trials on the finished Nerve Alive formula itself, and no supplement should be expected to 'cure' neuropathy. Think of it as daily nerve support, not a replacement for medical treatment.",
-        },
-        {
-          claim: "It is FDA approved",
+          claim: "It helps you sleep better, with more energy and a steadier mood",
           verdict: "partially-true",
           explanation:
-            "Worth clarifying: the FDA does not approve dietary supplements at all. What is accurate is that products like this are made in FDA-registered facilities following good manufacturing practices. That is a normal, positive standard — just not the same as FDA approval.",
+            "The sleep angle is the most believable part — passionflower has real evidence for winding down and sleeping better, which matters when nerve discomfort keeps you up at night. The broader energy and mood claims are softer, more of a knock-on benefit than a guarantee.",
+        },
+        {
+          claim: "It reverses neuropathy and repairs damaged nerves in a few weeks",
+          verdict: "false",
+          explanation:
+            "This is where the marketing overreaches. No supplement — Nerve Alive included — has been shown to reverse neuropathy or regrow nerves, and there are no trials on the product proving it. Treat it as daily nerve support, not a cure, and keep any prescribed treatment going.",
+        },
+        {
+          claim: "The money-back guarantee makes it risk-free to try",
+          verdict: "partially-true",
+          explanation:
+            "There is a money-back guarantee, which genuinely lowers the risk of trying it. Just confirm the current window and terms on the official checkout page before you buy — the guarantee length quoted in the marketing doesn't always match what's listed at purchase.",
         },
       ],
       ingredients: [
