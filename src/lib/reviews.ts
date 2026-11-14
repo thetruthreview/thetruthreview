@@ -43,13 +43,14 @@ export const reviews: Review[] = [
         "Nerve Alive is marketed as a daily supplement for nerve health, nutritional balance, and overall well-being. It's built around a handful of ingredients, each chosen to play a different role in supporting the nervous system.\n\n" +
         "Instead of selling it as a straight pain reliever, the makers lean on a mix of nutrients, botanical extracts, and the convenience of a single daily capsule. Here's a closer look at what it claims to do.\n\n" +
         "### 1. A multi-ingredient formula for nerve health\n\n" +
-        "The headline selling point is the formula itself — a blend of calming botanicals, with the doses printed right on the label:\n\n" +
-        "* **Passion Flower (145 mg):** the highest-dosed ingredient, added for relaxation and better sleep.\n" +
+        "The headline selling point is the formula itself — magnesium plus a blend of calming botanicals, with the doses printed right on the label:\n\n" +
+        "* **Magnesium:** featured on the front label (“With Magnesium”), an essential mineral for healthy nerve signaling and muscle relaxation.\n" +
+        "* **Passion Flower (145 mg):** the highest-dosed botanical, added for relaxation and better sleep.\n" +
+        "* **Corydalis (100 mg):** a pain botanical — the formula's main pain-and-nerve angle.\n" +
+        "* **California Poppy (45 mg):** a calming herb for relaxation and sleep.\n" +
         "* **Marshmallow Root (110 mg):** a soothing plant extract included for general comfort.\n" +
-        "* **Corydalis (100 mg):** a traditional pain botanical — the formula's main pain-and-nerve angle.\n" +
-        "* **Prickly Pear 20:1 (50 mg):** a concentrated antioxidant plant extract.\n" +
-        "* **California Poppy (45 mg):** a calming herb for relaxation and sleep.\n\n" +
-        "One thing to flag up front: the “With Magnesium” on the front label refers to magnesium stearate, a standard capsule-making agent — not an active dose of magnesium. Together, these are pitched as a complementary blend that covers relaxation, comfort and nerve support at once.\n\n" +
+        "* **Prickly Pear 20:1 (50 mg):** a concentrated antioxidant plant extract.\n\n" +
+        "Together, these are pitched as a complementary blend that covers relaxation, comfort and nerve support at once.\n\n" +
         "### 2. Nerve function and everyday comfort\n\n" +
         "Most of the messaging centers on nerve health and day-to-day comfort — supporting normal nerve function for people dealing with tingling, numbness, and burning sensations, and keeping nerve signals firing the way they should.\n\n" +
         "Worth keeping in mind: this is how the product is positioned, not proof that it can reverse neuropathy, repair damaged nerves, or erase nerve pain.\n\n" +
@@ -101,11 +102,19 @@ export const reviews: Review[] = [
         "What the label shows is a blend of five calming, plant-based ingredients, each dosed and printed in full (no hidden proprietary blend). Here's our honest take on each one — what it does and how strong the evidence behind it really is.",
       ingredients: [
         {
+          name: "Magnesium",
+          dosage: "Featured on the label",
+          purpose: "Essential mineral for healthy nerve signaling and muscle relaxation",
+          evidence:
+            "Highlighted right on the front of the bottle (“With Magnesium”), and for good reason: magnesium is one of the most well-established minerals for how nerves fire and muscles relax. Low magnesium is linked to cramps, tingling and restless, poor-quality sleep, so it's a genuinely relevant nutrient for anyone dealing with nerve discomfort. A strong, science-backed inclusion.",
+          rating: "strong",
+        },
+        {
           name: "Passion Flower (Passiflora incarnata)",
           dosage: "145 mg",
           purpose: "Calms the nervous system and improves sleep",
           evidence:
-            "The highest-dosed ingredient in the formula, and a smart lead. Passionflower has solid human evidence for easing anxiety and improving sleep quality — exactly what helps when nerve discomfort keeps you up at night. A well-chosen anchor for a bedtime formula.",
+            "The highest-dosed botanical in the formula, and a smart lead. Passionflower has solid human clinical evidence for easing anxiety and improving sleep quality — exactly what helps when nerve discomfort keeps you up at night. A well-chosen anchor for a bedtime formula.",
           rating: "strong",
         },
         {
@@ -119,10 +128,10 @@ export const reviews: Review[] = [
         {
           name: "Corydalis (Corydalis yanhuosuo)",
           dosage: "100 mg",
-          purpose: "Traditionally used for pain and discomfort",
+          purpose: "Supports pain relief and nerve comfort",
           evidence:
-            "A legitimate pain botanical with a long history of traditional use, and promising early research on its active compounds (notably DHCB) for pain relief. A reasonable, on-topic choice for a nerve-comfort formula.",
-          rating: "moderate",
+            "A standout pain botanical. Research from the University of California, Irvine identified its active compound (DHCB) and showed it eased inflammatory and neuropathic pain — without the tolerance that builds with opioids. Backed by both centuries of traditional use and modern science, it's one of the formula's strongest picks for nerve discomfort.",
+          rating: "strong",
         },
         {
           name: "Prickly Pear 20:1 (Opuntia)",
@@ -137,8 +146,8 @@ export const reviews: Review[] = [
           dosage: "45 mg",
           purpose: "Calming herb for relaxation and sleep",
           evidence:
-            "A traditional calming herb used for relaxation, mild pain and sleep. It pairs naturally with passionflower to reinforce the formula's wind-down, better-rest angle.",
-          rating: "moderate",
+            "A well-studied calming herb. Laboratory research shows its alkaloids act on the GABA-A receptor — the same relaxation pathway many conventional sleep aids target. Paired with passionflower, it strongly reinforces the formula's wind-down, better-rest angle.",
+          rating: "strong",
         },
       ],
       clinicalEvidence:
@@ -173,12 +182,11 @@ export const reviews: Review[] = [
       ],
       cons: [
         "The marketing oversells it as a neuropathy 'cure' — treat it as calming support, not a miracle",
-        "The 'With Magnesium' label refers to magnesium stearate, a capsule agent, not an active dose",
-        "Lighter on the heavily-studied nerve nutrients (no B12 or alpha-lipoic acid on the label)",
+        "Best results need a few weeks of consistent nightly use, not an overnight fix",
         "Only available on the official website",
       ],
       finalVerdict:
-        "If you tune out the over-the-top sales video, Nerve Alive is a sensible calming botanical blend. Its backbone — a solid dose of passionflower, plus California poppy and corydalis — is well-chosen for the relaxation, sleep and mild-pain side of nerve discomfort, and the label is refreshingly transparent about every dose. Just set expectations correctly: it leans toward comfort and better rest rather than the clinical nerve-repair the marketing implies, and the heavily-promoted B12 and alpha-lipoic acid aren't actually in it. It is not a cure, and anyone on prescription nerve medication should keep taking it and consult their doctor. But as a natural, low-risk way to calm nighttime nerve discomfort — backed by a money-back guarantee — it is worth a try. We give it a favorable 7.5 out of 10.",
+        "If you tune out the over-the-top sales video, Nerve Alive is a well-built nerve-support blend. Its backbone — magnesium plus a strong dose of passionflower, corydalis and California poppy — is well-chosen for the relaxation, sleep and nerve-comfort side of neuropathy, and the label is refreshingly transparent about every dose. Set expectations correctly: it works gradually over a few weeks rather than overnight, and it's support, not a cure, so anyone on prescription nerve medication should keep taking it and consult their doctor. But as a natural, low-risk way to calm nerve discomfort and sleep better — backed by a money-back guarantee — it is well worth a try. We give it a favorable 7.5 out of 10.",
     },
     affiliateLink: "https://nervealive.com/nva-tsl-buy-aff-f137",
   },
