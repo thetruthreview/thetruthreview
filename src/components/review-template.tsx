@@ -70,6 +70,18 @@ function SectionHeader({ number, title, id }: { number: string; title: string; i
   );
 }
 
+function Prose({ text }: { text: string }) {
+  return (
+    <>
+      {text.split("\n\n").map((para, i) => (
+        <p key={i} className="text-lg leading-relaxed mb-4 last:mb-0">
+          {para}
+        </p>
+      ))}
+    </>
+  );
+}
+
 function CtaButton({ href }: { href?: string }) {
   if (!href) return null;
   return (
@@ -183,7 +195,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
       <div className="max-w-5xl mx-auto px-4 py-12">
         <section className="mb-10">
           <SectionHeader id="introduction" number="01" title="Introduction" />
-          <p className="text-lg leading-relaxed">{sections.introduction}</p>
+          <Prose text={sections.introduction} />
         </section>
 
         <section className="mb-10">
@@ -238,22 +250,22 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
 
         <section className="mb-10">
           <SectionHeader id="clinical-evidence" number="05" title="Clinical Evidence" />
-          <p className="text-lg leading-relaxed">{sections.clinicalEvidence}</p>
+          <Prose text={sections.clinicalEvidence} />
         </section>
 
         <section className="mb-10">
           <SectionHeader id="safety" number="06" title="Safety & Side Effects" />
-          <p className="text-lg leading-relaxed">{sections.safety}</p>
+          <Prose text={sections.safety} />
         </section>
 
         <section className="mb-10">
           <SectionHeader id="customer-reviews" number="07" title="Customer Reviews & Complaints" />
-          <p className="text-lg leading-relaxed">{sections.customerReviews}</p>
+          <Prose text={sections.customerReviews} />
         </section>
 
         <section className="mb-10">
           <SectionHeader id="pricing" number="08" title="Pricing & Refund Policy" />
-          <p className="text-lg leading-relaxed">{sections.pricing}</p>
+          <Prose text={sections.pricing} />
         </section>
 
         <section className="mb-10">

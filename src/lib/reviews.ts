@@ -24,7 +24,12 @@ export const reviews: Review[] = [
       "A well-formulated nerve support supplement with high user satisfaction, a credible ingredient base and a money-back guarantee that makes it low-risk to try.",
     sections: {
       introduction:
-        "Nerve Alive is a dietary supplement marketed for people dealing with nerve discomfort — tingling, numbness, burning and the restless nights that often come with peripheral neuropathy. It is sold by BioAdvanced Labs as a once-daily capsule taken before bed, and it is promoted through a video presentation featuring a physician who describes it as a natural way to support nerve health and sleep. We looked past the promotional video and focused on what actually matters: the ingredients, the evidence behind them, safety, price and whether it is worth trying. Here is what we found.",
+        "If you are considering buying Nerve Alive, you probably want answers to a few important questions before placing an order: Does it actually work? Are its ingredients supported by scientific research? Are there any potential side effects? And, perhaps most importantly, is it worth the money?\n\n" +
+        "Nerve Alive is a dietary supplement marketed to support nerve health and help people experiencing discomfort commonly associated with peripheral neuropathy, including tingling, numbness, burning sensations, and nighttime discomfort. Its formula combines vitamins and botanical ingredients, and it is promoted as a convenient, once-daily approach to supporting nerve function and overall comfort.\n\n" +
+        "However, attractive marketing claims alone are not enough to establish whether a supplement deserves your trust.\n\n" +
+        "In this independent Nerve Alive review, we take a closer look at what is actually inside the formula, examine the scientific research behind its key ingredients, and separate reasonable health claims from promises that may go beyond the available evidence. We also investigate potential side effects, customer feedback, pricing options, and the company's refund policy.\n\n" +
+        "We will also address an important distinction: evidence supporting individual ingredients does not automatically prove that the finished Nerve Alive formula produces the same results.\n\n" +
+        "Our goal is straightforward: to help you understand what Nerve Alive may offer, where its limitations lie, and whether it represents a sensible purchase before you spend your money.",
       companyClaims: [
         "Supports nerve health naturally instead of simply masking discomfort",
         "Helps reduce tingling, numbness and burning sensations in the hands and feet",
