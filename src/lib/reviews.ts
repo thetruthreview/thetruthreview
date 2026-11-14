@@ -9,7 +9,7 @@ export const reviews: Review[] = [
   {
     slug: "nerve-alive",
     categorySlug: "nerve",
-    title: "Nerve Alive Review 2026: Scam or Legit?",
+    title: "Nerve Alive Review 2026: Does It Really Work?",
     productName: "Nerve Alive",
     category: "Nerve Health",
     publishedAt: "November 2025",
