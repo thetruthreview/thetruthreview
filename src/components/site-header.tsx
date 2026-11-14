@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function SiteHeader() {
@@ -13,16 +14,15 @@ export function SiteHeader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center gap-6">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="w-9 h-9 bg-[var(--brand-navy)] text-[var(--brand-gold)] rounded flex items-center justify-center font-black">
-            T
-          </span>
-          <span
-            className="text-xl font-bold text-[var(--brand-navy)] leading-none"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            The Truth Review
-          </span>
+        <Link href="/" aria-label="The Truth Review - Home">
+          <Image
+            src="/logo.webp"
+            alt="The Truth Review - Before You Buy, Know the Truth."
+            width={2000}
+            height={668}
+            priority
+            className="h-16 sm:h-20 w-auto"
+          />
         </Link>
 
         <nav className="ml-auto hidden sm:flex items-center gap-6 text-sm font-medium text-[var(--brand-navy)]">
