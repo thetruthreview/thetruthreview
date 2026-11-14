@@ -77,7 +77,7 @@ function CtaButton({ href }: { href?: string }) {
       href={href}
       target="_blank"
       rel="nofollow noopener noreferrer sponsored"
-      className="inline-block bg-[var(--brand-gold)] text-[var(--brand-navy)] font-bold px-6 py-3 rounded hover:bg-[var(--brand-gold-light)] transition-colors"
+      className="inline-block bg-[var(--brand-gold)] text-white font-bold px-6 py-3 rounded hover:bg-[var(--brand-gold-light)] transition-colors"
     >
       Check Current Price
     </a>
