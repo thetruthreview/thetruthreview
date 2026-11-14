@@ -68,7 +68,7 @@ export const reviews: Review[] = [
           claim: "It contains nutrients clinically studied for nerve health",
           verdict: "true",
           explanation:
-            "This one holds up. Alpha-lipoic acid and vitamin B12 (methylcobalamin) are among the most researched nutrients for nerve comfort, and both are in the formula. These are legitimate, well-studied nerve nutrients.",
+            "This one holds up. Magnesium, alpha-lipoic acid and vitamin B12 (methylcobalamin) are among the most researched nutrients for nerve and muscle comfort, and all three are in the formula. These are legitimate, well-studied nerve nutrients — not filler.",
         },
         {
           claim: "It can ease tingling, numbness and support better sleep",
