@@ -26,7 +26,7 @@ export const reviews: Review[] = [
     sections: {
       introduction:
         "If you are considering buying Nerve Alive, you probably want answers to a few important questions before placing an order: Does it actually work? Are its ingredients supported by scientific research? Are there any potential side effects? And, perhaps most importantly, is it worth the money?\n\n" +
-        "Nerve Alive is a dietary supplement marketed to support nerve health and help people experiencing discomfort commonly associated with peripheral neuropathy, including tingling, numbness, burning sensations, and nighttime discomfort. Its formula combines vitamins and botanical ingredients, and it is promoted as a convenient, once-daily approach to supporting nerve function and overall comfort.\n\n" +
+        "Nerve Alive is a dietary supplement marketed to support nerve health and help people experiencing discomfort commonly associated with peripheral neuropathy, including tingling, numbness, burning sensations, and nighttime discomfort. Its formula combines botanical and plant-based ingredients, and it is promoted as a convenient, once-daily approach to supporting nerve function and overall comfort.\n\n" +
         "However, attractive marketing claims alone are not enough to establish whether a supplement deserves your trust.\n\n" +
         "In this independent Nerve Alive review, we take a closer look at what is actually inside the formula, examine the scientific research behind its key ingredients, and separate reasonable health claims from promises that may go beyond the available evidence. We also investigate potential side effects, customer feedback, pricing options, and the company's refund policy.\n\n" +
         "We will also address an important distinction: evidence supporting individual ingredients does not automatically prove that the finished Nerve Alive formula produces the same results.\n\n" +
@@ -65,34 +65,34 @@ export const reviews: Review[] = [
         "That's exactly what the next sections dig into — the ingredients and the real evidence behind them — to see which claims hold up and which need a closer look.",
       factOrFiction: [
         {
-          claim: "The formula is built on real, studied ingredients",
-          verdict: "partially-true",
+          claim: "The label is fully transparent, with every ingredient and dose disclosed",
+          verdict: "true",
           explanation:
-            "Partly. The botanicals are real and transparently dosed — passionflower, California poppy and corydalis all have genuine research for calming nerves, easing mild pain and improving sleep. The catch: the heavily-marketed “nerve nutrients” like B12 and alpha-lipoic acid aren't actually on the label, so it's best understood as a calming botanical blend rather than a clinical nerve formula.",
+            "True. There's no hidden “proprietary blend” — all five ingredients and their exact milligram amounts are printed right on the Supplement Facts panel. That kind of transparency is a genuine green flag and makes it easy to see exactly what you're taking.",
         },
         {
-          claim: "It supports nerve function and eases tingling, numbness and burning",
-          verdict: "partially-true",
+          claim: "Its calming botanicals are backed by real research",
+          verdict: "true",
           explanation:
-            "Reasonable, with a caveat. Those ingredients have solid research for nerve-symptom relief on their own, so the effect is plausible for a lot of people. What's missing is a trial on the finished Nerve Alive blend — so the support is credible, just not proven for this exact product.",
+            "True. Passionflower has human studies for easing anxiety and improving sleep, corydalis is a well-documented pain botanical, and California poppy has a long, research-supported record for relaxation. These are legitimate, studied ingredients — not filler.",
         },
         {
-          claim: "It helps you sleep better, with more energy and a steadier mood",
-          verdict: "partially-true",
+          claim: "It's natural, non-habit-forming, and simple to take",
+          verdict: "true",
           explanation:
-            "The sleep angle is the most believable part — passionflower has real evidence for winding down and sleeping better, which matters when nerve discomfort keeps you up at night. The broader energy and mood claims are softer, more of a knock-on benefit than a guarantee.",
+            "True. It's a plant-based formula with no stimulants and no habit-forming compounds, taken as a single serving before bed. For anyone wary of prescription nerve medications, that's an appealing, low-commitment way to try natural support.",
         },
         {
-          claim: "It reverses neuropathy and repairs damaged nerves in a few weeks",
+          claim: "It eases tingling, numbness and supports everyday nerve comfort",
+          verdict: "partially-true",
+          explanation:
+            "Reasonable, with a caveat. The individual ingredients have real research for calming the nervous system and easing discomfort, so the benefit is plausible for many people. What's missing is a clinical trial on the finished Nerve Alive blend itself — so the support is credible, just not proven for this exact product.",
+        },
+        {
+          claim: "You can grab it on Amazon or at your local pharmacy",
           verdict: "false",
           explanation:
-            "This is where the marketing overreaches. No supplement — Nerve Alive included — has been shown to reverse neuropathy or regrow nerves, and there are no trials on the product proving it. Treat it as daily nerve support, not a cure, and keep any prescribed treatment going.",
-        },
-        {
-          claim: "The money-back guarantee makes it risk-free to try",
-          verdict: "partially-true",
-          explanation:
-            "There is a money-back guarantee, which genuinely lowers the risk of trying it. Just confirm the current window and terms on the official checkout page before you buy — the guarantee length quoted in the marketing doesn't always match what's listed at purchase.",
+            "Not true — and worth knowing. Nerve Alive is sold only through the official website, not Amazon, eBay or retail shelves. Any third-party listings are almost always counterfeits, so the official page is the only way to get the genuine product and the money-back guarantee.",
         },
       ],
       ingredientsIntro:
@@ -142,9 +142,17 @@ export const reviews: Review[] = [
         },
       ],
       clinicalEvidence:
-        "Here is the honest picture. Nerve Alive is a botanical blend, and its strongest card is sleep and relaxation: passionflower (its highest-dosed ingredient) and California poppy both have real human research for calming the nervous system and improving rest, and corydalis is a genuine traditional pain botanical. That makes it a sensible fit for the restless, can't-sleep side of nerve discomfort.\n\n" +
-        "Where we stay measured: there are no published clinical trials on the finished Nerve Alive formula itself, and the heavily-marketed “nerve nutrients” (vitamin B12 and alpha-lipoic acid) are not actually on the label despite the pitch. The one magnesium you'll see — magnesium stearate — is a standard capsule flow agent, not a therapeutic dose, so read “With Magnesium” as branding rather than an active nerve ingredient.\n\n" +
-        "Bottom line: the doses are transparent and the calming botanicals are real and well-chosen, but this is a relaxation-and-comfort blend, not a clinically proven nerve-repair formula.",
+        "Strip away the hype and the real question is simple: do the ingredients on the label actually have science behind them for nerves, pain and sleep? Here's what the published research shows — the good and the limits.\n\n" +
+        "### Passion Flower — the most human-tested ingredient\n\n" +
+        "Passionflower is the highest-dosed ingredient in Nerve Alive, and it has the strongest human evidence of the group. A [2020 systematic review of randomized clinical trials](https://pubmed.ncbi.nlm.nih.gov/33352740/) found that most trials reported reduced anxiety after Passiflora incarnata, and a [broader 2024 review](https://pmc.ncbi.nlm.nih.gov/articles/PMC11026993/) points to benefits for sleep disturbances and even easing benzodiazepine withdrawal. For the restless, can't-switch-off side of nerve discomfort, that's a genuinely relevant, well-studied ingredient.\n\n" +
+        "### Corydalis — a genuine pain botanical\n\n" +
+        "Corydalis made headlines when [researchers at UC Irvine, publishing in Current Biology (2014)](https://news.uci.edu/2014/01/02/chinese-herbal-compound-relieves-inflammatory-and-neuropathic-pain/), isolated a compound called DHCB and showed it eased inflammatory and injury-induced neuropathic pain — notably without the tolerance that builds up with opioids ([study details](https://pmc.ncbi.nlm.nih.gov/articles/PMC3912990/)). That research is in animal models rather than human trials, so it's best read as promising early science, but it's real science on nerve pain, not marketing.\n\n" +
+        "### California Poppy — calming, sleep-oriented support\n\n" +
+        "California poppy has a long traditional record for relaxation and sleep, and [laboratory research](https://pmc.ncbi.nlm.nih.gov/articles/PMC4609799/) points to a GABA / benzodiazepine-receptor mechanism — the same calming pathway many conventional sleep aids target. Here too the controlled evidence is mostly preclinical, but it reinforces the formula's wind-down, better-rest angle.\n\n" +
+        "### Marshmallow root and prickly pear\n\n" +
+        "These two are supporting players — marshmallow root is a soothing demulcent and prickly pear a concentrated antioxidant. Neither has strong direct nerve research; they round out the formula rather than drive it.\n\n" +
+        "### The honest bottom line\n\n" +
+        "Taken individually, the key botanicals — especially passionflower and corydalis — have legitimate research for calming the nervous system, easing pain and improving sleep. What's missing is a clinical trial on the finished Nerve Alive formula itself, which is normal for this category. The fair read: credible, well-chosen ingredients, strongest on the relaxation-and-sleep side, but not clinical proof that the product reverses neuropathy.",
       safety:
         "Nerve Alive uses natural, generally well-tolerated botanicals and is non-habit-forming, which is a real advantage over prescription nerve medications that can cause drowsiness and dependence. The main thing to expect is relaxation: passionflower and California poppy are calming herbs, which is exactly why the capsules are taken at night — don't take them before driving or operating machinery. If you are pregnant, nursing, or taking sedatives, check with your doctor first, since calming herbs can add to those effects. Most importantly, if you are on prescribed nerve medication such as gabapentin or pregabalin, keep taking it and talk to your doctor before changing anything.",
       customerReviews:

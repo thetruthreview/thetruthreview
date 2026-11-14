@@ -87,15 +87,30 @@ function Prose({ text }: { text: string }) {
 }
 
 function renderInline(text: string) {
-  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
-    part.startsWith("**") && part.endsWith("**") ? (
-      <strong key={i} className="font-bold text-[var(--brand-navy)]">
-        {part.slice(2, -2)}
-      </strong>
-    ) : (
-      <span key={i}>{part}</span>
-    )
-  );
+  return text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={i} className="font-bold text-[var(--brand-navy)]">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (link) {
+      return (
+        <a
+          key={i}
+          href={link[2]}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          className="text-[var(--brand-gold)] underline hover:text-[var(--brand-navy)]"
+        >
+          {link[1]}
+        </a>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
 }
 
 // Lightweight renderer: `### heading`, `* bullet` lists, `**bold**`, and paragraphs.
@@ -324,7 +339,7 @@ export function ReviewTemplate({ review }: { review: ReviewData }) {
 
         <section className="mb-10">
           <SectionHeader id="clinical-evidence" number="05" title="Clinical Evidence" />
-          <Prose text={sections.clinicalEvidence} />
+          <RichText text={sections.clinicalEvidence} />
         </section>
 
         <section className="mb-10">
