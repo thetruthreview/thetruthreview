@@ -40,16 +40,16 @@ export default function HomePage() {
 
       <section className="max-w-5xl mx-auto px-4 py-14 text-center">
         <h2 className="text-2xl font-bold text-[var(--brand-navy)] mb-3" style={serif}>
-          Layout preview
+          Latest Investigation
         </h2>
-        <p className="text-muted-foreground mb-5 text-sm">
-          The page below uses fictional sample content to show the review layout.
+        <p className="text-muted-foreground mb-5 text-lg">
+          Nerve Alive Review (2025): we break down the ingredients, the evidence and whether it is worth trying.
         </p>
         <Link
-          href="/reviews/vision/sample-product"
+          href="/reviews/nerve/nerve-alive"
           className="inline-block border border-[var(--brand-navy)] text-[var(--brand-navy)] px-5 py-2.5 rounded text-sm font-semibold hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
         >
-          View sample review
+          Read the Nerve Alive Review
         </Link>
       </section>
     </>

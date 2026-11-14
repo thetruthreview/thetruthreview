@@ -5,6 +5,7 @@ export interface Category {
 }
 
 export const categories: Category[] = [
+  { slug: "nerve", label: "Nerve Health", description: "Supplements marketed for neuropathy, nerve pain, tingling, numbness and nerve regeneration." },
   { slug: "vision", label: "Vision & Eye Health", description: "Supplements that claim to support eyesight, macular health and age-related vision decline." },
   { slug: "hearing", label: "Hearing & Tinnitus", description: "Products marketed for hearing support, ear health and ringing in the ears." },
   { slug: "blood-sugar", label: "Blood Sugar", description: "Supplements that claim to support healthy glucose levels and metabolism." },
