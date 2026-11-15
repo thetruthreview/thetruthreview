@@ -220,8 +220,8 @@ export function RankingPage({ data }: { data: RankingData }) {
         {data.eyebrow}
       </div>
 
-      <article className="max-w-5xl mx-auto px-4 py-10">
-        <div className="flex items-center justify-between gap-4 mb-5 pb-4 border-b">
+      <article className="max-w-5xl mx-auto px-4 py-5 sm:py-10">
+        <div className="flex items-center justify-between gap-4 mb-3 sm:mb-5 pb-3 sm:pb-4 border-b">
           <span className="text-xs font-bold uppercase tracking-wide text-[var(--brand-gold)] bg-[var(--brand-gold)]/10 px-3 py-1 rounded-full">
             {data.badge}
           </span>
