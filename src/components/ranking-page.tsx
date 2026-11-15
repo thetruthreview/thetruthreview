@@ -6,6 +6,9 @@ export interface RankedProduct {
   brand: string;
   score: number;
   winner?: boolean;
+  anchor?: boolean;
+  image?: string;
+  ratingNote?: string;
   bottomLine: string;
   pros: string[];
   cons: string[];
@@ -63,14 +66,33 @@ function Stars({ score }: { score: number }) {
   );
 }
 
+function ProductImage({ p, size }: { p: RankedProduct; size: "lg" | "sm" }) {
+  const box = size === "lg" ? "h-56" : "h-40";
+  if (p.image) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src={p.image} alt={p.name} className={`${box} w-full object-contain`} />
+    );
+  }
+  return (
+    <div
+      className={`${box} w-full rounded-lg border border-dashed bg-slate-50 flex items-center justify-center text-center text-xs text-muted-foreground px-2`}
+    >
+      {p.name}
+      <br />
+      product image
+    </div>
+  );
+}
+
 function WinnerCard({ p }: { p: RankedProduct }) {
   return (
-    <div className="relative border-2 border-[var(--brand-gold)] rounded-xl bg-white mb-6 mt-6">
+    <div className="relative border-2 border-[var(--brand-gold)] rounded-xl bg-white mb-6 mt-8">
       <span className="absolute -top-3 left-6 bg-[var(--brand-gold)] text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">
-        #1 Top Pick for 2026
+        🏆 #1 Top Product for 2026
       </span>
-      <div className="p-6 pt-7">
-        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
+      <div className="p-6 pt-8">
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-5">
           <div>
             <h3 className="text-2xl font-black text-[var(--brand-navy)]" style={serif}>
               {p.rank}. {p.name}
@@ -78,33 +100,44 @@ function WinnerCard({ p }: { p: RankedProduct }) {
             <p className="text-sm text-muted-foreground">{p.brand}</p>
           </div>
           <div className="sm:text-right">
-            <div className="text-2xl font-black text-[var(--brand-gold)]" style={serif}>
-              {p.score.toFixed(1)} <span className="text-base text-muted-foreground">/ 5</span>
+            <div className="text-3xl font-black text-[var(--brand-gold)]" style={serif}>
+              {p.score.toFixed(1)} <span className="text-lg text-muted-foreground">/ 5.0</span>
             </div>
-            <Stars score={p.score} />
+            <div className="flex sm:justify-end items-center gap-2">
+              <Stars score={p.score} />
+              {p.ratingNote && (
+                <span className="text-xs text-muted-foreground">({p.ratingNote})</span>
+              )}
+            </div>
           </div>
         </div>
 
-        <p className="text-lg leading-relaxed mb-5">
-          <strong className="text-[var(--brand-navy)]">The Bottom Line:</strong> {p.bottomLine}
-        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-6">
+          <ProductImage p={p} size="lg" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
-          <div className="bg-green-50 border border-green-100 rounded-lg p-4">
-            <h4 className="font-bold text-green-800 mb-2 text-sm uppercase tracking-wide">Pros</h4>
-            <ul className="space-y-1.5">
-              {p.pros.map((x, i) => (
-                <li key={i} className="text-base text-green-700 leading-relaxed">+ {x}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="bg-red-50 border border-red-100 rounded-lg p-4">
-            <h4 className="font-bold text-red-800 mb-2 text-sm uppercase tracking-wide">Cons</h4>
-            <ul className="space-y-1.5">
-              {p.cons.map((x, i) => (
-                <li key={i} className="text-base text-red-700 leading-relaxed">– {x}</li>
-              ))}
-            </ul>
+          <div>
+            <p className="text-base leading-relaxed mb-4">
+              <strong className="text-[var(--brand-navy)]">The Bottom Line:</strong> {p.bottomLine}
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="bg-green-50 border border-green-100 rounded-lg p-4">
+                <h4 className="font-bold text-green-800 mb-2 text-sm">Pros:</h4>
+                <ul className="space-y-1.5">
+                  {p.pros.map((x, i) => (
+                    <li key={i} className="text-sm text-green-700 leading-relaxed">✓ {x}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-red-50 border border-red-100 rounded-lg p-4">
+                <h4 className="font-bold text-red-800 mb-2 text-sm">Cons:</h4>
+                <ul className="space-y-1.5">
+                  {p.cons.map((x, i) => (
+                    <li key={i} className="text-sm text-red-700 leading-relaxed">✗ {x}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -112,9 +145,9 @@ function WinnerCard({ p }: { p: RankedProduct }) {
           href={p.link ?? "#"}
           target="_blank"
           rel="nofollow noopener noreferrer sponsored"
-          className="block w-full text-center bg-[var(--brand-gold)] text-white font-bold text-lg px-6 py-4 rounded-lg hover:bg-[var(--brand-gold-light)] transition-colors"
+          className="block w-full text-center bg-[var(--brand-gold)] text-white font-bold text-lg uppercase tracking-wide px-6 py-4 rounded-lg hover:bg-[var(--brand-gold-light)] transition-colors mt-6"
         >
-          {p.ctaLabel ?? "Visit Official Website"} →
+          Visit Official {p.name} Website →
         </a>
         {p.ctaNote && (
           <p className="text-center text-xs text-muted-foreground mt-2">{p.ctaNote}</p>
@@ -127,7 +160,7 @@ function WinnerCard({ p }: { p: RankedProduct }) {
 function RunnerUpCard({ p }: { p: RankedProduct }) {
   return (
     <div className="border rounded-xl bg-white p-6 mb-4">
-      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
         <div>
           <h3 className="text-xl font-bold text-[var(--brand-navy)]" style={serif}>
             {p.rank}. {p.name}
@@ -135,28 +168,43 @@ function RunnerUpCard({ p }: { p: RankedProduct }) {
           <p className="text-sm text-muted-foreground">{p.brand}</p>
         </div>
         <div className="sm:text-right">
-          <div className="text-xl font-bold text-[var(--brand-navy)]" style={serif}>
-            {p.score.toFixed(1)} <span className="text-sm text-muted-foreground">/ 5</span>
+          <div className="text-2xl font-bold text-slate-500" style={serif}>
+            {p.score.toFixed(1)} <span className="text-base text-muted-foreground">/ 5.0</span>
           </div>
-          <Stars score={p.score} />
+          <div className="flex sm:justify-end items-center gap-2">
+            <Stars score={p.score} />
+            {p.ratingNote && (
+              <span className="text-xs text-muted-foreground">({p.ratingNote})</span>
+            )}
+          </div>
         </div>
       </div>
 
-      <p className="text-base leading-relaxed mb-4">
-        <strong className="text-[var(--brand-navy)]">The Bottom Line:</strong> {p.bottomLine}
-      </p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <ul className="space-y-1">
-          {p.pros.map((x, i) => (
-            <li key={i} className="text-sm text-green-700">+ {x}</li>
-          ))}
-        </ul>
-        <ul className="space-y-1">
-          {p.cons.map((x, i) => (
-            <li key={i} className="text-sm text-red-700">– {x}</li>
-          ))}
-        </ul>
+      <div className="grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-5">
+        <ProductImage p={p} size="sm" />
+        <div>
+          <p className="text-base leading-relaxed mb-4">
+            <strong className="text-[var(--brand-navy)]">The Bottom Line:</strong> {p.bottomLine}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <h4 className="font-bold text-green-800 mb-1 text-sm">Pros:</h4>
+              <ul className="space-y-1">
+                {p.pros.map((x, i) => (
+                  <li key={i} className="text-sm text-green-700">✓ {x}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-red-800 mb-1 text-sm">Cons:</h4>
+              <ul className="space-y-1">
+                {p.cons.map((x, i) => (
+                  <li key={i} className="text-sm text-red-700">✗ {x}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -226,7 +274,7 @@ export function RankingPage({ data }: { data: RankingData }) {
                     <span className="font-bold text-[var(--brand-navy)]">{p.name}</span>
                     {p.winner && (
                       <span className="ml-2 bg-green-600 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded">
-                        Top Pick
+                        Winner
                       </span>
                     )}
                   </td>
@@ -245,7 +293,7 @@ export function RankingPage({ data }: { data: RankingData }) {
                         View Offer →
                       </a>
                     ) : (
-                      <span className="text-muted-foreground text-sm">See review</span>
+                      <span className="text-muted-foreground text-sm">Not Rec.</span>
                     )}
                   </td>
                 </tr>
@@ -256,9 +304,12 @@ export function RankingPage({ data }: { data: RankingData }) {
         <p className="text-xs text-muted-foreground mb-8">{data.methodologyNote}</p>
 
         {winner && <WinnerCard p={winner} />}
-        {rest.map((p) => (
-          <RunnerUpCard key={p.rank} p={p} />
-        ))}
+        {rest
+          .slice()
+          .sort((a, b) => a.rank - b.rank)
+          .map((p) => (
+            <RunnerUpCard key={p.rank} p={p} />
+          ))}
 
         <p className="text-xs text-muted-foreground mt-8 leading-relaxed border-t pt-5">
           {data.disclaimer}
