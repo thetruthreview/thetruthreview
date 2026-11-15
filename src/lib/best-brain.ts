@@ -49,7 +49,7 @@ export const bestBrain: RankingData = {
       rank: 2,
       name: "Prevagen",
       brand: "by Quincy Bioscience",
-      score: 2.9,
+      score: 3.2,
       anchor: true,
       ratingNote: "Heavily contested",
       bottomLine:
@@ -63,7 +63,7 @@ export const bestBrain: RankingData = {
       ],
     },
     {
-      rank: 3,
+      rank: 4,
       name: "NooCube",
       brand: "by Wolfson Brands",
       score: 2.7,
@@ -73,10 +73,10 @@ export const bestBrain: RankingData = {
       cons: ["Several ingredients dosed below research levels", "Formula spread thin across many goals"],
     },
     {
-      rank: 4,
+      rank: 3,
       name: "Neuriva",
       brand: "by Reckitt",
-      score: 2.5,
+      score: 3.1,
       bottomLine:
         "Easy to find and inexpensive, but its marketing has already been reined in once. In a class action settlement, its maker agreed to drop “clinically proven” from its labeling and marketing in favor of “clinically tested” — a meaningful downgrade, and a useful lesson in how loosely that word gets used in this aisle.",
       pros: ["Affordable per serving", "Easy to find in retail"],

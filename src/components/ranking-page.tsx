@@ -267,7 +267,10 @@ export function RankingPage({ data }: { data: RankingData }) {
               </tr>
             </thead>
             <tbody>
-              {data.products.map((p) => (
+              {data.products
+                .slice()
+                .sort((a, b) => a.rank - b.rank)
+                .map((p) => (
                 <tr key={p.rank} className={`border-t ${p.winner ? "bg-green-50" : "bg-white"}`}>
                   <td className="px-4 py-3 font-bold text-[var(--brand-navy)]">#{p.rank}</td>
                   <td className="px-4 py-3">
