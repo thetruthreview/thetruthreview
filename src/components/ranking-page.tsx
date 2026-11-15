@@ -30,6 +30,7 @@ export interface RankingData {
   tableTitle: string;
   products: RankedProduct[];
   methodologyNote: string;
+  references?: string[];
   disclaimer: string;
 }
 
@@ -321,6 +322,21 @@ export function RankingPage({ data }: { data: RankingData }) {
           .map((p) => (
             <RunnerUpCard key={p.rank} p={p} />
           ))}
+
+        {data.references && data.references.length > 0 && (
+          <div className="mt-10 border-t pt-5">
+            <h2 className="text-lg font-bold text-[var(--brand-navy)] mb-3" style={serif}>
+              References
+            </h2>
+            <ol className="space-y-1.5">
+              {data.references.map((r, i) => (
+                <li key={i} className="text-sm text-muted-foreground leading-relaxed">
+                  {i + 1}. {r}
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
 
         <p className="text-xs text-muted-foreground mt-8 leading-relaxed border-t pt-5">
           {data.disclaimer}
