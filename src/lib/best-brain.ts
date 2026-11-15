@@ -28,6 +28,7 @@ export const bestBrain: RankingData = {
     {
       rank: 1,
       name: "MemoVolt",
+      image: "/products/memovolt.png",
       brand: "by MemoVolt",
       score: 4.8,
       winner: true,
@@ -48,6 +49,7 @@ export const bestBrain: RankingData = {
     {
       rank: 2,
       name: "Prevagen",
+      image: "/products/prevagen.png",
       brand: "by Quincy Bioscience",
       score: 3.2,
       anchor: true,
@@ -65,6 +67,7 @@ export const bestBrain: RankingData = {
     {
       rank: 4,
       name: "NooCube",
+      image: "/products/noocube.png",
       brand: "by Wolfson Brands",
       score: 2.7,
       bottomLine:
@@ -75,6 +78,7 @@ export const bestBrain: RankingData = {
     {
       rank: 3,
       name: "Neuriva",
+      image: "/products/neuriva.png",
       brand: "by Reckitt",
       score: 3.1,
       bottomLine:
@@ -88,6 +92,7 @@ export const bestBrain: RankingData = {
     {
       rank: 5,
       name: "Focus Factor",
+      image: "/products/focus-factor.png",
       brand: "by Factor Nutrition Labs",
       score: 2.2,
       bottomLine:
