@@ -113,6 +113,13 @@ export const bestBrain: RankingData = {
   methodologyNote:
     "How we ranked: each product was scored on ingredient quality and dosing versus published research, label transparency (are individual doses disclosed?), value per serving, refund policy, and the brand's advertising and regulatory record. We do not accept payment for placement, and our rankings are not influenced by commissions.",
 
+  verdictTitle: "Our Final Verdict",
+  verdict: [
+    "If you landed here researching **Prevagen**, the honest answer is that its record doesn't justify the price. The studies behind it were funded and written by the company and never peer-reviewed, the one placebo-controlled trial found no real benefit over a sugar pill, and in 2024 a federal court ordered the memory claims pulled from its marketing [1]. That doesn't make it dangerous — it's widely sold and generally well tolerated — but you would be paying a premium for a claim that did not hold up in court.",
+    "Across the five formulas we compared, **MemoVolt** was the only one that brought together ingredients with genuine human research behind them, a clear explanation of how it works, and a 60-day money-back guarantee that puts the risk on the company instead of on you.",
+    "It isn't magic and it won't work overnight. But if you are going to spend money on memory support this year, it's the one we would spend it on.",
+  ],
+
   references: [
     "Truth in Advertising. “TINA.org to FTC: Prevagen is Making Unsupported Memory Claims.” TINA.org, published September 20, 2015; updated December 13, 2024.",
     "Williams v. Reckitt Benckiser LLC, No. 1:20-cv-23564 (S.D. Fla.). Class action settlement concerning Neuriva advertising claims.",

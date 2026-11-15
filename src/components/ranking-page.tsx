@@ -30,6 +30,8 @@ export interface RankingData {
   tableTitle: string;
   products: RankedProduct[];
   methodologyNote: string;
+  verdictTitle?: string;
+  verdict?: string[];
   references?: string[];
   disclaimer: string;
 }
@@ -327,6 +329,55 @@ export function RankingPage({ data }: { data: RankingData }) {
           .map((p) => (
             <RunnerUpCard key={p.rank} p={p} />
           ))}
+
+        {data.verdict && data.verdict.length > 0 && winner && (
+          <section className="mt-10 border-t pt-8">
+            <h2 className="text-2xl font-bold text-[var(--brand-navy)] mb-4" style={serif}>
+              {data.verdictTitle ?? "Our Final Verdict"}
+            </h2>
+            <div className="space-y-4 mb-6">
+              {data.verdict.map((para, i) => (
+                <p key={i} className="text-lg leading-relaxed">
+                  {inline(para)}
+                </p>
+              ))}
+            </div>
+
+            <div className="border-2 border-[var(--brand-gold)] rounded-xl bg-white p-6">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-5">
+                <div className="w-28 shrink-0 mx-auto sm:mx-0">
+                  <ProductImage p={winner} size="sm" />
+                </div>
+                <div className="flex-1 text-center sm:text-left">
+                  <div className="text-xs font-bold uppercase tracking-wide text-[var(--brand-gold)] mb-1">
+                    Our #1 Pick for 2026
+                  </div>
+                  <h3 className="text-2xl font-black text-[var(--brand-navy)]" style={serif}>
+                    {winner.name}
+                  </h3>
+                  <div className="flex items-center justify-center sm:justify-start gap-2 mt-1">
+                    <Stars score={winner.score} />
+                    <span className="font-bold text-[var(--brand-navy)]">
+                      {winner.score.toFixed(1)} / 5.0
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href={winner.link ?? "#"}
+                target="_blank"
+                rel="nofollow noopener noreferrer sponsored"
+                className="block w-full text-center bg-[var(--brand-gold)] text-white font-bold text-lg uppercase tracking-wide px-6 py-4 rounded-lg hover:bg-[var(--brand-gold-light)] transition-colors mt-5"
+              >
+                Visit Official {winner.name} Website →
+              </a>
+              {winner.ctaNote && (
+                <p className="text-center text-xs text-muted-foreground mt-2">{winner.ctaNote}</p>
+              )}
+            </div>
+          </section>
+        )}
 
         {data.references && data.references.length > 0 && (
           <div className="mt-10 border-t pt-5">
