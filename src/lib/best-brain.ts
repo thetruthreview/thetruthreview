@@ -60,13 +60,13 @@ export const bestBrain: RankingData = {
       anchor: true,
       ratingNote: "Heavily contested",
       bottomLine:
-        "Prevagen was long promoted as a clinically proven way to improve memory, built around apoaequorin, a protein originally found in jellyfish. On the pharmacy shelf it looks reassuring. The record tells a different story: the supporting studies were company-funded and unpublished, the one placebo-controlled trial found no significant benefit over placebo, and in 2024 a federal court ordered the company to drop the memory claims from its marketing [1]. You are paying a premium price for a single ingredient with a contested record.",
+        "Prevagen was long promoted as a clinically proven way to improve memory, built around apoaequorin, a protein originally found in jellyfish. On the pharmacy shelf it looks reassuring. The record tells a different story: the supporting studies were company-funded and unpublished, the one placebo-controlled trial found no significant benefit over placebo, and in 2024 a federal court ordered the company to drop the memory claims from its marketing [1]. What's left is a single-ingredient formula whose central promise no longer stands.",
       pros: ["Widely available in pharmacies", "Simple one-capsule daily routine"],
       cons: [
         "Federal court ordered the memory claims removed from its marketing in 2024 [1]",
         "Supporting studies were company-funded and not peer-reviewed [1]",
         "Its placebo-controlled trial found no significant benefit over placebo [1]",
-        "Expensive for a single-ingredient formula",
+        "FDA found the company failed to report over 1,000 adverse events (2008–2011) [1]",
       ],
     },
     {
@@ -115,7 +115,7 @@ export const bestBrain: RankingData = {
 
   verdictTitle: "Our Final Verdict",
   verdict: [
-    "If you landed here researching **Prevagen**, the honest answer is that its record doesn't justify the price. The studies behind it were funded and written by the company and never peer-reviewed, the one placebo-controlled trial found no real benefit over a sugar pill, and in 2024 a federal court ordered the memory claims pulled from its marketing [1]. That doesn't make it dangerous — it's widely sold and generally well tolerated — but you would be paying a premium for a claim that did not hold up in court.",
+    "If you landed here researching **Prevagen**, the honest answer is that the claim that sold it did not survive scrutiny. The studies behind it were funded and written by the company itself and never peer-reviewed. The one placebo-controlled trial found no real benefit over a sugar pill. The FDA found the company had failed to report more than a thousand adverse events from its own customers. And in 2024, a federal court ordered the memory claims pulled from its marketing altogether [1]. The product is still on the shelf — but the promise that put it there is gone.",
     "Across the five formulas we compared, **MemoVolt** was the only one that brought together ingredients with genuine human research behind them, a clear explanation of how it works, and a 60-day money-back guarantee that puts the risk on the company instead of on you.",
     "It isn't magic and it won't work overnight. But if you are going to spend money on memory support this year, it's the one we would spend it on.",
   ],
