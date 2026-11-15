@@ -44,7 +44,7 @@ export const bestBrain: RankingData = {
       ],
       cons: ["Only available on the official website", "Best results take several weeks of use"],
       ctaNote: "🔒 6 Bottles at $49 each · Free US Shipping · 3 Free Bonus Guides",
-      link: "https://trymemovolt.com/welcome",
+      link: "https://mwebtracepoint.com/13563/1570/14/?",
     },
     {
       rank: 2,
