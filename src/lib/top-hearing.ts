@@ -1,19 +1,6 @@
-export interface RankedProduct {
-  rank: number;
-  name: string;
-  brand: string;
-  score: number;
-  winner?: boolean;
-  image?: string;
-  bottomLine: string;
-  pros: string[];
-  cons: string[];
-  ctaLabel?: string;
-  ctaNote?: string;
-  link?: string;
-}
+import type { RankingData } from "@/components/ranking-page";
 
-export const topHearing = {
+export const topHearing: RankingData = {
   eyebrow: "Independent Supplement Investigations · Special Report · Updated for 2026",
   badge: "Evidence Review",
   title: "Hearing Supplements (2026): Which Ones Are Actually Worth It?",
@@ -34,7 +21,9 @@ export const topHearing = {
     "Here's how they ranked.",
   ],
 
-  products: <RankedProduct[]>[
+  tableTitle: "2026 Hearing Support Ranking Summary",
+
+  products: [
     {
       rank: 1,
       name: "ZenCortex",
