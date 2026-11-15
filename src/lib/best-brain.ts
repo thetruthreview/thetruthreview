@@ -36,11 +36,11 @@ export const bestBrain: RankingData = {
       bottomLine:
         "MemoVolt is not just another memory pill. Where most of this category leans on a single hero ingredient and a big advertising budget, MemoVolt is built around compounds that carry real human research — saffron extract, studied for memory and mood; berberine and Ceylon cinnamon, two of the best-researched compounds for glucose metabolism; and Morosil, a Sicilian red orange extract with published trials behind it. The approach is what sets it apart: instead of only targeting neurons directly, it supports how efficiently your brain cells take up fuel in the first place. Clean, stimulant-free, non-GMO, and backed by a 60-day guarantee.",
       pros: [
-        "Built on researched compounds: saffron, berberine, Ceylon cinnamon, Morosil",
-        "Dual approach — neuron support plus healthy glucose metabolism",
-        "Stimulant-free, non-GMO, simple once-daily tablet",
+        "Supports sharper recall and everyday mental clarity",
+        "Helps clear the brain fog that builds through the day",
+        "Targets how brain cells take up fuel, not just the neurons",
+        "Stimulant-free — no jitters, no afternoon crash",
         "60-Day 100% Money Back Guarantee",
-        "Clean advertising record — no FTC or class action history",
       ],
       cons: ["Only available on the official website", "Best results take several weeks of use"],
       ctaNote: "🔒 6 Bottles at $49 each · Free US Shipping · 3 Free Bonus Guides",

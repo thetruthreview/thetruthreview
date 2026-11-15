@@ -257,13 +257,13 @@ export function RankingPage({ data }: { data: RankingData }) {
         </h2>
         <div className="overflow-x-auto mb-2">
           <table className="w-full border rounded-lg overflow-hidden text-left">
-            <thead className="bg-[var(--brand-navy)] text-white text-sm">
+            <thead className="bg-[var(--brand-navy)] text-white text-xs sm:text-sm">
               <tr>
-                <th className="px-4 py-3 font-semibold">Rank</th>
-                <th className="px-4 py-3 font-semibold">Product</th>
-                <th className="px-4 py-3 font-semibold hidden sm:table-cell">Brand</th>
-                <th className="px-4 py-3 font-semibold">Rating</th>
-                <th className="px-4 py-3 font-semibold">Action</th>
+                <th className="px-2 sm:px-4 py-3 font-semibold">Rank</th>
+                <th className="px-2 sm:px-4 py-3 font-semibold">Product</th>
+                <th className="px-2 sm:px-4 py-3 font-semibold hidden sm:table-cell">Brand</th>
+                <th className="px-2 sm:px-4 py-3 font-semibold">Rating</th>
+                <th className="px-2 sm:px-4 py-3 font-semibold">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -272,31 +272,39 @@ export function RankingPage({ data }: { data: RankingData }) {
                 .sort((a, b) => a.rank - b.rank)
                 .map((p) => (
                 <tr key={p.rank} className={`border-t ${p.winner ? "bg-green-50" : "bg-white"}`}>
-                  <td className="px-4 py-3 font-bold text-[var(--brand-navy)]">#{p.rank}</td>
-                  <td className="px-4 py-3">
-                    <span className="font-bold text-[var(--brand-navy)]">{p.name}</span>
+                  <td className="px-2 sm:px-4 py-3 font-bold text-[var(--brand-navy)] text-sm">
+                    #{p.rank}
+                  </td>
+                  <td className="px-2 sm:px-4 py-3">
+                    <span className="font-bold text-[var(--brand-navy)] text-sm sm:text-base">
+                      {p.name}
+                    </span>
                     {p.winner && (
-                      <span className="ml-2 bg-green-600 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded">
+                      <span className="block sm:inline sm:ml-2 mt-1 sm:mt-0 w-fit bg-green-600 text-white text-[9px] sm:text-[10px] font-bold uppercase px-1.5 sm:px-2 py-0.5 rounded">
                         Winner
                       </span>
                     )}
                   </td>
-                  <td className="px-4 py-3 text-muted-foreground hidden sm:table-cell">{p.brand}</td>
-                  <td className="px-4 py-3 font-semibold text-[var(--brand-navy)]">
+                  <td className="px-2 sm:px-4 py-3 text-muted-foreground hidden sm:table-cell">
+                    {p.brand}
+                  </td>
+                  <td className="px-2 sm:px-4 py-3 font-semibold text-[var(--brand-navy)] text-sm whitespace-nowrap">
                     {p.score.toFixed(1)} / 5
                   </td>
-                  <td className="px-4 py-3">
+                  <td className="px-2 sm:px-4 py-3">
                     {p.winner ? (
                       <a
                         href={p.link ?? "#"}
                         target="_blank"
                         rel="nofollow noopener noreferrer sponsored"
-                        className="text-[var(--brand-gold)] font-bold hover:underline whitespace-nowrap"
+                        className="text-[var(--brand-gold)] font-bold hover:underline whitespace-nowrap text-sm"
                       >
                         View Offer →
                       </a>
                     ) : (
-                      <span className="text-muted-foreground text-sm">Not Rec.</span>
+                      <span className="text-muted-foreground text-xs sm:text-sm whitespace-nowrap">
+                        Not Rec.
+                      </span>
                     )}
                   </td>
                 </tr>

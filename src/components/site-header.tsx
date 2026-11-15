@@ -24,7 +24,7 @@ export function SiteHeader() {
 
         <Link
           href="/reviews"
-          className="ml-auto sm:ml-0 bg-[var(--brand-gold)] text-white font-bold text-sm px-5 py-2.5 rounded hover:bg-[var(--brand-gold-light)] transition-colors"
+          className="ml-auto sm:ml-0 shrink-0 whitespace-nowrap bg-[var(--brand-gold)] text-white font-bold text-xs sm:text-sm px-3 sm:px-5 py-2 sm:py-2.5 rounded hover:bg-[var(--brand-gold-light)] transition-colors"
         >
           Latest Reviews
         </Link>
