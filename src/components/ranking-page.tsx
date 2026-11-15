@@ -104,12 +104,12 @@ function WinnerCard({ p }: { p: RankedProduct }) {
             <div className="text-3xl font-black text-[var(--brand-gold)]" style={serif}>
               {p.score.toFixed(1)} <span className="text-lg text-muted-foreground">/ 5.0</span>
             </div>
-            <div className="flex sm:justify-end items-center gap-2">
+            <div className="flex sm:justify-end">
               <Stars score={p.score} />
-              {p.ratingNote && (
-                <span className="text-xs text-muted-foreground">({p.ratingNote})</span>
-              )}
             </div>
+            {p.ratingNote && (
+              <div className="text-xs text-muted-foreground mt-0.5">({p.ratingNote})</div>
+            )}
           </div>
         </div>
 
@@ -172,12 +172,12 @@ function RunnerUpCard({ p }: { p: RankedProduct }) {
           <div className="text-2xl font-bold text-slate-500" style={serif}>
             {p.score.toFixed(1)} <span className="text-base text-muted-foreground">/ 5.0</span>
           </div>
-          <div className="flex sm:justify-end items-center gap-2">
+          <div className="flex sm:justify-end">
             <Stars score={p.score} />
-            {p.ratingNote && (
-              <span className="text-xs text-muted-foreground">({p.ratingNote})</span>
-            )}
           </div>
+          {p.ratingNote && (
+            <div className="text-xs text-muted-foreground mt-0.5">({p.ratingNote})</div>
+          )}
         </div>
       </div>
 
