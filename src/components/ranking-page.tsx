@@ -43,7 +43,7 @@ function inline(text: string) {
 }
 
 function Stars({ score }: { score: number }) {
-  const pct = Math.max(0, Math.min(100, (score / 10) * 100));
+  const pct = Math.max(0, Math.min(100, (score / 5) * 100));
   const row = (cls: string) => (
     <div className={`flex gap-0.5 ${cls}`}>
       {Array.from({ length: 5 }).map((_, i) => (
@@ -79,7 +79,7 @@ function WinnerCard({ p }: { p: RankedProduct }) {
           </div>
           <div className="sm:text-right">
             <div className="text-2xl font-black text-[var(--brand-gold)]" style={serif}>
-              {p.score.toFixed(1)} <span className="text-base text-muted-foreground">/ 10</span>
+              {p.score.toFixed(1)} <span className="text-base text-muted-foreground">/ 5</span>
             </div>
             <Stars score={p.score} />
           </div>
@@ -136,7 +136,7 @@ function RunnerUpCard({ p }: { p: RankedProduct }) {
         </div>
         <div className="sm:text-right">
           <div className="text-xl font-bold text-[var(--brand-navy)]" style={serif}>
-            {p.score.toFixed(1)} <span className="text-sm text-muted-foreground">/ 10</span>
+            {p.score.toFixed(1)} <span className="text-sm text-muted-foreground">/ 5</span>
           </div>
           <Stars score={p.score} />
         </div>
@@ -232,7 +232,7 @@ export function RankingPage({ data }: { data: RankingData }) {
                   </td>
                   <td className="px-4 py-3 text-muted-foreground hidden sm:table-cell">{p.brand}</td>
                   <td className="px-4 py-3 font-semibold text-[var(--brand-navy)]">
-                    {p.score.toFixed(1)} / 10
+                    {p.score.toFixed(1)} / 5
                   </td>
                   <td className="px-4 py-3">
                     {p.winner ? (

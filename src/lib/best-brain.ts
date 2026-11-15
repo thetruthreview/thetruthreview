@@ -27,31 +27,33 @@ export const bestBrain: RankingData = {
   products: [
     {
       rank: 1,
-      name: "Mind Lab Pro",
-      brand: "by Opti-Nutra",
-      score: 8.8,
+      name: "MemoVolt",
+      brand: "by MemoVolt",
+      score: 4.8,
       winner: true,
       bottomLine:
-        "Mind Lab Pro takes the top spot on the one criterion that separates a serious formula from a marketing exercise: it discloses everything. Every ingredient is listed with its exact dose — there is no proprietary blend to hide behind — and the amounts line up with what the research actually used, rather than token sprinkles. It's also clean in format, with no stimulants and no artificial fillers, so it's easy to take daily without the jitters-and-crash cycle. You pay more per bottle than the drugstore options, but you can see precisely what you're paying for.",
+        "MemoVolt takes the top spot on the strength of its ingredient lineup. Instead of padding the label with the usual filler, it's built around compounds that carry real human research — saffron extract, which has been studied for memory and mood; berberine and Ceylon cinnamon, two of the better-researched compounds for glucose metabolism; and Morosil, a Sicilian red orange extract with published trials behind it. The approach is also unusual in a useful way: rather than only targeting neurons directly, the formula supports how efficiently brain cells take up fuel in the first place. Add a 60-day money-back guarantee, a stimulant-free non-GMO tablet, and a clean advertising record, and it's the most complete package in this ranking.",
       pros: [
-        "Full label transparency — every dose printed, zero proprietary blends",
-        "Doses line up with the amounts used in published research",
-        "Stimulant-free and clean format, easy to take every day",
-        "No regulatory actions over its advertising claims",
+        "Built on genuinely researched compounds — saffron, berberine, Ceylon cinnamon and Morosil",
+        "Dual approach: neuron support plus healthy glucose metabolism",
+        "Stimulant-free, non-GMO, simple once-daily tablet",
+        "60-day money-back guarantee on every order",
+        "No regulatory or class action history over its advertising",
       ],
       cons: [
-        "Higher price per bottle than drugstore brands",
-        "Sold mainly through the official site",
+        "Only sold on the official website",
+        "Marketing leans on “Neuron Starvation,” a brand term rather than a recognized medical one",
+        "Works gradually — give it several weeks of consistent use",
       ],
       ctaLabel: "Visit Official Website",
-      ctaNote: "Multi-month bundles and money-back guarantee available",
-      link: "#",
+      ctaNote: "6-bottle bundle at $49/bottle · Free US shipping · 60-day guarantee",
+      link: "https://trymemovolt.com/welcome",
     },
     {
       rank: 2,
       name: "NooCube",
       brand: "by Wolfson Brands",
-      score: 7.3,
+      score: 3.6,
       bottomLine:
         "A solid runner-up with a transparent label and a sensible, well-known ingredient lineup. It loses ground to our top pick because several of its inclusions sit at lighter amounts than the research typically uses, so the formula is spread a little thin across its goals.",
       pros: ["Transparent label with disclosed doses", "Stimulant-free, well-tolerated lineup"],
@@ -63,7 +65,7 @@ export const bestBrain: RankingData = {
       rank: 3,
       name: "Prevagen",
       brand: "by Quincy Bioscience",
-      score: 5.4,
+      score: 2.7,
       bottomLine:
         "Easily the most advertised name in the category, and the most legally contested. The FTC and the New York Attorney General sued over its memory claims in 2017, and a class action over the same claims settled in 2020. The formula itself rests largely on a single proprietary protein, with a much thinner evidence base than the advertising suggests.",
       pros: ["Widely available in pharmacies and retail", "Simple one-capsule routine"],
@@ -79,7 +81,7 @@ export const bestBrain: RankingData = {
       rank: 4,
       name: "Neuriva",
       brand: "by Reckitt",
-      score: 5.1,
+      score: 2.6,
       bottomLine:
         "A mainstream, easy-to-find option, but its marketing has already been reined in once. In a class action settlement, its maker agreed to drop “clinically proven” from labeling and marketing in favor of “clinically tested” — a meaningful difference, and a useful reminder of how loosely that language gets used in this aisle.",
       pros: ["Easy to find in retail", "Affordable per serving"],
@@ -94,7 +96,7 @@ export const bestBrain: RankingData = {
       rank: 5,
       name: "Focus Factor",
       brand: "by Factor Nutrition Labs",
-      score: 4.7,
+      score: 2.3,
       bottomLine:
         "Essentially a multivitamin wearing a nootropic label. There's nothing harmful here, but the brain-specific ingredients sit inside a proprietary blend, so there's no way to tell how much of anything you're getting — which is precisely the problem this ranking was built to expose.",
       pros: ["Inexpensive and widely stocked", "Doubles as a basic multivitamin"],

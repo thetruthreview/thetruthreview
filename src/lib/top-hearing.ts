@@ -28,7 +28,7 @@ export const topHearing: RankingData = {
       rank: 1,
       name: "ZenCortex",
       brand: "by ZenCortex",
-      score: 8.7,
+      score: 4.4,
       winner: true,
       bottomLine:
         "ZenCortex came out on top for one simple reason: it tells you exactly what's in it. The full ingredient list is printed with individual doses — no proprietary blend hiding the amounts — and the formula leans on well-researched botanicals and antioxidants rather than filler. Combined with a long refund window, it's the option that gives you the most information up front and the least risk if it doesn't work for you.",
@@ -47,7 +47,7 @@ export const topHearing: RankingData = {
       rank: 2,
       name: "Quietum Plus",
       brand: "by Quietum",
-      score: 7.1,
+      score: 3.6,
       bottomLine:
         "A long-running and heavily marketed formula with a broad herbal lineup. It scores well on reputation and refund policy, but the label leans on a wide ingredient list where several inclusions sit at modest amounts, which makes it harder to judge what's doing the work.",
       pros: ["Established brand with a long track record", "Generous refund window"],
@@ -59,7 +59,7 @@ export const topHearing: RankingData = {
       rank: 3,
       name: "Cortexi",
       brand: "by Cortexi",
-      score: 6.4,
+      score: 3.2,
       bottomLine:
         "A liquid formula marketed for hearing clarity and focus. Some genuinely useful ingredients appear on the label, but the blend spreads itself across a lot of goals at once, and the per-serving amounts are lighter than what most research uses.",
       pros: ["Liquid format absorbs easily", "Includes recognized antioxidant ingredients"],
@@ -71,7 +71,7 @@ export const topHearing: RankingData = {
       rank: 4,
       name: "SonoVive",
       brand: "by SonoVive",
-      score: 5.8,
+      score: 2.9,
       bottomLine:
         "Positioned at the overlap of hearing and cognitive support, SonoVive relies largely on nootropic-style ingredients. That makes it a reasonable pick if mental clarity is your main concern, but it's a weaker match for someone whose priority is the ringing itself.",
       pros: ["Reasonable choice if focus is the main goal"],
@@ -83,7 +83,7 @@ export const topHearing: RankingData = {
       rank: 5,
       name: "Tinnitus 911",
       brand: "by PhytAge Labs",
-      score: 5.2,
+      score: 2.6,
       bottomLine:
         "The name promises a lot, and that's part of the problem. The formula is built mostly around common vitamins and a handful of herbs, and the marketing sets expectations that the label doesn't support.",
       pros: ["Inexpensive per bottle"],
