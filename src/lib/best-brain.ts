@@ -44,7 +44,10 @@ export const bestBrain: RankingData = {
         "Stimulant-free — no jitters, no afternoon crash",
         "60-Day 100% Money Back Guarantee",
       ],
-      cons: ["Only available on the official website", "Best results take several weeks of use"],
+      cons: [
+        "Sold only on the official website — the company notes supplies are limited",
+        "Works gradually — give it a few weeks of consistent use",
+      ],
       ctaNote: "🔒 6 Bottles at $49 each · Free US Shipping · 3 Free Bonus Guides",
       link: "https://mwebtracepoint.com/13563/1570/14/?",
     },
