@@ -45,8 +45,8 @@ export const bestBrain: RankingData = {
         "60-Day 100% Money Back Guarantee",
       ],
       cons: [
-        "Sold only on the official website — the company notes supplies are limited",
-        "Works gradually — give it a few weeks of consistent use",
+        "Only available on the official website",
+        "High demand means stock is often limited",
       ],
       ctaNote: "🔒 6 Bottles at $49 each · Free US Shipping · 3 Free Bonus Guides",
       link: "https://mwebtracepoint.com/13563/1570/14/?",
