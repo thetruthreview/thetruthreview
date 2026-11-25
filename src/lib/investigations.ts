@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/sodapeak",
+    title: "SodaPeak Review: Ingredients, Price & Where to Buy",
+    category: "Men's Health",
+    summary:
+      "A made-in-USA daily gummy with Tongkat Ali, Maca and Ashwagandha. We go through the seven disclosed doses, how to take it, the official prices and the 60-day guarantee.",
+    image: "/sodapeak/images/sodapeak-6-bottles.png",
+    imageAlt: "SodaPeak male wellness gummy bottles",
+  },
+  {
     href: "/breathizen",
     title: "BreathiZen Review: Ingredients, Price & Where to Buy",
     category: "Respiratory Health",
