@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbSchema, pageMetadata, webPageSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
+const METHODOLOGY_DESCRIPTION =
+  "How The Truth Review investigates dietary supplements — our 10-section framework, evidence standards, and editorial commitments.";
+
+export const metadata: Metadata = pageMetadata({
   title: "Our Review Methodology",
-  description:
-    "How The Truth Review investigates dietary supplements — our 10-section framework, evidence standards, and editorial commitments.",
-};
+  description: METHODOLOGY_DESCRIPTION,
+  path: "/methodology",
+});
 
 const sections = [
   { number: "01", title: "Introduction", desc: "What the product is, who makes it, and why we're investigating it." },
@@ -22,6 +27,12 @@ const sections = [
 export default function MethodologyPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
+      <JsonLd
+        graph={[
+          webPageSchema({ path: "/methodology", name: "Our Review Methodology", description: METHODOLOGY_DESCRIPTION }),
+          breadcrumbSchema([["Methodology", "/methodology"]]),
+        ]}
+      />
       <div className="mb-8">
         <span className="text-[10px] font-bold tracking-widest uppercase text-[var(--brand-gold)]">
           Editorial Policy

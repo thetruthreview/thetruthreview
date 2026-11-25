@@ -6,6 +6,9 @@ import { VerdictBadge } from "@/components/verdict-badge";
 import { RatingStars } from "@/components/rating-stars";
 import { categories, getCategory } from "@/lib/categories";
 import { getReviewsByCategory } from "@/lib/reviews";
+import { JsonLd } from "@/components/json-ld";
+import { absoluteUrl, breadcrumbSchema, pageMetadata, plainText, webPageSchema } from "@/lib/seo";
+import { reviewPath } from "@/lib/seo-content";
 
 const serif = { fontFamily: "var(--font-playfair), Georgia, serif" };
 
@@ -21,7 +24,14 @@ export async function generateMetadata({
   const { category } = await params;
   const cat = getCategory(category);
   if (!cat) return {};
-  return { title: `${cat.label} Reviews`, description: cat.description };
+  const hasReviews = getReviewsByCategory(category).length > 0;
+  return pageMetadata({
+    title: `${cat.label} Supplement Reviews`,
+    description: `Independent ${cat.label.toLowerCase()} supplement reviews. ${cat.description}`,
+    path: `/reviews/${cat.slug}`,
+    // Empty categories are thin pages: keep them out of Google until they have reviews.
+    noindex: !hasReviews,
+  });
 }
 
 export default async function CategoryPage({
@@ -33,9 +43,29 @@ export default async function CategoryPage({
   const cat = getCategory(category);
   if (!cat) notFound();
   const list = getReviewsByCategory(category);
+  const path = `/reviews/${cat.slug}`;
 
   return (
     <Container className="py-10">
+      <JsonLd
+        graph={[
+          webPageSchema({ type: "CollectionPage", path, name: `${cat.label} Supplement Reviews`, description: cat.description }),
+          breadcrumbSchema([["Reviews", "/reviews"], [cat.label, path]]),
+          ...(list.length
+            ? [{
+                "@type": "ItemList",
+                name: `${cat.label} reviews`,
+                itemListElement: list.map((r, i) => ({
+                  "@type": "ListItem",
+                  position: i + 1,
+                  name: r.productName,
+                  url: absoluteUrl(reviewPath(r)),
+                  description: plainText(r.summary),
+                })),
+              }]
+            : []),
+        ]}
+      />
       <nav className="text-xs text-muted-foreground mb-4">
         <Link href="/reviews" className="hover:text-[var(--brand-gold)]">Reviews</Link>
         <span className="mx-2">/</span>

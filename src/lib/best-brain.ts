@@ -6,6 +6,8 @@ export const bestBrain: RankingData = {
   title: "Prevagen Review (2026): Is It Worth the Hype or Should You Avoid It?",
   subtitle:
     "An independent comparison of the Top 5 memory and brain supplements on the market today — revealed after analyzing ingredient dosing, published research, and each brand's advertising record.",
+  metaDescription:
+    "Prevagen review 2026: what its studies and the FTC case really show, and how it compares with top memory supplements on dosing and evidence.",
   author: "The Truth Review Editorial Team",
   updated: "Updated November 2026",
   readTime: "6 min read",

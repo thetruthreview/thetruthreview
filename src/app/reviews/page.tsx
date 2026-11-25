@@ -3,18 +3,41 @@ import Link from "next/link";
 import { Container } from "@/components/container";
 import { categories } from "@/lib/categories";
 import { getReviewsByCategory } from "@/lib/reviews";
+import { JsonLd } from "@/components/json-ld";
+import { absoluteUrl, breadcrumbSchema, pageMetadata, webPageSchema } from "@/lib/seo";
 
 const serif = { fontFamily: "var(--font-playfair), Georgia, serif" };
 
-export const metadata: Metadata = {
-  title: "Supplement Reviews",
-  description:
-    "Independent, science-backed reviews of dietary supplements, organized by health category.",
-};
+const REVIEWS_DESCRIPTION =
+  "Independent, science-backed reviews of dietary supplements, organized by health category: nerve, hearing, vision, brain, blood sugar, sleep and more.";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Supplement Reviews by Category",
+  description: REVIEWS_DESCRIPTION,
+  path: "/reviews",
+});
 
 export default function ReviewsIndexPage() {
   return (
     <Container className="py-10">
+      <JsonLd
+        graph={[
+          webPageSchema({ type: "CollectionPage", path: "/reviews", name: "Supplement Reviews", description: REVIEWS_DESCRIPTION }),
+          breadcrumbSchema([["Reviews", "/reviews"]]),
+          {
+            "@type": "ItemList",
+            name: "Supplement review categories",
+            itemListElement: categories
+              .filter((c) => getReviewsByCategory(c.slug).length > 0)
+              .map((c, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                name: c.label,
+                url: absoluteUrl(`/reviews/${c.slug}`),
+              })),
+          },
+        ]}
+      />
       <div className="mb-8 border-b pb-6">
         <span className="text-[10px] font-bold tracking-widest uppercase text-[var(--brand-gold)]">
           Independent Investigations

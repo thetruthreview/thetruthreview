@@ -1,15 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbSchema, organizationSchema, pageMetadata, webPageSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
+const ABOUT_DESCRIPTION =
+  "The Truth Review is an independent consumer publication dedicated to evidence-based investigations of dietary supplements and nutraceuticals.";
+
+export const metadata: Metadata = pageMetadata({
   title: "About Us",
-  description:
-    "The Truth Review is an independent consumer publication dedicated to evidence-based investigations of dietary supplements and nutraceuticals.",
-};
+  description: ABOUT_DESCRIPTION,
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
+      <JsonLd
+        graph={[
+          { ...webPageSchema({ type: "AboutPage", path: "/about", name: "About The Truth Review", description: ABOUT_DESCRIPTION }), about: { "@id": organizationSchema()["@id"] } },
+          organizationSchema(),
+          breadcrumbSchema([["About Us", "/about"]]),
+        ]}
+      />
       <div className="mb-8">
         <span className="text-[10px] font-bold tracking-widest uppercase text-[var(--brand-gold)]">
           About This Publication

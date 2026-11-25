@@ -1,4 +1,7 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
+import { organizationSchema, pageMetadata, webPageSchema, websiteSchema } from "@/lib/seo";
 
 const serif = { fontFamily: "var(--font-playfair), Georgia, serif" };
 
@@ -8,9 +11,27 @@ const pillars = [
   { title: "Honest verdict", text: "A clear conclusion, including when the evidence simply isn't there." },
 ];
 
+const HOME_TITLE = "The Truth Review: Independent Supplement Reviews & Investigations";
+const HOME_DESCRIPTION =
+  "Independent dietary supplement reviews: we check every ingredient, dosage and clinical study behind the sales page, so you know the truth before you buy.";
+
+export const metadata: Metadata = pageMetadata({
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
+  path: "/",
+  absoluteTitle: true,
+});
+
 export default function HomePage() {
   return (
     <>
+      <JsonLd
+        graph={[
+          websiteSchema(),
+          organizationSchema(),
+          webPageSchema({ path: "/", name: HOME_TITLE, description: HOME_DESCRIPTION }),
+        ]}
+      />
       <section className="bg-[var(--brand-navy)] text-white pb-28 pt-16 px-4">
         <div className="max-w-5xl mx-auto">
           <span className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--brand-gold)]">

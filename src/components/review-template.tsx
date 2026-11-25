@@ -22,6 +22,8 @@ export interface ReviewData {
     transparency: number;
   };
   summary: string;
+  /** Search-result description (~150 chars). Falls back to summary. */
+  metaDescription?: string;
   verdictHeadline?: string;
   sections: {
     introduction: string;

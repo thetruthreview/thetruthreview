@@ -22,6 +22,8 @@ export interface RankingData {
   badge: string;
   title: string;
   subtitle: string;
+  /** Search-result description (~150 chars). Falls back to subtitle. */
+  metaDescription?: string;
   author: string;
   updated: string;
   readTime: string;

@@ -7,3 +7,20 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## SEO rules (mandatory for every page)
+
+The goal is organic Google traffic, so **every page must ship with complete SEO**. Site domain: `https://www.thetruthreview.com` (constant `SITE_URL` in `src/lib/seo.ts`).
+
+**Next.js pages (`src/app/**/page.tsx`)**
+- Build metadata with `pageMetadata()` from `src/lib/seo.ts` (or `reviewMetadata()` / `rankingMetadata()` from `src/lib/seo-content.ts`). This sets title, description, canonical, Open Graph, Twitter card and robots. Never export a bare `{ title, description }`.
+- Render structured data with `<JsonLd graph={[...]} />` (`src/components/json-ld.tsx`): at least a `WebPage` (or the right subtype) and a `BreadcrumbList`; reviews add `Article` + `Product` with `Review`; rankings add `Article` + `ItemList`.
+- Add the page to `src/app/sitemap.ts`.
+- Pages with no real content (e.g. empty categories) get `noindex: true` and stay out of the sitemap.
+
+**Static HTML landing pages (`public/<slug>/index.html`, routed in `next.config.ts`)**
+- Fill everything in the HTML itself: `<title>`, meta description, robots, canonical (`https://www.thetruthreview.com/<slug>`), Open Graph (incl. 1200×630 `og:image`), Twitter tags, article dates/author, and a JSON-LD `@graph` with WebSite, Organization, Article, Product, BreadcrumbList and FAQPage when there is a FAQ.
+- No placeholders left (`SEU-DOMINIO`, `{{...}}`); asset paths are absolute (`/<slug>/images/...`).
+- Add the page to `src/app/sitemap.ts`.
+
+**Content accuracy:** prices, packages, bonuses and guarantee terms on landing pages must match the product's official site exactly; never list a package that does not exist there.

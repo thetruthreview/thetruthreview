@@ -6,6 +6,8 @@ export const topHearing: RankingData = {
   title: "Hearing Supplements (2026): Which Ones Are Actually Worth It?",
   subtitle:
     "An independent comparison of the top hearing and tinnitus support supplements on the market today — ranked after analyzing label transparency, ingredient dosing, and the published evidence behind each formula.",
+  metaDescription:
+    "Hearing and tinnitus supplements ranked for 2026: we compared ZenCortex, Quietum Plus, Cortexi and more on label transparency, dosing and evidence.",
   author: "The Truth Review Editorial Team",
   updated: "Updated November 2026",
   readTime: "6 min read",
