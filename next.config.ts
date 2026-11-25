@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   // Standalone landing pages served from /public as static HTML.
   async rewrites() {
-    return [{ source: "/BreathiZen", destination: "/BreathiZen/index.html" }];
+    return [{ source: "/breathizen", destination: "/breathizen/index.html" }];
   },
   turbopack: {
     rules: {

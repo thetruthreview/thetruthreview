@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   description:
     "Independent investigations into dietary supplements and nutraceuticals. Science-backed analysis, ingredient deep dives, and honest consumer verdicts.",
-  metadataBase: new URL("https://thetruthrview.com"),
+  metadataBase: new URL("https://www.thetruthreview.com"),
   openGraph: {
     type: "website",
     siteName: "The Truth Review",
