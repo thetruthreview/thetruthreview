@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/sodatide",
+    title: "SodaTide Review: Ingredients, Price & Where to Buy",
+    category: "Digestive Health",
+    summary:
+      "A made-in-USA synbiotic capsule with chicory root inulin, potato resistant starch and three probiotic strains, Akkermansia muciniphila among them. We go through the label, how to take it, the official prices and the 60-day guarantee.",
+    image: "/sodatide/images/sodatide-6-bottles.webp",
+    imageAlt: "SodaTide metabolic and digestive support capsule bottles",
+  },
+  {
     href: "/sodapeak",
     title: "SodaPeak Review: Ingredients, Price & Where to Buy",
     category: "Men's Health",
