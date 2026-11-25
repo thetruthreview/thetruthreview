@@ -1,6 +1,6 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/json-ld";
+import { investigations } from "@/lib/investigations";
 import { organizationSchema, pageMetadata, webPageSchema, websiteSchema } from "@/lib/seo";
 
 const serif = { fontFamily: "var(--font-playfair), Georgia, serif" };
@@ -21,6 +21,8 @@ export const metadata: Metadata = pageMetadata({
   path: "/",
   absoluteTitle: true,
 });
+
+const latest = investigations[0];
 
 export default function HomePage() {
   return (
@@ -64,14 +66,15 @@ export default function HomePage() {
           Latest Investigation
         </h2>
         <p className="text-muted-foreground mb-5 text-lg">
-          Nerve Alive Review (2025): we break down the ingredients, the evidence and whether it is worth trying.
+          {latest.title}: {latest.summary}
         </p>
-        <Link
-          href="/reviews/nerve/nerve-alive"
+        {/* Plain <a>: landing pages like /breathizen are static HTML outside the Next.js router. */}
+        <a
+          href={latest.href}
           className="inline-block border border-[var(--brand-navy)] text-[var(--brand-navy)] px-5 py-2.5 rounded text-sm font-semibold hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
         >
-          Read the Nerve Alive Review
-        </Link>
+          Read the Review
+        </a>
       </section>
     </>
   );

@@ -1,9 +1,5 @@
 import type { MetadataRoute } from "next";
-import { categories } from "@/lib/categories";
-import { getReviewsByCategory, reviews } from "@/lib/reviews";
 import { absoluteUrl, toIsoDate } from "@/lib/seo";
-import { reviewPath } from "@/lib/seo-content";
-import { topHearing } from "@/lib/top-hearing";
 import { bestBrain } from "@/lib/best-brain";
 
 /**
@@ -21,12 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     page("/", 1, "weekly"),
     page("/reviews", 0.8, "weekly"),
-    // Only categories that already have reviews (empty ones are noindex).
-    ...categories
-      .filter((c) => getReviewsByCategory(c.slug).length > 0)
-      .map((c) => page(`/reviews/${c.slug}`, 0.7, "weekly")),
-    ...reviews.map((r) => page(reviewPath(r), 0.9, "monthly", toIsoDate(r.updatedAt ?? r.publishedAt))),
-    page("/tophearing", 0.9, "monthly", toIsoDate(topHearing.updated)),
     page("/best-brain-supplement", 0.9, "monthly", toIsoDate(bestBrain.updated)),
     // Static landing pages served from /public.
     page("/breathizen", 0.9, "monthly", "2026-11-25"),

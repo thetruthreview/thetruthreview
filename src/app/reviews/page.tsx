@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Container } from "@/components/container";
-import { categories } from "@/lib/categories";
-import { getReviewsByCategory } from "@/lib/reviews";
 import { JsonLd } from "@/components/json-ld";
 import { absoluteUrl, breadcrumbSchema, pageMetadata, webPageSchema } from "@/lib/seo";
+import { investigations } from "@/lib/investigations";
 
 const serif = { fontFamily: "var(--font-playfair), Georgia, serif" };
 
 const REVIEWS_DESCRIPTION =
-  "Independent, science-backed reviews of dietary supplements, organized by health category: nerve, hearing, vision, brain, blood sugar, sleep and more.";
+  "Independent dietary supplement reviews from The Truth Review: ingredients, label, evidence, price and guarantee, analyzed before you buy.";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Supplement Reviews by Category",
+  title: "Supplement Reviews",
   description: REVIEWS_DESCRIPTION,
   path: "/reviews",
 });
@@ -26,18 +24,17 @@ export default function ReviewsIndexPage() {
           breadcrumbSchema([["Reviews", "/reviews"]]),
           {
             "@type": "ItemList",
-            name: "Supplement review categories",
-            itemListElement: categories
-              .filter((c) => getReviewsByCategory(c.slug).length > 0)
-              .map((c, i) => ({
-                "@type": "ListItem",
-                position: i + 1,
-                name: c.label,
-                url: absoluteUrl(`/reviews/${c.slug}`),
-              })),
+            name: "Supplement reviews",
+            itemListElement: investigations.map((inv, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              name: inv.title,
+              url: absoluteUrl(inv.href),
+            })),
           },
         ]}
       />
+
       <div className="mb-8 border-b pb-6">
         <span className="text-[10px] font-bold tracking-widest uppercase text-[var(--brand-gold)]">
           Independent Investigations
@@ -46,30 +43,35 @@ export default function ReviewsIndexPage() {
           Supplement Reviews
         </h1>
         <p className="text-muted-foreground max-w-xl">
-          Browse our investigations by health category. Each review follows the same
-          10-section methodology.
+          Our latest supplement investigations: what is in the formula, what the label says and
+          what you should know before you order.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {categories.map((cat) => {
-          const count = getReviewsByCategory(cat.slug).length;
-          return (
-            <Link
-              key={cat.slug}
-              href={`/reviews/${cat.slug}`}
-              className="group border rounded-lg p-5 hover:border-[var(--brand-gold)]/60 hover:shadow-md transition-all bg-white"
-            >
-              <div className="flex items-center justify-between mb-2">
-                <h2 className="font-bold text-[var(--brand-navy)] group-hover:text-[var(--brand-gold)] transition-colors" style={serif}>
-                  {cat.label}
-                </h2>
-                <span className="text-xs text-muted-foreground">{count}</span>
-              </div>
-              <p className="text-xs text-muted-foreground leading-relaxed">{cat.description}</p>
-            </Link>
-          );
-        })}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {investigations.map((inv) => (
+          // Plain <a>: /breathizen is a static HTML page outside the Next.js router.
+          <a
+            key={inv.href}
+            href={inv.href}
+            className="group border rounded-lg overflow-hidden hover:border-[var(--brand-gold)]/60 hover:shadow-md transition-all bg-white flex flex-col"
+          >
+            <div className="bg-[var(--brand-navy)]/5 flex items-center justify-center p-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={inv.image} alt={inv.imageAlt} width={220} height={220} loading="lazy" className="h-44 w-auto object-contain" />
+            </div>
+            <div className="p-5 flex-1 flex flex-col">
+              <span className="text-[10px] font-bold tracking-widest uppercase text-[var(--brand-gold)] mb-1">
+                {inv.category}
+              </span>
+              <h2 className="font-bold text-lg text-[var(--brand-navy)] group-hover:text-[var(--brand-gold)] transition-colors mb-2 leading-snug" style={serif}>
+                {inv.title}
+              </h2>
+              <p className="text-sm text-muted-foreground mb-4 flex-1">{inv.summary}</p>
+              <span className="text-sm font-semibold text-[var(--brand-navy)]">Read the review →</span>
+            </div>
+          </a>
+        ))}
       </div>
     </Container>
   );

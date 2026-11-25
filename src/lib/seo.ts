@@ -33,7 +33,7 @@ export function toIsoDate(text?: string): string | undefined {
 interface PageSeo {
   title: string;
   description: string;
-  /** Site path, e.g. "/reviews/nerve". Used for the canonical URL and og:url. */
+  /** Site path, e.g. "/about". Used for the canonical URL and og:url. */
   path: string;
   /** Site path or absolute URL of the share image. */
   image?: string;
