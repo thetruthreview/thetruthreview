@@ -24,3 +24,8 @@ The goal is organic Google traffic, so **every page must ship with complete SEO*
 - Add the page to `src/app/sitemap.ts`.
 
 **Content accuracy:** prices, packages, bonuses and guarantee terms on landing pages must match the product's official site exactly; never list a package that does not exist there.
+
+## Content rules
+
+- **FAQs:** questions follow a logical order (what it is → ingredients → how to use → how long → safety/side effects → interactions → legitimacy → price → subscription → where to buy → guarantee). No two questions may cover the same topic, and answers must not repeat each other's information. Keep the visible FAQ and the FAQPage JSON-LD identical.
+- **Pros & Cons:** cons for the products we recommend (review subjects, ranking winners, landing-page products) must be mild and non-damaging, e.g. "Only sold on the official website", "Best results with consistent daily use". Never use cons that undermine the product.
