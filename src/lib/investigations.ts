@@ -19,8 +19,8 @@ export const investigations: Investigation[] = [
     title: "SodaPeak Review: Ingredients, Price & Where to Buy",
     category: "Men's Health",
     summary:
-      "A made-in-USA daily gummy with Tongkat Ali, Maca and Ashwagandha. We go through the seven disclosed doses, how to take it, the official prices and the 60-day guarantee.",
-    image: "/sodapeak/images/sodapeak-6-bottles.png",
+      "A made-in-USA daily gummy built on a 9-botanical blend with Muira Puama, Maca, Catuaba and Ashwagandha. We go through the label, how to take it, the official prices and the 60-day guarantee.",
+    image: "/sodapeak/images/sodapeak-6-bottles.webp",
     imageAlt: "SodaPeak male wellness gummy bottles",
   },
   {
