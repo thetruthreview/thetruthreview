@@ -30,3 +30,7 @@ The goal is organic Google traffic, so **every page must ship with complete SEO*
 
 - **FAQs:** questions follow a logical order (what it is → ingredients → how to use → how long → safety/side effects → interactions → legitimacy → price → subscription → where to buy → guarantee). No two questions may cover the same topic, and answers must not repeat each other's information. Keep the visible FAQ and the FAQPage JSON-LD identical.
 - **Pros & Cons on landing pages:** any cons on a product landing page (e.g. /breathizen) must be mild and non-damaging, e.g. "Only sold on the official website", "Best results with consistent daily use". Never use cons that undermine the product.
+
+## Google Search Console
+
+The site is verified in Google Search Console (URL-prefix property `https://www.thetruthreview.com`) with the file `public/google963148c2f2c81f52.html`. **Never delete or edit that file**, or the property loses verification. The sitemap (`/sitemap.xml`) is submitted there; after publishing a new page, give the owner its URL so they can use "Request indexing".
