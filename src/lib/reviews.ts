@@ -189,8 +189,8 @@ export const reviews: Review[] = [
         "Free bonus guides with multi-bottle orders",
       ],
       cons: [
-        "The marketing oversells it as a neuropathy 'cure' — treat it as calming support, not a miracle",
-        "Best results need a few weeks of consistent nightly use, not an overnight fix",
+        "Designed as daily nerve-comfort support, not a replacement for prescribed treatment",
+        "Best results come with a few weeks of consistent nightly use",
         "Only available on the official website",
       ],
       finalVerdict:
