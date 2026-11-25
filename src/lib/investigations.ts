@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/vapocept",
+    title: "VapoCept Review: Ingredients, Price & Where to Buy",
+    category: "Brain & Memory",
+    summary:
+      "A made-in-USA once-daily capsule with ginkgo biloba, turmeric, lutein and green tea for focus and mental clarity. We go through the label, how to take it, the official prices and the 60-day guarantee.",
+    image: "/vapocept/images/vapocept-6-bottles.webp",
+    imageAlt: "VapoCept focus and mental clarity capsule bottles",
+  },
+  {
     href: "/sodatide",
     title: "SodaTide Review: Ingredients, Price & Where to Buy",
     category: "Digestive Health",

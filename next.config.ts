@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
       { source: "/breathizen", destination: "/breathizen/index.html" },
       { source: "/sodatide", destination: "/sodatide/index.html" },
       { source: "/sodapeak", destination: "/sodapeak/index.html" },
+      { source: "/vapocept", destination: "/vapocept/index.html" },
     ];
   },
   turbopack: {
