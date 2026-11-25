@@ -298,17 +298,8 @@ section.ice{background:var(--ice)}
 .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
 @media(max-width:820px){.split{grid-template-columns:1fr}.split img{max-width:300px;margin:0 auto}}
 
-.facts .dv{display:block;font-weight:400;font-size:.82rem;opacity:.72}
-.facts .sub-row{padding-left:22px;font-weight:400}
+.label-cap{max-width:1000px;margin:14px auto 0;font-size:.9rem;line-height:1.6;opacity:.82;text-align:center}
 .label-img{max-width:1000px;width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.35);margin:26px auto}
-.facts{max-width:620px;width:100%;margin:26px auto;background:#fff;color:var(--ink);border:3px solid var(--navy);border-radius:10px;overflow:hidden}
-.facts h3{background:var(--navy);color:#fff;margin:0;padding:12px 18px;font-size:1.25rem}
-.facts table{width:100%;border-collapse:collapse;font-size:.97rem}
-.facts th,.facts td{padding:11px 18px;border-bottom:1px solid var(--line);text-align:left}
-.facts thead th{background:var(--ice);font-size:.82rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
-.facts td.amt{text-align:right;font-weight:800;white-space:nowrap}
-.facts tr:last-child td{border-bottom:0}
-.facts .note{padding:12px 18px;font-size:.85rem;color:var(--muted);background:var(--ice);margin:0}
 
 .ing{display:grid;grid-template-columns:62px 1fr;gap:18px;background:#fff;color:var(--ink);border-radius:var(--r);padding:22px;margin-bottom:14px;box-shadow:0 6px 20px rgba(30,16,18,.15)}
 .ing-ico{width:62px;height:62px;border-radius:16px;background:var(--ice);display:flex;align-items:center;justify-content:center;font-size:1.9rem}
@@ -407,7 +398,6 @@ footer a{color:#F0DCC8}
  header .btn-sm{white-space:nowrap}
  .btn-lg{font-size:1rem;padding:17px 18px}
  .hero h1{font-size:1.85rem}
- .facts th,.facts td{padding:10px 12px}
 }
 </style>
 </head>
@@ -498,31 +488,7 @@ footer a{color:#F0DCC8}
       <p class="sub">Straight from the bottle label — here is exactly what a SodaPeak gummy contains.</p>
     </div>
     <img class="label-img" src="/sodapeak/images/sodapeak-label.webp" alt="SodaPeak bottle label Supplement Facts: serving size 1 gummy, 30 per container, 10 calories, 3 g total sugar, 4 mg sodium, and an 82 mg proprietary blend of Muira Puama, Maca, Catuaba, green tea, caffeine 5 mg, Ashwagandha, L-Arginine, Tribulus terrestris and horny goat weed extracts" width="1100" height="415" loading="lazy" decoding="async">
-
-    <div class="facts">
-      <h3>Supplement Facts</h3>
-      <table>
-        <caption class="sr-only">SodaPeak Supplement Facts panel, amounts per serving</caption>
-        <thead><tr><th scope="col">Serving size: 1 gummy · 30 servings per bottle</th><th scope="col" class="amt">Amount</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Calories</th><td class="amt">10</td></tr>
-          <tr><th scope="row">Total Carbohydrate <span class="dv">(1% DV)</span></th><td class="amt">3 g</td></tr>
-          <tr><th scope="row">Total Sugar <span class="dv">(incl. 3 g added sugar, 6% DV)</span></th><td class="amt">3 g</td></tr>
-          <tr><th scope="row">Sodium <span class="dv">(&lt;1% DV)</span></th><td class="amt">4 mg</td></tr>
-          <tr><th scope="row">Proprietary Blend <span class="dv">≈ 567 mg of dry powders</span></th><td class="amt">82 mg</td></tr>
-          <tr><th scope="row" class="sub-row">Muira Puama extract</th><td class="amt">†</td></tr>
-          <tr><th scope="row" class="sub-row">Maca extract</th><td class="amt">†</td></tr>
-          <tr><th scope="row" class="sub-row">Catuaba extract</th><td class="amt">†</td></tr>
-          <tr><th scope="row" class="sub-row">Green tea extract</th><td class="amt">†</td></tr>
-          <tr><th scope="row" class="sub-row">Caffeine</th><td class="amt">5 mg</td></tr>
-          <tr><th scope="row" class="sub-row">Ashwagandha</th><td class="amt">†</td></tr>
-          <tr><th scope="row" class="sub-row">L-Arginine</th><td class="amt">†</td></tr>
-          <tr><th scope="row" class="sub-row">Tribulus terrestris</th><td class="amt">†</td></tr>
-          <tr><th scope="row" class="sub-row">Horny goat weed extract</th><td class="amt">†</td></tr>
-        </tbody>
-      </table>
-      <p class="note">† Daily Value not established. Other ingredients: corn syrup, cane sugar, water, apple pectin, sorbitol liquid, natural flavors, citric acid, sodium citrate dihydrate.</p>
-    </div>
+    <p class="label-cap">Per gummy: 10 calories, 3 g sugar, 4 mg sodium and an 82 mg proprietary blend — stated as equivalent to about 567 mg of dry powders — of Muira Puama, Maca, Catuaba, green tea (caffeine 5 mg), Ashwagandha, L-Arginine, Tribulus terrestris and horny goat weed. Other ingredients: corn syrup, cane sugar, water, apple pectin, sorbitol liquid, natural flavors, citric acid, sodium citrate dihydrate.</p>
 
     <div class="ing-grid">
     <div class="ing">
