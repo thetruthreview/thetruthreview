@@ -327,7 +327,8 @@ section.blue .ing h3{color:var(--ink)}
 .steps div{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px}
 .steps b{display:inline-flex;width:44px;height:44px;border-radius:50%;background:var(--blue2);color:#fff;align-items:center;justify-content:center;font:900 1.2rem Nunito,sans-serif;margin-bottom:10px}
 .steps p{margin:0;color:var(--muted);font-size:.95rem}
-@media(max-width:700px){.steps{grid-template-columns:1fr}}
+.steps img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin:0 0 16px}
+@media(max-width:700px){.steps{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto}}
 
 .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:center;max-width:1000px;margin:30px auto 0}
 .plan{background:#fff;border:3px solid var(--sky);border-radius:20px;text-align:center;overflow:hidden;color:var(--ink)}
@@ -668,10 +669,11 @@ footer a{color:#D5EEF9}
   <div class="wrap narrow center">
     <h2>As Easy as 1-2-3</h2>
     <div class="steps">
-      <div><b>1</b><h3>Shake</h3><p>Shake the bottle well before each use.</p></div>
-      <div><b>2</b><h3>Spray</h3><p>4 pumps (0.60 mL) directly into your mouth or onto your tongue.</p></div>
-      <div><b>3</b><h3>Once Daily</h3><p>Make it part of your morning routine for consistent support.</p></div>
+      <div><img src="/breathizen/images/step-1-shake.webp" alt="Woman holding a BreathiZen spray bottle, ready to shake it before use" width="640" height="800" loading="lazy" decoding="async"><b>1</b><h3>Shake</h3><p>Shake the bottle well before each use.</p></div>
+      <div><img src="/breathizen/images/step-2-spray.webp" alt="Woman spraying BreathiZen herbal spray directly into her mouth" width="640" height="800" loading="lazy" decoding="async"><b>2</b><h3>Spray</h3><p>4 pumps (0.60 mL) directly into your mouth or onto your tongue.</p></div>
+      <div><img src="/breathizen/images/step-3-daily.webp" alt="Woman taking a deep breath by an open window with BreathiZen on the table, as part of her morning routine" width="640" height="800" loading="lazy" decoding="async"><b>3</b><h3>Once Daily</h3><p>Make it part of your morning routine for consistent support.</p></div>
     </div>
+    <p class="micro" style="margin-top:14px">Illustrative images. Individual results may vary.</p>
   </div>
 </section>
 
