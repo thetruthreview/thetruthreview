@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/nervealive",
+    title: "Nerve Alive Review: Ingredients, Price & Where to Buy",
+    category: "Nerve Health",
+    summary:
+      "A daily nerve support capsule with passion flower, marshmallow root, corydalis, prickly pear and California poppy — every active printed with its own amount, no proprietary blend. We go through the label, the prices, the bonuses and the 60-day guarantee.",
+    image: "/nervealive/images/nervealive-6-bottles.webp",
+    imageAlt: "Nerve Alive nerve support capsule bottles",
+  },
+  {
     href: "/sugardefender",
     title: "Sugar Defender Review: Ingredients, Price & Where to Buy",
     category: "Blood Sugar Support",

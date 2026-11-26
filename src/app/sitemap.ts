@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/reviews", 0.8, "weekly"),
     page("/best-brain-supplement", 0.9, "monthly"),
     // Static landing pages served from /public.
+    page("/nervealive", 0.9, "monthly"),
     page("/sugardefender", 0.9, "monthly"),
     page("/dentavive", 0.9, "monthly"),
     page("/gelagen", 0.9, "monthly"),
