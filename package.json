@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/page-dates.mjs",
     "build": "next build",
+    "dates": "node scripts/page-dates.mjs",
     "start": "next start",
     "lint": "eslint"
   },
