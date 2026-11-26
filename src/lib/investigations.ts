@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/slimtide",
+    title: "SlimTide Review: Ingredients, Price & Where to Buy",
+    category: "Metabolism & Digestion",
+    summary:
+      "A made-in-USA once-daily synbiotic capsule with chicory root inulin, potato resistant starch and three probiotic strains, including Akkermansia muciniphila. We go through the label, how to take it, the official prices, the bonuses and the 60-day guarantee.",
+    image: "/slimtide/images/slimtide-6-bottles.webp",
+    imageAlt: "SlimTide metabolic and digestive support capsule bottles",
+  },
+  {
     href: "/memohoney",
     title: "MemoHoney Review: Ingredients, Price & Where to Buy",
     category: "Brain & Memory",
