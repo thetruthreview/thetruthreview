@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/gelagen",
+    title: "Gelagen Review: Ingredients, Price & Where to Buy",
+    category: "Hair, Skin & Nails",
+    summary:
+      "Made-in-USA daily beauty gummies with 5,000 mcg biotin, B vitamins and vitamins A, C and E for skin, hair and nails. We go through the label, how to take them, the official prices, the bonuses and the 60-day guarantee.",
+    image: "/gelagen/images/gelagen-6-bottles.webp",
+    imageAlt: "Gelagen skin, hair and nail gummy bottles",
+  },
+  {
     href: "/slimtide",
     title: "SlimTide Review: Ingredients, Price & Where to Buy",
     category: "Metabolism & Digestion",

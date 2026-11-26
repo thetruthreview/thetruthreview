@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       { source: "/breathizen", destination: "/breathizen/index.html" },
+      { source: "/gelagen", destination: "/gelagen/index.html" },
       { source: "/slimtide", destination: "/slimtide/index.html" },
       { source: "/memohoney", destination: "/memohoney/index.html" },
       { source: "/sodatide", destination: "/sodatide/index.html" },
