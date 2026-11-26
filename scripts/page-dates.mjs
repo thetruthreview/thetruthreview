@@ -40,6 +40,7 @@ const PAGES = {
   "/slimtide": ["public/slimtide/index.html"],
   "/gelagen": ["public/gelagen/index.html"],
   "/dentavive": ["public/dentavive/index.html"],
+  "/sugardefender": ["public/sugardefender/index.html"],
 };
 
 /** Date (YYYY-MM-DD) of the last commit touching this file, or null. */

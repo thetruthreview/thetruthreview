@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/sugardefender",
+    title: "Sugar Defender Review: Ingredients, Price & Where to Buy",
+    category: "Blood Sugar Support",
+    summary:
+      "A made-in-USA liquid drop with chromium and a 200 mg herbal blend of maca, gymnema, ginseng and African mango. We go through the label, how to take it, the official prices, the bonuses and the 60-day guarantee.",
+    image: "/sugardefender/images/sugardefender-6-bottles.webp",
+    imageAlt: "Sugar Defender blood sugar support drop bottles",
+  },
+  {
     href: "/dentavive",
     title: "DentaVive Review: Ingredients, Price & Where to Buy",
     category: "Oral Health",
