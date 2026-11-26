@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/memohoney",
+    title: "MemoHoney Review: Ingredients, Price & Where to Buy",
+    category: "Brain & Memory",
+    summary:
+      "A made-in-USA once-daily vegetable capsule with L-arginine, L-citrulline, niacin and beta-alanine for memory and focus. We go through the label, how to take it, the official prices, the bonuses and the 60-day guarantee.",
+    image: "/memohoney/images/memohoney-6-bottles.webp",
+    imageAlt: "MemoHoney advanced memory support capsule bottles",
+  },
+  {
     href: "/vapocept",
     title: "VapoCept Review: Ingredients, Price & Where to Buy",
     category: "Brain & Memory",
