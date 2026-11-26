@@ -54,14 +54,14 @@ export default function AboutPage() {
           We generate revenue through affiliate partnerships. When you purchase a product through
           a link on this site, we may earn a commission at no additional cost to you. This
           never influences our conclusions — we{" "}
-          <Link href="/affiliate-disclosure" className="underline text-[var(--brand-gold)]">
+          <Link href="/disclaimer" className="underline text-[var(--brand-gold)]">
             disclose all affiliate relationships
           </Link>{" "}
           clearly on every review page.
         </p>
         <p>
           If you have questions, corrections, or product suggestions, you can reach our editorial
-          team at <a href="mailto:editorial@thetruthrview.com" className="underline text-[var(--brand-gold)]">editorial@thetruthrview.com</a>.
+          team at <a href="mailto:editorial@thetruthreview.com" className="underline text-[var(--brand-gold)]">editorial@thetruthreview.com</a>.
         </p>
       </div>
 

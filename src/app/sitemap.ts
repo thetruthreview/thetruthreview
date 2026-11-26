@@ -25,5 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/breathizen", 0.9, "monthly", "2026-11-25"),
     page("/about", 0.4, "yearly"),
     page("/methodology", 0.5, "yearly"),
+    page("/contact", 0.4, "yearly"),
+    page("/disclaimer", 0.3, "yearly"),
+    page("/privacy", 0.3, "yearly"),
+    page("/terms", 0.3, "yearly"),
   ];
 }
