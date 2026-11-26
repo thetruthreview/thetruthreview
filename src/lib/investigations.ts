@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/dentavive",
+    title: "DentaVive Review: Ingredients, Price & Where to Buy",
+    category: "Oral Health",
+    summary:
+      "A once-daily chewable oral probiotic with five strains, including L. reuteri and S. salivarius K12, plus tricalcium phosphate for gums, breath and teeth. We go through the formula, how to take it, the official prices, the bonuses and the 60-day guarantee.",
+    image: "/dentavive/images/dentavive-hero.webp",
+    imageAlt: "DentaVive oral probiotic bottles",
+  },
+  {
     href: "/gelagen",
     title: "Gelagen Review: Ingredients, Price & Where to Buy",
     category: "Hair, Skin & Nails",
