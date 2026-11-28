@@ -5,8 +5,9 @@ export interface Investigation {
   /** The product on its own, for card and list labels. */
   name: string;
   /**
-   * The heading on the /reviews card. Deliberately NOT the page's own H1 or
-   * title: each one chases a keyword family that page is not already after.
+   * The heading on the /reviews card: the brand plus the question an organic
+   * visitor types. Deliberately NOT the page's own H1 or title, and every
+   * question is one the page it links to actually answers.
    */
   headline: string;
   title: string;
@@ -24,7 +25,7 @@ export const investigations: Investigation[] = [
   {
     href: "/vapolung",
     name: "VapoLung",
-    headline: "What's Inside VapoLung: All Five Botanicals, Milligram by Milligram",
+    headline: "VapoLung Review: Does the Five-Botanical Spray Really Work?",
     title: "VapoLung Review: Ingredients, Price & Where to Buy",
     category: "Respiratory Health",
     summary:
@@ -35,7 +36,7 @@ export const investigations: Investigation[] = [
   {
     href: "/honeyharmony",
     name: "HoneyHarmony",
-    headline: "How to Take HoneyHarmony: Dosage, Timing and a Full Day's Routine",
+    headline: "HoneyHarmony Review: Is It Worth It, and What Does a Bottle Cost?",
     title: "HoneyHarmony Review: Ingredients, Price & Where to Buy",
     category: "Blood Sugar Support",
     summary:
@@ -46,7 +47,7 @@ export const investigations: Investigation[] = [
   {
     href: "/klaronail",
     name: "KlaroNail",
-    headline: "KlaroNail's 5% Undecylenic Acid: The Active Behind the Spray",
+    headline: "KlaroNail Review: Ingredients, Side Effects and How to Use It",
     title: "KlaroNail Review: Ingredients, Price & Where to Buy",
     category: "Nail & Foot Care",
     summary:
@@ -57,7 +58,7 @@ export const investigations: Investigation[] = [
   {
     href: "/audifort",
     name: "Audifort",
-    headline: "Audifort's 90-Day Guarantee: The Longest Refund Window on Our List",
+    headline: "Audifort Review: Does It Work, and What Does the 90-Day Guarantee Cover?",
     title: "Audifort Review: Ingredients, Price & Where to Buy",
     category: "Hearing Health",
     summary:
@@ -68,7 +69,7 @@ export const investigations: Investigation[] = [
   {
     href: "/gelatinesculpt",
     name: "GelatineSculpt",
-    headline: "GelatineSculpt Price: Every Package Compared, Shipping Included",
+    headline: "GelatineSculpt Review: Honest Prices, Bonuses and Refund Terms",
     title: "GelatineSculpt Review: Ingredients, Price & Where to Buy",
     category: "Weight Management",
     summary:
@@ -79,7 +80,7 @@ export const investigations: Investigation[] = [
   {
     href: "/nervealive",
     name: "NerveAlive",
-    headline: "NerveAlive's Label: Every Herb Dosed on Its Own, No Blend to Hide In",
+    headline: "NerveAlive Review: What's in Each Capsule, and Any Side Effects?",
     title: "NerveAlive Review: Ingredients, Price & Where to Buy",
     category: "Nerve Health",
     summary:
@@ -90,7 +91,7 @@ export const investigations: Investigation[] = [
   {
     href: "/sugardefender",
     name: "SugarDefender",
-    headline: "How SugarDefender Works: Chromium Plus a 200 mg Herbal Blend",
+    headline: "SugarDefender Review: Does the Chromium Formula Hold Up?",
     title: "SugarDefender Review: Ingredients, Price & Where to Buy",
     category: "Blood Sugar Support",
     summary:
@@ -101,7 +102,7 @@ export const investigations: Investigation[] = [
   {
     href: "/dentavive",
     name: "DentaVive",
-    headline: "The Five Probiotic Strains in DentaVive, and What Each One Is For",
+    headline: "DentaVive Review: Is a Chewable Oral Probiotic Worth Trying?",
     title: "DentaVive Review: Ingredients, Price & Where to Buy",
     category: "Oral Health",
     summary:
@@ -112,7 +113,7 @@ export const investigations: Investigation[] = [
   {
     href: "/gelagen",
     name: "Gelagen",
-    headline: "Gelagen's 5,000 mcg of Biotin: What That Dose Means for Hair and Nails",
+    headline: "Gelagen Review: How Long Before Biotin Gummies Show Results?",
     title: "Gelagen Review: Ingredients, Price & Where to Buy",
     category: "Hair, Skin & Nails",
     summary:
@@ -123,7 +124,7 @@ export const investigations: Investigation[] = [
   {
     href: "/slimtide",
     name: "SlimTide",
-    headline: "Akkermansia Muciniphila in SlimTide: The Strain Behind the Formula",
+    headline: "SlimTide Review: Is Akkermansia Worth the Price?",
     title: "SlimTide Review: Ingredients, Price & Where to Buy",
     category: "Metabolism & Digestion",
     summary:
@@ -134,7 +135,7 @@ export const investigations: Investigation[] = [
   {
     href: "/memohoney",
     name: "MemoHoney",
-    headline: "MemoHoney's Amino Acids: L-Arginine, L-Citrulline and Blood Flow",
+    headline: "MemoHoney Review: Does It Help Memory, and Is It Safe to Take?",
     title: "MemoHoney Review: Ingredients, Price & Where to Buy",
     category: "Brain & Memory",
     summary:
@@ -145,7 +146,7 @@ export const investigations: Investigation[] = [
   {
     href: "/vapocept",
     name: "VapoCept",
-    headline: "Ginkgo, Turmeric and Lutein: Reading the VapoCept Formula",
+    headline: "VapoCept Review: Does Ginkgo Really Sharpen Focus?",
     title: "VapoCept Review: Ingredients, Price & Where to Buy",
     category: "Brain & Memory",
     summary:
@@ -156,7 +157,7 @@ export const investigations: Investigation[] = [
   {
     href: "/sodatide",
     name: "SodaTide",
-    headline: "SodaTide's Prebiotic Fiber and Three Live Strains, Explained",
+    headline: "SodaTide Review: How Long Does a Synbiotic Take to Work?",
     title: "SodaTide Review: Ingredients, Price & Where to Buy",
     category: "Digestive Health",
     summary:
@@ -167,7 +168,7 @@ export const investigations: Investigation[] = [
   {
     href: "/sodapeak",
     name: "SodaPeak",
-    headline: "The Nine Botanicals in SodaPeak, From Muira Puama to Ashwagandha",
+    headline: "SodaPeak Review: Do the Nine Botanicals Really Deliver?",
     title: "SodaPeak Review: Ingredients, Price & Where to Buy",
     category: "Men's Health",
     summary:
@@ -178,7 +179,7 @@ export const investigations: Investigation[] = [
   {
     href: "/breathizen",
     name: "BreathiZen",
-    headline: "Where to Buy BreathiZen, and What Each Package Costs",
+    headline: "BreathiZen Review: Price, Guarantee and Where to Order Safely",
     title: "BreathiZen Review: Ingredients, Price & Where to Buy",
     category: "Respiratory Health",
     summary:
@@ -189,7 +190,7 @@ export const investigations: Investigation[] = [
   {
     href: "/best-brain-supplement",
     name: "Prevagen",
-    headline: "Prevagen vs the Top Memory Supplements: Dosing and Evidence Compared",
+    headline: "Prevagen vs MemoVolt and NooCube: Which Memory Formula Wins?",
     title: bestBrain.title,
     category: "Brain & Memory",
     summary:
