@@ -23,6 +23,17 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/villora",
+    name: "Villora",
+    headline: "Villora Review: Can One Capsule Really Replace Three Bottles?",
+    title: "Villora Review: Ingredients, Price & Where to Buy",
+    category: "Digestive Health",
+    summary:
+      "A made-in-USA vegan capsule with eight gut actives: six gel-forming fibers, green black walnut hull and 1.5 billion CFU of Lactobacillus acidophilus, guaranteed at manufacture. We go through the label, the launch prices, the two free guides and the 60-day guarantee.",
+    image: "/villora/images/villora-hero.webp",
+    imageAlt: "Villora daily gut support complex capsule bottles",
+  },
+  {
     href: "/vapolung",
     name: "VapoLung",
     headline: "VapoLung Review: Does the Five-Botanical Spray Really Work?",

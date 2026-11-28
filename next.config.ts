@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
       { source: "/nervealive", destination: "/nervealive/index.html" },
       { source: "/sugardefender", destination: "/sugardefender/index.html" },
       { source: "/dentavive", destination: "/dentavive/index.html" },
+      { source: "/villora", destination: "/villora/index.html" },
       { source: "/vapolung", destination: "/vapolung/index.html" },
       { source: "/honeyharmony", destination: "/honeyharmony/index.html" },
       { source: "/audifort", destination: "/audifort/index.html" },
