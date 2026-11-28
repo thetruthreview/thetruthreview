@@ -61,6 +61,33 @@ function lastCommitDate(file) {
   }
 }
 
+/**
+ * A shallow clone — which is what the deploy checks out — has only the last
+ * commit or two, so git attributes every file to that commit and every page
+ * would claim it changed today. That is worse than no date: a lastmod that
+ * moves without the page moving teaches Google to ignore the field. In that
+ * case keep the dates committed to the repo, which were generated here.
+ */
+function hasFullHistory() {
+  try {
+    const shallow = execFileSync("git", ["rev-parse", "--is-shallow-repository"], {
+      cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    if (shallow !== "false") return false;
+    const count = Number(execFileSync("git", ["rev-list", "--count", "HEAD"], {
+      cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"],
+    }).trim());
+    return Number.isFinite(count) && count > 20;
+  } catch {
+    return false;
+  }
+}
+
+if (!hasFullHistory()) {
+  console.log("page-dates: shallow or missing git history; keeping the committed dates.");
+  process.exit(0);
+}
+
 const dates = {};
 let found = 0;
 
