@@ -37,13 +37,6 @@ const byConcern = Object.values(
   }, {}),
 ).sort((a, b) => b.items.length - a.items.length || a.category.localeCompare(b.category));
 
-/**
- * Card and list labels use the product, not the headline.
- * "BreathiZen Review: Ingredients, Price & Where to Buy" -> "BreathiZen"
- * "Prevagen Review (2026): Is It Worth the Hype…"        -> "Prevagen"
- */
-const productName = (title: string) => title.split(/ Review\b/)[0];
-
 export default function HomePage() {
   return (
     <>
@@ -138,7 +131,7 @@ export default function HomePage() {
                   {inv.category}
                 </span>
                 <h3 className="font-bold text-[var(--brand-navy)] group-hover:text-[var(--brand-gold)] transition-colors mb-3 leading-snug" style={serif}>
-                  {productName(inv.title)}
+                  {inv.name}
                 </h3>
                 <span className="text-sm font-semibold text-[var(--brand-navy)] mt-auto">Read the review →</span>
               </div>
@@ -175,7 +168,7 @@ export default function HomePage() {
                         href={inv.href}
                         className="text-[var(--brand-navy)] hover:text-[var(--brand-gold)] transition-colors text-[15px]"
                       >
-                        {productName(inv.title)}
+                        {inv.name}
                       </a>
                     </li>
                   ))}

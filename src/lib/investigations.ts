@@ -2,6 +2,10 @@ import { bestBrain } from "@/lib/best-brain";
 
 export interface Investigation {
   href: string;
+  /** The product on its own, for card and list labels. */
+  name: string;
+  /** The benefit-led headline, matching the H1 on the landing page. */
+  headline: string;
   title: string;
   category: string;
   summary: string;
@@ -16,6 +20,8 @@ export interface Investigation {
 export const investigations: Investigation[] = [
   {
     href: "/vapolung",
+    name: "VapoLung",
+    headline: "VapoLung: Five Botanicals for Easier Daily Breathing",
     title: "VapoLung Review: Ingredients, Price & Where to Buy",
     category: "Respiratory Health",
     summary:
@@ -25,6 +31,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/honeyharmony",
+    name: "HoneyHarmony",
+    headline: "HoneyHarmony: Everyday Support for Healthy Blood Sugar",
     title: "HoneyHarmony Review: Ingredients, Price & Where to Buy",
     category: "Blood Sugar Support",
     summary:
@@ -34,6 +42,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/klaronail",
+    name: "KlaroNail",
+    headline: "KlaroNail: Clear, Healthy-Looking Nails in a Simple Daily Spray",
     title: "KlaroNail Review: Ingredients, Price & Where to Buy",
     category: "Nail & Foot Care",
     summary:
@@ -43,6 +53,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/audifort",
+    name: "Audifort",
+    headline: "Audifort: Daily Support for Healthy Hearing",
     title: "Audifort Review: Ingredients, Price & Where to Buy",
     category: "Hearing Health",
     summary:
@@ -52,6 +64,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/gelatinesculpt",
+    name: "GelatineSculpt",
+    headline: "GelatineSculpt: Feel Lighter, Day After Day",
     title: "GelatineSculpt Review: Ingredients, Price & Where to Buy",
     category: "Weight Management",
     summary:
@@ -61,6 +75,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/nervealive",
+    name: "NerveAlive",
+    headline: "NerveAlive: Everyday Support for Calm, Healthy Nerves",
     title: "NerveAlive Review: Ingredients, Price & Where to Buy",
     category: "Nerve Health",
     summary:
@@ -70,6 +86,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/sugardefender",
+    name: "SugarDefender",
+    headline: "SugarDefender: Steady Energy, Steady Days",
     title: "SugarDefender Review: Ingredients, Price & Where to Buy",
     category: "Blood Sugar Support",
     summary:
@@ -79,6 +97,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/dentavive",
+    name: "DentaVive",
+    headline: "DentaVive: Healthy Gums & Fresh Breath Start With Good Bacteria",
     title: "DentaVive Review: Ingredients, Price & Where to Buy",
     category: "Oral Health",
     summary:
@@ -88,6 +108,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/gelagen",
+    name: "Gelagen",
+    headline: "Gelagen: Beauty Support from Within for Skin, Hair & Nails",
     title: "Gelagen Review: Ingredients, Price & Where to Buy",
     category: "Hair, Skin & Nails",
     summary:
@@ -97,6 +119,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/slimtide",
+    name: "SlimTide",
+    headline: "SlimTide: Metabolic & Digestive Support That Starts in Your Gut",
     title: "SlimTide Review: Ingredients, Price & Where to Buy",
     category: "Metabolism & Digestion",
     summary:
@@ -106,6 +130,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/memohoney",
+    name: "MemoHoney",
+    headline: "MemoHoney: Advanced Memory Support for Sharper, Clearer Days",
     title: "MemoHoney Review: Ingredients, Price & Where to Buy",
     category: "Brain & Memory",
     summary:
@@ -115,6 +141,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/vapocept",
+    name: "VapoCept",
+    headline: "VapoCept: Sharper Focus and Everyday Mental Clarity",
     title: "VapoCept Review: Ingredients, Price & Where to Buy",
     category: "Brain & Memory",
     summary:
@@ -124,6 +152,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/sodatide",
+    name: "SodaTide",
+    headline: "SodaTide: Lighter Digestion and Steady Everyday Energy",
     title: "SodaTide Review: Ingredients, Price & Where to Buy",
     category: "Digestive Health",
     summary:
@@ -133,6 +163,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/sodapeak",
+    name: "SodaPeak",
+    headline: "SodaPeak: More Energy, More Confidence",
     title: "SodaPeak Review: Ingredients, Price & Where to Buy",
     category: "Men's Health",
     summary:
@@ -142,6 +174,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/breathizen",
+    name: "BreathiZen",
+    headline: "BreathiZen: Feel the Refreshing Difference of Clearer Breathing",
     title: "BreathiZen Review: Ingredients, Price & Where to Buy",
     category: "Respiratory Health",
     summary:
@@ -151,6 +185,8 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/best-brain-supplement",
+    name: "Prevagen",
+    headline: "Prevagen: Does the Jellyfish Protein Really Help Memory?",
     title: bestBrain.title,
     category: "Brain & Memory",
     summary:

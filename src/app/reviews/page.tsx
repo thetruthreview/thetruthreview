@@ -65,7 +65,7 @@ export default function ReviewsIndexPage() {
                 {inv.category}
               </span>
               <h2 className="font-bold text-lg text-[var(--brand-navy)] group-hover:text-[var(--brand-gold)] transition-colors mb-2 leading-snug" style={serif}>
-                {inv.title}
+                {inv.headline}
               </h2>
               <p className="text-sm text-muted-foreground mb-4 flex-1">{inv.summary}</p>
               <span className="text-sm font-semibold text-[var(--brand-navy)]">Read the review →</span>
