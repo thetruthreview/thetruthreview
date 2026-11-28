@@ -52,30 +52,30 @@ export const investigations: Investigation[] = [
   },
   {
     href: "/gelatinesculpt",
-    title: "Gelatine Sculpt Review: Ingredients, Price & Where to Buy",
+    title: "GelatineSculpt Review: Ingredients, Price & Where to Buy",
     category: "Weight Management",
     summary:
       "A made-in-USA liquid drop with chromium and a 200 mg blend of maca, green tea, gymnema and African mango. We read the Supplement Facts panel line by line — including the three featured ingredients that are not on it — and go through the prices, the six bonuses and the 60-day guarantee.",
     image: "/gelatinesculpt/images/gelatinesculpt-hero.webp",
-    imageAlt: "Gelatine Sculpt metabolism support drop bottles",
+    imageAlt: "GelatineSculpt metabolism support drop bottles",
   },
   {
     href: "/nervealive",
-    title: "Nerve Alive Review: Ingredients, Price & Where to Buy",
+    title: "NerveAlive Review: Ingredients, Price & Where to Buy",
     category: "Nerve Health",
     summary:
       "A daily nerve support capsule with passion flower, marshmallow root, corydalis, prickly pear and California poppy — every active printed with its own amount, no proprietary blend. We go through the label, the prices, the bonuses and the 60-day guarantee.",
     image: "/nervealive/images/nervealive-hero.webp",
-    imageAlt: "Nerve Alive nerve support capsule bottles",
+    imageAlt: "NerveAlive nerve support capsule bottles",
   },
   {
     href: "/sugardefender",
-    title: "Sugar Defender Review: Ingredients, Price & Where to Buy",
+    title: "SugarDefender Review: Ingredients, Price & Where to Buy",
     category: "Blood Sugar Support",
     summary:
       "A made-in-USA liquid drop with chromium and a 200 mg herbal blend of maca, gymnema, ginseng and African mango. We go through the label, how to take it, the official prices, the bonuses and the 60-day guarantee.",
     image: "/sugardefender/images/sugardefender-hero.webp",
-    imageAlt: "Sugar Defender blood sugar support drop bottles",
+    imageAlt: "SugarDefender blood sugar support drop bottles",
   },
   {
     href: "/dentavive",

@@ -18,7 +18,7 @@ export const reviewSchema = defineType({
       type: "string",
       group: "meta",
       validation: (R) => R.required(),
-      description: 'e.g. "Sugar Defender Review — Does It Really Work?"',
+      description: 'e.g. "SugarDefender Review — Does It Really Work?"',
     }),
     defineField({
       name: "slug",
