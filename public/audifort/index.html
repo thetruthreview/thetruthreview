@@ -303,7 +303,7 @@ header nav a:hover{color:var(--red)}
 .checks li::before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:var(--y1);color:#000;font-size:.8rem;display:flex;align-items:center;justify-content:center;font-weight:900}
 .hero .micro{color:#A8D8E4;margin-top:12px}
 .hero-img img{filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
-@media(max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:18px}.hero-img{order:-1;max-width:300px;margin:0 auto}}
+@media(max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:18px}.hero-img{order:-1;max-width:255px;margin:0 auto}}
 
 .trust{background:var(--navy);color:#fff;font-weight:700;font-size:.9rem}
 .trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 30px;padding:13px 20px}
@@ -324,6 +324,14 @@ section.ice{background:var(--ice)}
 
 .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
 #what-is .split img{width:56%;height:auto;margin:0 auto}
+/* --- pack sizing --- Our pack art is trimmed tight to the bottles, while the
+   other pages carry a transparent margin around theirs. These widths make the
+   bottles render at the same height they do on /breathizen, section by section. */
+.hero-img img{width:420px;max-width:100%;margin-left:auto;margin-right:auto}
+#legit .split2 img{width:155px;margin:0 auto}
+.plan img[src*="2-bottles"]{width:86px}
+.plan img[src*="6-bottles"]{width:157px}
+.plan img[src*="3-bottles"]{width:112px}
 @media(max-width:820px){.split{grid-template-columns:1fr}.split img{max-width:320px;margin:0 auto}}
 
 .label-img{max-width:1000px;width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.35);margin:26px auto}
@@ -383,7 +391,7 @@ details p{margin:12px 0 0;font-size:.97rem;color:var(--muted)}
 .cta-band{background:radial-gradient(circle at 50% 20%,var(--navy) 0%,var(--navy2) 55%,var(--deep) 100%);color:#D5EFF6;text-align:center;padding:50px 22px;border-radius:24px;margin:50px 0}
 .cta-band h2{color:#fff}
 .cta-band p{max-width:620px;margin:0 auto 22px}
-.cta-band img{width:320px;margin:0 auto 10px;filter:drop-shadow(0 14px 24px rgba(0,0,0,.45))}
+.cta-band img{width:220px;margin:0 auto 10px;filter:drop-shadow(0 14px 24px rgba(0,0,0,.45))}
 
 .sources ol{font-size:.88rem;padding-left:20px;color:var(--muted)}
 footer{background:var(--deep);color:#9FC8D2;font-size:.84rem;padding:36px 0}
