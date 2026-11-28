@@ -1,10 +1,10 @@
 import sharp from "sharp";
 
 /**
- * Villora's offer page ships a single bottle render, so the package art on
- * /villora is composed from it here: one bottle in front, the rest fanning
- * back - smaller and a little higher as they recede, matching the pack shots
- * the other brands supply.
+ * The brand supplied official art for the 6-bottle pack (villora-hero.webp and
+ * villora-6-bottles.webp) but not for the smaller sizes, so the 2- and 4-bottle
+ * packs are composed here from the single bottle render. This deliberately does
+ * NOT write the 6-bottle or hero files: those are brand art, never overwrite them.
  *
  *   node scripts/villora-packs.mjs <folder-with-bottle.webp>
  */
@@ -54,8 +54,6 @@ async function pack(n, frontH, file) {
   console.log(file.padEnd(26), `${W}x${H}`);
 }
 
-await pack(6, 620, "villora-hero.webp");
-await pack(6, 460, "villora-6-bottles.webp");
 await pack(4, 460, "villora-4-bottles.webp");
 await pack(2, 460, "villora-2-bottles.webp");
 await sharp(base).resize({ height: 900 }).webp({ quality: 90 }).toFile(`${OUT}/villora-bottle.webp`);
