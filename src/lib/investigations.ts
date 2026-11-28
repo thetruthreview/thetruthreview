@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/vapolung",
+    title: "VapoLung Review: Ingredients, Price & Where to Buy",
+    category: "Respiratory Health",
+    summary:
+      "A made-in-USA herbal oral spray with a 154 mg blend of mullein, ginger, bromelain, organic lemon and cordyceps militaris — five botanicals where most sprays carry three. We go through the label, the prices, the five bonuses and the 60-day guarantee.",
+    image: "/vapolung/images/vapolung-hero.webp",
+    imageAlt: "VapoLung herbal lung support spray bottles",
+  },
+  {
     href: "/honeyharmony",
     title: "HoneyHarmony Review: Ingredients, Price & Where to Buy",
     category: "Blood Sugar Support",

@@ -45,6 +45,7 @@ const PAGES = {
   "/gelatinesculpt": ["public/gelatinesculpt/index.html"],
   "/audifort": ["public/audifort/index.html"],
   "/honeyharmony": ["public/honeyharmony/index.html"],
+  "/vapolung": ["public/vapolung/index.html"],
   "/klaronail": ["public/klaronail/index.html"],
 };
 
