@@ -20,7 +20,7 @@ export const investigations: Investigation[] = [
     category: "Nail & Foot Care",
     summary:
       "A made-in-USA topical nail and skin spray with 5% undecylenic acid, tea tree, clove and manuka oils. We go through the full label, how to use it, the official prices, the bonuses and the 60-day guarantee.",
-    image: "/klaronail/images/klaronail-6-bottles.webp",
+    image: "/klaronail/images/klaronail-hero.webp",
     imageAlt: "KlaroNail nail and skin spray bottles",
   },
   {
@@ -29,7 +29,7 @@ export const investigations: Investigation[] = [
     category: "Hearing Health",
     summary:
       "A made-in-USA liquid drop sold as healthy hearing support, with chromium and a 200 mg botanical blend — and a 90-day guarantee, the longest we have reviewed. We read the label, including what it says about how hearing-specific this formula really is.",
-    image: "/audifort/images/audifort-6-bottles.webp",
+    image: "/audifort/images/audifort-hero.webp",
     imageAlt: "Audifort healthy hearing support drop bottles",
   },
   {
@@ -38,7 +38,7 @@ export const investigations: Investigation[] = [
     category: "Weight Management",
     summary:
       "A made-in-USA liquid drop with chromium and a 200 mg blend of maca, green tea, gymnema and African mango. We read the Supplement Facts panel line by line — including the three featured ingredients that are not on it — and go through the prices, the six bonuses and the 60-day guarantee.",
-    image: "/gelatinesculpt/images/gelatinesculpt-6-bottles.webp",
+    image: "/gelatinesculpt/images/gelatinesculpt-hero.webp",
     imageAlt: "Gelatine Sculpt metabolism support drop bottles",
   },
   {
@@ -47,7 +47,7 @@ export const investigations: Investigation[] = [
     category: "Nerve Health",
     summary:
       "A daily nerve support capsule with passion flower, marshmallow root, corydalis, prickly pear and California poppy — every active printed with its own amount, no proprietary blend. We go through the label, the prices, the bonuses and the 60-day guarantee.",
-    image: "/nervealive/images/nervealive-6-bottles.webp",
+    image: "/nervealive/images/nervealive-hero.webp",
     imageAlt: "Nerve Alive nerve support capsule bottles",
   },
   {
@@ -56,7 +56,7 @@ export const investigations: Investigation[] = [
     category: "Blood Sugar Support",
     summary:
       "A made-in-USA liquid drop with chromium and a 200 mg herbal blend of maca, gymnema, ginseng and African mango. We go through the label, how to take it, the official prices, the bonuses and the 60-day guarantee.",
-    image: "/sugardefender/images/sugardefender-6-bottles.webp",
+    image: "/sugardefender/images/sugardefender-hero.webp",
     imageAlt: "Sugar Defender blood sugar support drop bottles",
   },
   {
@@ -74,7 +74,7 @@ export const investigations: Investigation[] = [
     category: "Hair, Skin & Nails",
     summary:
       "Made-in-USA daily beauty gummies with 5,000 mcg biotin, B vitamins and vitamins A, C and E for skin, hair and nails. We go through the label, how to take them, the official prices, the bonuses and the 60-day guarantee.",
-    image: "/gelagen/images/gelagen-6-bottles.webp",
+    image: "/gelagen/images/gelagen-hero.webp",
     imageAlt: "Gelagen skin, hair and nail gummy bottles",
   },
   {
@@ -83,7 +83,7 @@ export const investigations: Investigation[] = [
     category: "Metabolism & Digestion",
     summary:
       "A made-in-USA once-daily synbiotic capsule with chicory root inulin, potato resistant starch and three probiotic strains, including Akkermansia muciniphila. We go through the label, how to take it, the official prices, the bonuses and the 60-day guarantee.",
-    image: "/slimtide/images/slimtide-6-bottles.webp",
+    image: "/slimtide/images/slimtide-hero.webp",
     imageAlt: "SlimTide metabolic and digestive support capsule bottles",
   },
   {
@@ -92,7 +92,7 @@ export const investigations: Investigation[] = [
     category: "Brain & Memory",
     summary:
       "A made-in-USA once-daily vegetable capsule with L-arginine, L-citrulline, niacin and beta-alanine for memory and focus. We go through the label, how to take it, the official prices, the bonuses and the 60-day guarantee.",
-    image: "/memohoney/images/memohoney-6-bottles.webp",
+    image: "/memohoney/images/memohoney-hero.webp",
     imageAlt: "MemoHoney advanced memory support capsule bottles",
   },
   {
@@ -101,7 +101,7 @@ export const investigations: Investigation[] = [
     category: "Brain & Memory",
     summary:
       "A made-in-USA once-daily capsule with ginkgo biloba, turmeric, lutein and green tea for focus and mental clarity. We go through the label, how to take it, the official prices and the 60-day guarantee.",
-    image: "/vapocept/images/vapocept-6-bottles.webp",
+    image: "/vapocept/images/vapocept-hero.webp",
     imageAlt: "VapoCept focus and mental clarity capsule bottles",
   },
   {
@@ -110,7 +110,7 @@ export const investigations: Investigation[] = [
     category: "Digestive Health",
     summary:
       "A made-in-USA synbiotic capsule with chicory root inulin, potato resistant starch and three probiotic strains, Akkermansia muciniphila among them. We go through the label, how to take it, the official prices and the 60-day guarantee.",
-    image: "/sodatide/images/sodatide-6-bottles.webp",
+    image: "/sodatide/images/sodatide-hero.webp",
     imageAlt: "SodaTide metabolic and digestive support capsule bottles",
   },
   {
@@ -119,7 +119,7 @@ export const investigations: Investigation[] = [
     category: "Men's Health",
     summary:
       "A made-in-USA daily gummy built on a 9-botanical blend with Muira Puama, Maca, Catuaba and Ashwagandha. We go through the label, how to take it, the official prices and the 60-day guarantee.",
-    image: "/sodapeak/images/sodapeak-6-bottles.webp",
+    image: "/sodapeak/images/sodapeak-hero.webp",
     imageAlt: "SodaPeak male wellness gummy bottles",
   },
   {
@@ -128,7 +128,7 @@ export const investigations: Investigation[] = [
     category: "Respiratory Health",
     summary:
       "A made-in-USA herbal oral spray with mullein, ginger and organic lemon. We go through the label, how to use it, the official prices and the 60-day guarantee.",
-    image: "/breathizen/images/breathizen-6-bottles.webp",
+    image: "/breathizen/images/breathizen-hero.webp",
     imageAlt: "BreathiZen herbal oral spray bottles",
   },
   {
