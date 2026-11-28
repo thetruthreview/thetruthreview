@@ -99,7 +99,7 @@ function WinnerCard({ p }: { p: RankedProduct }) {
   return (
     <div className="relative border-2 border-[var(--brand-gold)] rounded-xl bg-white mb-6 mt-8">
       <span className="absolute -top-3 left-6 bg-[var(--brand-gold)] text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">
-        🏆 #1 Top Product for 2026
+        🏆 #1 Top Product for 2027
       </span>
       <div className="p-6 pt-8">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-5">
@@ -352,7 +352,7 @@ export function RankingPage({ data }: { data: RankingData }) {
                 </div>
                 <div className="flex-1 text-center sm:text-left">
                   <div className="text-xs font-bold uppercase tracking-wide text-[var(--brand-gold)] mb-1">
-                    Our #1 Pick for 2026
+                    Our #1 Pick for 2027
                   </div>
                   <h3 className="text-2xl font-black text-[var(--brand-navy)]" style={serif}>
                     {winner.name}

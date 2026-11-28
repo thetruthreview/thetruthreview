@@ -1,13 +1,13 @@
 import type { RankingData } from "@/components/ranking-page";
 
 export const bestBrain: RankingData = {
-  eyebrow: "Independent Supplement Investigations · Special Report · Updated for 2026",
+  eyebrow: "Independent Supplement Investigations · Special Report · Updated for 2027",
   badge: "Evidence Review",
-  title: "Prevagen Review (2026): Is It Worth the Hype or Should You Avoid It?",
+  title: "Prevagen Review (2027): Is It Worth the Hype or Should You Avoid It?",
   subtitle:
     "An independent comparison of the Top 5 memory and brain supplements on the market today — revealed after analyzing ingredient dosing, published research, and each brand's advertising record.",
   metaDescription:
-    "Prevagen review 2026: what its studies and the FTC case really show, and how it compares with top memory supplements on dosing and evidence.",
+    "Prevagen review 2027: what its studies and the FTC case really show, and how it compares with top memory supplements on dosing and evidence.",
   author: "The Truth Review Editorial Team",
   updated: "Updated November 2026",
   readTime: "6 min read",
@@ -26,7 +26,7 @@ export const bestBrain: RankingData = {
     "Here's how they ranked.",
   ],
 
-  tableTitle: "2026 Memory & Brain Health Ranking Summary",
+  tableTitle: "2027 Memory & Brain Health Ranking Summary",
 
   products: [
     {
