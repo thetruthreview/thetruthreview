@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/klaronail",
+    title: "KlaroNail Review: Ingredients, Price & Where to Buy",
+    category: "Nail & Foot Care",
+    summary:
+      "A made-in-USA topical nail and skin spray with 5% undecylenic acid, tea tree, clove and manuka oils. We go through the full label, how to use it, the official prices, the bonuses and the 60-day guarantee.",
+    image: "/klaronail/images/klaronail-6-bottles.webp",
+    imageAlt: "KlaroNail nail and skin spray bottles",
+  },
+  {
     href: "/audifort",
     title: "Audifort Review: Ingredients, Price & Where to Buy",
     category: "Hearing Health",
