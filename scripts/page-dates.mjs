@@ -44,6 +44,7 @@ const PAGES = {
   "/nervealive": ["public/nervealive/index.html"],
   "/gelatinesculpt": ["public/gelatinesculpt/index.html"],
   "/audifort": ["public/audifort/index.html"],
+  "/klaronail": ["public/klaronail/index.html"],
 };
 
 /** Date (YYYY-MM-DD) of the last commit touching this file, or null. */
