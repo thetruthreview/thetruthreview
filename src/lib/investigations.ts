@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/honeyharmony",
+    title: "HoneyHarmony Review: Ingredients, Price & Where to Buy",
+    category: "Blood Sugar Support",
+    summary:
+      "A made-in-USA liquid drop with 7 mcg of chromium — 20% of the Daily Value, printed on its own line rather than pooled — plus a botanical blend of maca, gymnema, green tea and ginseng. We go through the label, the prices, the six bonuses and the 60-day guarantee.",
+    image: "/honeyharmony/images/honeyharmony-hero.webp",
+    imageAlt: "HoneyHarmony blood sugar support drop bottles",
+  },
+  {
     href: "/klaronail",
     title: "KlaroNail Review: Ingredients, Price & Where to Buy",
     category: "Nail & Foot Care",

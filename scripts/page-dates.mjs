@@ -44,6 +44,7 @@ const PAGES = {
   "/nervealive": ["public/nervealive/index.html"],
   "/gelatinesculpt": ["public/gelatinesculpt/index.html"],
   "/audifort": ["public/audifort/index.html"],
+  "/honeyharmony": ["public/honeyharmony/index.html"],
   "/klaronail": ["public/klaronail/index.html"],
 };
 
