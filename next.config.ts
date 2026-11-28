@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
       { source: "/nervealive", destination: "/nervealive/index.html" },
       { source: "/sugardefender", destination: "/sugardefender/index.html" },
       { source: "/dentavive", destination: "/dentavive/index.html" },
+      { source: "/audifort", destination: "/audifort/index.html" },
       { source: "/gelatinesculpt", destination: "/gelatinesculpt/index.html" },
       { source: "/gelagen", destination: "/gelagen/index.html" },
       { source: "/slimtide", destination: "/slimtide/index.html" },

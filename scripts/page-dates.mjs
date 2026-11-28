@@ -43,6 +43,7 @@ const PAGES = {
   "/sugardefender": ["public/sugardefender/index.html"],
   "/nervealive": ["public/nervealive/index.html"],
   "/gelatinesculpt": ["public/gelatinesculpt/index.html"],
+  "/audifort": ["public/audifort/index.html"],
 };
 
 /** Date (YYYY-MM-DD) of the last commit touching this file, or null. */

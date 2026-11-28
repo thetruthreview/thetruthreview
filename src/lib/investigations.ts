@@ -15,6 +15,15 @@ export interface Investigation {
  */
 export const investigations: Investigation[] = [
   {
+    href: "/audifort",
+    title: "Audifort Review: Ingredients, Price & Where to Buy",
+    category: "Hearing Health",
+    summary:
+      "A made-in-USA liquid drop sold as healthy hearing support, with chromium and a 200 mg botanical blend — and a 90-day guarantee, the longest we have reviewed. We read the label, including what it says about how hearing-specific this formula really is.",
+    image: "/audifort/images/audifort-6-bottles.webp",
+    imageAlt: "Audifort healthy hearing support drop bottles",
+  },
+  {
     href: "/gelatinesculpt",
     title: "Gelatine Sculpt Review: Ingredients, Price & Where to Buy",
     category: "Weight Management",
